@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programas de acción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegación menú  -->
+<div id="menu"></div>
+<!--cierre de navegación nav menú-->
+  
+  <section class="hero-section" class="programa_accion" id="programa_accion">
+    <div class="overlay"></div>
+    <div class="text-overlay">
+      <h1>Programas<br> de acción</h1>
+    </div>
+  </section>
+  <section class="content-container">
+    <div class="content">
+      <h2>Workshop & Wellness</h2>
+      <h3>Más que un programa, un compromiso.</h3>
+      <p>No solo nos enfocamos en el desarrollo profesional, sino también en el bienestar integral de nuestros colaboradores. Por esa razón, creamos el Programa Workshop & Wellness, una iniciativa que combina capacitación y cuidado personal, contribuyendo tanto al crecimiento individual como al impacto positivo en la comunidad.</p>
+      <p>Este programa incluye una variedad de actividades diseñadas para fomentar la salud, el bienestar y la conciencia social:</p>
+      <ul>
+        <li><strong>Campañas de RCP:</strong> Capacitación en reanimación cardiopulmonar para estar preparados ante emergencias y salvar vidas.</li>
+        <li><strong>Donación de sangre:</strong> Organizamos jornadas en alianza con instituciones de salud, promoviendo la solidaridad y el compromiso social.</li>
+        <li><strong>Charlas y talleres de bienestar:</strong> Desde gestión del estrés hasta mindfulness, porque cuidar la mente es tan importante como cuidar el cuerpo.</li>
+      </ul>
+      <p>A través de Workshop & Wellness, no solo buscamos capacitar a nuestro equipo, sino también aportar nuestro grano de arena para un mundo mejor.</p>
+    </div>
+    <div class="carousel">
+      <img src="img/programa_accion_carroussel_1.png" alt="Slide 1" class="active">
+      <img src="img/programa_accion_carroussel_2.png" alt="Slide 2">
+      <img src="img/programa_accion_carroussel_3.png" alt="Slide 3">
+      <img src="img/programa_accion_carroussel_4.png" alt="Slide 4">
+    </div>
+ 
+  </section>
+  <div class="divisor"></div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+
+  // Cargar el footer
+  fetch('modulo/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando el footer:', error));
+  </script>
+  <!-- Fin de footer-->
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .contact-section {
+      padding: 50px 20px;
+      color: #fff;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-header h1 {
+      font-size: 42px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .contact-header h2 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .contact-form-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form .submit-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      float: right;
+    }
+
+    .contact-form .submit-button:hover {
+      background-color: #0056b3;
+    }
+
+    .contact-map {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .contact-details {
+      margin-top: 15px;
+      color: black;
+      text-align: center;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+    }
+
+    .commercial-contacts {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .commercial-contacts .contact-card {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffffff, #f0f0f0);
+      color: #333;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transform: scale(1);
+      transition: transform 0.3s, background 0.5s, color 0.5s;
+    }
+
+    .commercial-contacts .contact-card:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #3a526c, #0056b3);
+      color: #fff;
+    }
+
+    .commercial-contacts .contact-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .commercial-contacts .contact-card p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-form, .contact-map {
+        width: 100%;
+      }
+
+      .contact-form {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<section class="hero-section" id="contacto">
+  <div class="overlay"></div>
+  <div class="text-overlay">
+    <h1>Contacto</h1>
+    <h2>Trabajemos juntos</h2>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1 style="text-align: left; color:black; font-size: 1.5em;">CFOTech IT Global Services</h1>
+      <h2 style="text-align: left; color:black;">Contacta con nosotros</h2>
+    </div>
+    <div class="contact-form-container">
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Nombre y apellido</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+
+        <label for="company">Empresa</label>
+        <input type="text" id="company" name="company" placeholder="Ingresa el nombre de tu empresa">
+
+        <label for="reason">Motivo</label>
+        <select id="reason" name="reason" required>
+          <option value="consulta">Consulta</option>
+          <option value="soporte">Soporte</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="message">Comentario</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5778812014863!2d-58.37310338477193!3d-34.60905268045998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd56e0285b%3A0x1b3b6f5f3d201bd2!2sAv.%20Chiclana%203345%2C%20C1437%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sus!4v1672536414576!5m2!1sen!2sus" 
+          height="300" 
+          loading="lazy"></iframe>
+          <div class="contact-details">
+            <p><strong>Tel:</strong> +54911 5263-3750</p>
+            <p><strong>Dirección:</strong> Av. Chiclana 3345 - Piso 8 | Torre 2, CABA, Buenos Aires, Argentina.</p>
+          </div>
+      </div>
+    </div>
+    <div class="commercial-contacts">
+      <h2>Equipo Comercial</h2>
+      <div class="contact-card">
+        <h3>Ximena Dabbe</h3>
+        <p>Chief Commercial Officer</p>
+        <p><strong>Email:</strong> xdabbe@cfotechlatam.com</p>
+        <p><strong>Tel:</strong> +54911 1234-5678</p>
+      </div>
+      <div class="contact-card">
+        <h3>Mariano Deluca</h3>
+        <p>General Manager</p>
+        <p><strong>Email:</strong> mdeluca@cfotechlatam.com</p>
+        <p><strong>Tel:</strong> +54911 8765-4321</p>
+      </div>
+      <div class="contact-card">
+        <h3>Yamila Garre</h3>
+        <p>Commercial Manager</p>
+        <p><strong>Email:</strong> ygarre@cfotechlatam.com</p>
+        <p><strong>Tel:</strong> +54911 1357-2468</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/hero-container.js"></script>
+
+</body>
+</html>

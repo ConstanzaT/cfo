@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFOTech IT Global Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Navegación menú  -->
+<div id="menu"></div>
+<!--cierre de navegación nav menú-->
+
+
+<!-- Hero section video carrousel -->
+  <section class="hero-section">
+    <div class="video-carousel">
+      <div class="slide" data-index="0">
+        <video class="carousel-video" muted loop> 
+          <source src="video/1_CFOTech_Video_Header_C-Level.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-black"></div> <!-- Video 1 -->
+        <div class="slide-content">
+          <h1>Somos el motor detrás de cada solución</h1>
+          <p>Cada solución, resultado y éxito alcanzado es posible gracias a nuestro equipo. Transformamos desafíos en soluciones tecnológicas de vanguardia.</p>
+          <a href="#" class="btn">Trabaja con nosotros</a>
+        </div>
+      </div>
+      <div class="slide" data-index="1">
+        <video class="carousel-video" muted loop>
+          <source src="video/2_CFOTech_Video_Header_Technology.mp4" type="video/mp4" >
+        </video>
+        <div class="overlay-black"></div> <!-- Video 2 -->
+        <div class="slide-content">
+          <h1>Innovación tecnológica</h1>
+          <p>Impulsamos el desarrollo de soluciones disruptivas para liderar el cambio en un mundo dinámico.</p>
+          <a href="#" class="btn">Conoce más</a>
+        </div>
+      </div>
+      <div class="slide" data-index="2">
+        <video class="carousel-video" muted loop>
+          <source src="video/3_CFOTech_Video_Header_Worlwide.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-black"></div> <!-- Video 3 -->
+        <div class="slide-content">
+          <h1>Presencia global</h1>
+          <p>Estamos conectados a nivel mundial para ofrecer soluciones que trascienden fronteras.</p>
+          <a href="#" class="btn">Únete a nosotros</a>
+        </div>
+      </div>
+    </div>
+    <div class="arrow arrow-left">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+      </svg>
+    </div>
+    <div class="arrow arrow-right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+      </svg>
+    </div>
+  </section>
+<!-- Cierre de Hero section video carrousel -->
+
+<!--Sección: redes -->
+  <section class="connect">
+    <p>
+      Conéctate con nuestra comunidad de más de 
+      <span class="highlight">50 mil</span> 
+      seguidores y mantente al día con nuestras últimas novedades
+    </p>
+    <div class="social-icons">
+      <a href="#" ><img src="img/ig_red.svg" class="icon" aria-label="Instagram"></a>
+      <a href="#" ><img src="img/youtube_red.svg" class="icon" aria-label="YouTube"></a>
+      <a href="#" ><img src="img/link_red.svg" class="icon" aria-label="LinkedIn"></a>
+    </div>
+  </section>
+<!--Fin de sección: redes -->
+
+
+<!-- Seccion: Servicios -->
+  <section class="services" >
+    <h2 >Nuestros servicios</h2>
+    <div class="service-container">
+      <div class="service">
+        <div class="icon icon-outsourcing"></div>
+        <h3>Outsourcing</h3>
+        <p>Proveemos personal capacitado y soluciones personalizadas para mejorar la eficiencia y productividad de tu negocio.</p>
+      </div>
+      <div class="service">
+        <div class="icon icon-delivery-center"></div>
+        <h3>Delivery Center</h3>
+        <p>Ofrecemos una gestión integral de proyectos tecnológicos, cubriendo todas las etapas del desarrollo de software, desde la concepción hasta el mantenimiento.</p>
+      </div>
+    </div>
+  </section>
+<!-- Fin de Seccion: Servicios -->
+
+<!--Seccion: Certificaciones -->
+  <section class="certified-trust">
+    <h2>Confianza certificada para tus soluciones</h2>
+    <div class="logos">
+      <img src="img/AWS_icon.svg" alt="AWS Logo">
+      <img src="img/Microsoft_Azure_icon.svg" alt="Azure Logo">
+    </div>
+  </section>
+<!--Fin de seccion: Certificaciones -->
+
+
+<!-- Sección Clientes -->
+<section class="clientes">
+  <h2>Clientes y Socios Tecnológicos</h2>
+  <div class="carousel-container">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Imagenes generadas con js -->
+    </div>
+  </div>
+</section>
+
+<!--Sección clientes y socios estratégicos-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carouselTrack = document.getElementById("carousel-track");
+    const imageCount = 77; // Numero total de imagenes
+    // Agregado de imagenes dinamicamente
+    for (let i = 1; i <= imageCount; i++) {
+      const img = document.createElement("img");
+      img.src = `img/clientes/image${i}.svg`;
+      img.alt = `Cliente ${i}`;
+      img.loading = "lazy"; // 
+      carouselTrack.appendChild(img);
+    }
+  });
+</script>
+<!-- Fin sección Clientes y socios -->
+
+
+ <!--Seccion: partners -->
+ <section class="partners">
+    <h2>Partners</h2>
+    <div class="partners_img">
+      <img src="img/partner_1.svg" alt="Katalon">
+      <img src="img/partner_2.svg" alt="Rocketbot">
+    </div>
+  </section>
+ <!--Fin de seccion: partners -->
+
+<!--Seccion: quienes somos -->
+<section class="team-section">
+    <div class="image-container">
+        <img src="img/landing_cfo.svg" alt="Equipo TeamCFO">
+    </div>
+    <div class="text-container">
+        <h2>Quiénes somos</h2>
+        <p>Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, con sede en Argentina y en el exterior.</p>
+        <p>Somos Líderes en Servicios Tecnológicos y Recruiting en IT.</p>
+        <p>Acompañamos a nuestros clientes para brindarles soluciones digitales.</p>
+        <p>Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.</p>
+        <a href="#" class="btn">Conócenos →</a>
+    </div>
+</section>
+<!--Fin section: quienes somos -->
+
+<!--contadores seccion--><!-- Cifras del crecimiento de la empresa-->
+<section class="contadores">
+    <div class="counter-container" id="counter-section">
+        <div class="counter-item">
+          <div class="counter-value" id="counter1">0</div>
+          <div class="counter-label">
+            <span class="counter-icon"><img src="img/contador1.svg" alt="Colaboradores"></span> Colaboradores
+          </div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-value" id="counter2">0</div>
+          <div class="counter-label">
+            <span class="counter-icon"><img src="img/contador2.svg" alt="Países"></span> Países
+          </div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-value" id="counter3">0</div>
+          <div class="counter-label">
+            <span class="counter-icon"><img src="img/contador3.svg" alt="Clientes"></span> Clientes en todo el mundo
+          </div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-value" id="counter4">0</div>
+          <div class="counter-label">
+            <span class="counter-icon"><img src="img/contador4.svg" alt="Industrias"></span> Industrias
+          </div>
+        </div>
+      </div>
+  </section>
+<!--Fin contadores seccion-->
+
+<!-- Seccion de hiringroom en landing page-->
+<section class = "container_hiring">
+    <div class="container">
+    <div class="container">
+        <div>
+          <img src="img/hiring_logo.svg" alt="Hiring Room Logo" class="logo">
+        </div>
+        <main>
+            <h1>¿Estás buscando tu próximo desafío?</h1>
+            <p>Trabajá con nosotros</p>
+            <button class="cta-button">Trabajá con nosotros →</button>
+        </main>
+    </div>
+    </section>
+<!-- Fin seccion de hiringroom en landing page-->
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<!-- Fin de footer-->
+
+<!--Js-->
+  <script src="js/footer.js"></script>
+  <script src="js/carrussel_hero.js"></script>
+  <script src="js/carrussel_cliente.js"></script>  
+  <script src="js/menu.js"></script>
+  <script src="js/contadores_home.js"></script>
+</body>
+</html>
