@@ -29,6 +29,104 @@
   <p>Nuestro equipo UX tiene el objetivo de construir sistemas visuales de alta complejidad comprendiendo a sus usuarios, sus comportamientos, funciones  y comodidades. </p>
 </section>
 
+<div class="containeracordeon">
+      
+  <div class="contentacordeon">
+      <div class="headeracordeon">
+          <h1>Metodologías realizadas por el equipo UX</h1>
+      </div>
+      <ul class="accordion">
+          <li class="accordion-item">
+              <div class="accordion-header">
+                  <span>DCU (Diseño centrado en el usuario)</span>
+                  
+                  <img src="img/ux-plus.png" class="icon" alt="Imagen relacionada con UX">
+                  
+              </div>
+              <div class="accordion-content">
+                  Nos centramos en el usuario a la hora de construir una experiencia de usuario. A partir de sus necesidades generamos soluciones que ayuden a complementar un sistema ordenado, accesible y ordenado.
+              </div>
+          </li>
+          <li class="accordion-item">
+            <div class="accordion-header">
+                <span>DCU (Diseño centrado en el usuario)</span>
+                
+                <img src="img/ux-plus.png" class="icon" alt="Imagen relacionada con UX">
+                
+            </div>
+            <div class="accordion-content">
+                Nos centramos en el usuario a la hora de construir una experiencia de usuario. A partir de sus necesidades generamos soluciones que ayuden a complementar un sistema ordenado, accesible y ordenado.
+            </div>
+        </li>
+        <li class="accordion-item">
+          <div class="accordion-header">
+              <span>DCU (Diseño centrado en el usuario)</span>
+              
+              <img src="img/ux-plus.png" class="icon" alt="Imagen relacionada con UX">
+          </div>
+          <div class="accordion-content">
+              Nos centramos en el usuario a la hora de construir una experiencia de usuario. A partir de sus necesidades generamos soluciones que ayuden a complementar un sistema ordenado, accesible y ordenado.
+          </div>
+      </li>
+      <li class="accordion-item">
+        <div class="accordion-header">
+            <span>DCU (Diseño centrado en el usuario)</span>
+            
+          <img src="img/ux-plus.png" class="icon" alt="Imagen relacionada con UX">
+        </div>
+        <div class="accordion-content">
+            Nos centramos en el usuario a la hora de construir una experiencia de usuario. A partir de sus necesidades generamos soluciones que ayuden a complementar un sistema ordenado, accesible y ordenado.
+        </div>
+    </li>
+      </ul>
+  </div>
+  <div class="image-container">
+      <img src="img/UX.png" alt="Imagen relacionada con UX">
+  </div>
+</div>
+
+<script>
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.icon');
+
+    if (content.classList.contains('active')) {
+      // Si está activo, lo colapsa y cambia el ícono a "ux-plus.png"
+      content.classList.remove('active');
+      icon.src = 'img/ux-plus.png';
+    } else {
+      // Colapsa todos los demás elementos y cambia sus íconos a "ux-plus.png"
+      document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.icon').forEach(i => i.src = 'img/ux-plus.png');
+      
+      // Expande el contenido actual y cambia el ícono a "menos-ux.png"
+      content.classList.add('active');
+      icon.src = 'img/menos-ux.png';
+    }
+  });
+});
+
+</script>
+
+<section class="EquipoUX"></section>
+<section class="welcomedc">
+  <div class="carousel-container">
+    <div class="carousel-images">
+      <div class="carousel-slide">
+        <img src="img/Web_Nuestro-Equipo-UX.png" alt="Imagen 1">
+      </div>
+     
+    </div>
+    <div class="carousel-text">
+      <p>
+        Nuestro equipo UX tiene el compromiso de construir un sistema accesible, funcional y que cumpla con las necesidades de los usuarios.   </div>
+  </div>
+ 
+</section>
+
 
 
 <div id="footer"></div>

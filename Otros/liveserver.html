@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Historia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .carouselhistoria {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0px auto;
+      overflow: hidden;
+    }
+
+    #carousel-track-historia {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      flex: 0 0 calc(100% / 3.5);
+      max-width: calc(100% / 3);
+      margin-right: 10px;
+      background: linear-gradient(135deg, #78d5d7, #4eb78a);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card:last-child {
+      margin-right: 0;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-button.left {
+      left: 10px;
+    }
+
+    .carousel-button.right {
+      right: 10px;
+    }
+
+    .carousel-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .carousel-button:disabled {
+      display: none; /* Ocultar flecha si está deshabilitada */
+    }
+  </style>
+</head>
+<body>
+  <div class="carouselhistoria">
+    <button id="carousel-button-left-historia" class="carousel-button left">&#8249;</button>
+    <div id="carousel-track-historia" class="carousel-track">
+      <div class="card">
+        <h3>2021</h3>
+        <h4>Nuevos Horizontes</h4>
+        <p>Comenzamos proyectos internacionales que expandieron nuestra presencia global.</p>
+      </div>
+      <div class="card">
+        <h3>2022</h3>
+        <h4>Innovación Constante</h4>
+        <p>Introdujimos soluciones tecnológicas de vanguardia para nuestros clientes.</p>
+      </div>
+      <div class="card">
+        <h3>2023</h3>
+        <h4>Crecimiento Sostenido</h4>
+        <p>Nuestro equipo creció significativamente, logrando nuevas metas.</p>
+      </div>
+      <div class="card">
+        <h3>2024</h3>
+        <h4>Futuro Prometedor</h4>
+        <p>Seguimos liderando en innovación y excelencia en el sector tecnológico.</p>
+      </div>
+      <div class="card">
+        <h3>2025</h3>
+        <h4>Expansión Global</h4>
+        <p>Nos convertimos en un referente global en tecnología y servicios.</p>
+      </div>
+    </div>
+    <button id="carousel-button-right-historia" class="carousel-button right">&#8250;</button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function updateButtons() {
+      const leftButton = document.getElementById('carousel-button-left-historia');
+      const rightButton = document.getElementById('carousel-button-right-historia');
+      const cards = document.querySelectorAll('.card');
+      const totalCards = cards.length;
+      const visibleCards = 3;
+
+      leftButton.disabled = currentIndex === 0;
+      rightButton.disabled = currentIndex >= totalCards - visibleCards;
+    }
+
+    function moveCarousel(direction) {
+      const track = document.getElementById('carousel-track-historia');
+      const cards = document.querySelectorAll('.card');
+      const cardWidth = cards[0].offsetWidth;
+      const totalCards = cards.length;
+      const visibleCards = 3;
+
+      currentIndex += direction;
+
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      } else if (currentIndex > totalCards - visibleCards) {
+        currentIndex = totalCards - visibleCards;
+      }
+
+      const offset = -(currentIndex * cardWidth);
+      track.style.transform = `translateX(${offset}px)`;
+
+      updateButtons();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateButtons();
+      document.getElementById('carousel-button-left-historia').addEventListener('click', () => moveCarousel(-1));
+      document.getElementById('carousel-button-right-historia').addEventListener('click', () => moveCarousel(1));
+    });
+  </script>
+</body>
+</html>
