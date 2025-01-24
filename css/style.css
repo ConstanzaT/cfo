@@ -1409,7 +1409,7 @@ text-align: center;
   padding: 0; /* Sin relleno */
   margin: 0; /* Sin márgenes */
   justify-content: space-between; /* Espaciado entre los elementos (opcional) */
-  align-items: left; /* Alineación vertical */
+
 }
 .mobile-menu ul {
   list-style: none; /* Sin viñetas */
@@ -2523,7 +2523,7 @@ display: none; /* Ocultar flecha si está deshabilitada */
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%));
   pointer-events: none; /* Permite interacción con elementos debajo */
 }.slide {
   position: relative; /* Necesario para posicionar .overlay-black dentro */
