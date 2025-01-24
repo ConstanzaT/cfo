@@ -8,7 +8,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 /*Index*/
 
     .hero-section {
@@ -476,9 +475,6 @@ header img {
 .text-overlay h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    text-align: left;
-    margin-bottom: 5px;
-    margin-top:5px;
 }
 
 .text-overlay p {
@@ -805,8 +801,6 @@ text-align: center;
     align-items: center; /* Centra el contenido verticalmente */
     background-image: url('../img/landing_cfo.svg');
     background-size: cover;
-
-    
 
 }
 
@@ -2656,6 +2650,8 @@ display: none; /* Ocultar flecha si está deshabilitada */
 
 }
 .servicio:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
   background: #fff;
   cursor: pointer;
 
@@ -2704,4 +2700,75 @@ h1{
 }
 .h1left{
   text-align: left;
+}
+
+
+/* Enhanced Responsiveness */
+
+/* Global improvements */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 15px;
+}
+
+/* For very small screens (phones < 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .carousel-container {
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .servicio p {
+        width: 100%; /* Full width for better readability */
+    }
+
+    .hero-section, #outsourcing, #contacto, #historiahero {
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+/* For small screens (tablets < 768px) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-track {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Adjusting font sizes */
+h1, h2 {
+    font-size: calc(1.5rem + 1vw); /* Scales dynamically with screen size */
+}
+
+/* Optimized paddings */
+.section {
+    padding: 15px 5%;
+}
+
+/* Improved carousel alignment */
+.carousel-track {
+    scroll-snap-type: x mandatory;
+    gap: 15px;
 }
