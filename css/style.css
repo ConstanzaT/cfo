@@ -60,7 +60,7 @@ body {
 
     .slide-content {
       position: absolute;
-      bottom: 20%;
+      bottom: 25%;
       left: 10%;
       color: white;
       text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
@@ -76,7 +76,7 @@ body {
     .slide-content p {
       font-size: 1.2rem;
       margin: 0 0 1.5rem;
-      max-width: 70%;
+      max-width: 60%;
     }
 
     .slide-content .btn {
@@ -86,10 +86,12 @@ body {
       text-transform: uppercase;
       border-radius: 25px;
       text-decoration: none;
+      margin-top:200px;
     }
 
     .slide-content .btn:hover {
       background: #e68900;
+      
     }
 
     .arrow {
@@ -131,7 +133,7 @@ body {
   #clientes-carousel h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   #clientes-carousel .carousel {
@@ -572,8 +574,7 @@ text-align: center;
   }
   
   .icon {
-    width: 40px;
-    height: 40px;
+  
     display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -609,7 +610,8 @@ text-align: center;
     display: flex;
     justify-content: center;
     gap: 50px;
-    flex-wrap: wrap;
+    align-items: center;
+    
   }
   
   .service {
@@ -645,21 +647,18 @@ text-align: center;
   .icon {
     width: 80px;
     height: 80px;
-    margin: 0 auto 20px;
+   
     /*background: linear-gradient(90deg, #4FA949, #6EC7EA);*/
     
   }
   
-  .icon-outsourcing {
-    background-image: url('../img/outsourcing.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
+
   .icon-delivery-center {
     background-image: url('../img/delivery.svg'); 
     background-size: contain;
     background-repeat: no-repeat;
+    width:223px;
+    height:112px;
   }
 
 /* seccion hiringroom en landing*/
@@ -734,7 +733,7 @@ text-align: center;
   .certified-trust .logos img {
     display: inline-block;
   
-    max-height: 150px; /* Ajusta el tamaño máximo permitido si es necesario */
+    max-height: 100px; /* Ajusta el tamaño máximo permitido si es necesario */
   }
 
   /*contadores*/
@@ -1064,7 +1063,7 @@ text-align: center;
 
   .slide-content p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 50px;
   }
 
   /* Responsive Design */
@@ -2575,4 +2574,105 @@ display: none; /* Ocultar flecha si está deshabilitada */
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+.slide-content h1{
+  color:white;
+}
+.social-icons .icon{
+  width:50px;
+  height:50px;
+}
+.overlay-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%));
+  pointer-events: none; /* Permite interacción con elementos debajo */
+}.slide {
+  position: relative; /* Necesario para posicionar .overlay-black dentro */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+/* Estilo para el contenedor de servicios */
+/* Estilos para la sección de servicios */
+/* Estilos para la sección de servicios */
+.servicios {
+  text-align: center;
+  padding: 2rem;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  margin-top:20px;
+}
+
+.contenedor-servicios {
+  display: flex; /* Coloca los elementos uno al lado del otro */
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.servicio {
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 500px;
+  min-height: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column; /* Mantiene los elementos internos en columna */
+  align-items: center; /* Centra los elementos internos horizontalmente */
+  justify-content: center; /* Centra los elementos internos verticalmente */
+ 
+
+}
+.servicio:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+
+
+}
+.servicio .icono {
+  margin-bottom: 1rem;
+}
+
+.servicio .icono img {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.servicio:nth-child(2) .icono img {
+  width: 40px; /* Achica el ícono del segundo servicio */
+}
+
+.servicio h3 {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 1rem;
+}
+.servicios h2{
+  margin-top:50px;
+}
+.servicio p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  width: 350px;
+}
+.clientes h2 {
+  margin-top:20px;
+  margin-bottom: -20px; 
+}
+
+.carousel-container {
+  margin-top: 0; 
 }
