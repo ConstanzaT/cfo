@@ -121,85 +121,7 @@
         gap: 20px;
     }
 }
-/* Responsividad para la sección de servicios */
 
-/* Dispositivos pequeños (max-width: 320px) */
-@media screen and (max-width: 320px) {
-    .servicios h1 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    .contenedor-servicios {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 10px;
-    }
-    .servicio {
-        text-align: center;
-    }
-    .servicio img {
-        width: 60px;
-        height: auto;
-    }
-    .servicio h3 {
-        font-size: 1rem;
-    }
-    .servicio p {
-        font-size: 0.8rem;
-    }
-}
-
-/* Dispositivos móviles medianos (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .servicios h1 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-    .contenedor-servicios {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .servicio img {
-        width: 80px;
-        height: auto;
-    }
-    .servicio h3 {
-        font-size: 1.2rem;
-    }
-    .servicio p {
-        font-size: 0.9rem;
-        text-align: center;
-    }
-}
-
-/* Tablets y dispositivos medianos (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .servicios h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .contenedor-servicios {
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
-    .servicio {
-        width: 45%;
-        text-align: center;
-    }
-    
-    .servicio img {
-        width: 100px;
-        height: auto;
-    }
-    .servicio h3 {
-        font-size: 1.4rem;
-    }
-    .servicio p {
-        font-size: 1rem;
-    }
-}
 
 /* Tablets grandes y laptops pequeñas (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
@@ -224,29 +146,133 @@
     }
 }
 
+/* General: Estilización de la sección del equipo */
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% 0 5%; /* Combina márgenes superior e inferior */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 350px; /* Altura fija para mantener consistencia */
+}
+
+.image-container {
+    flex: 1; /* Ocupa el 50% del ancho */
+    min-height: 100%;
+    display: flex; /* Ajusta el contenido */
+    justify-content: center;
+    align-items: center;
+    background: url('../img/landing_cfo.svg') no-repeat center center/cover;
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta imagen al contenedor */
+    height: auto; /* Mantiene proporción */
+}
+
+.text-container {
+    flex: 1; /* Ocupa el 50% del ancho */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background: url('../img/landing_background.svg') no-repeat center center/cover;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.text-container p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.text-container .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 30%; /* Tamaño fijo para desktop */
+    text-align: center;
+}
+
+.text-container .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
 
-/* Responsividad */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .team-section {
-        flex-direction: column; /* Cambia el diseño a columnas */
-      
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra horizontalmente */
+        gap: 20px; /* Espaciado entre elementos */
+        height: auto; /* Permite altura dinámica */
+    }
+
+    .image-container,
+    .text-container {
+        flex: none; /* Quita la distribución del 50% */
+        width: 100%; /* Ocupa todo el ancho */
     }
 
     .image-container {
-        max-width: 100%; /* Ajusta el ancho */
-        border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores */
+        height: 300px; /* Altura específica para tablets */
     }
 
     .text-container {
-        max-width: 100%;
-        text-align: center; /* Centra el texto */
+        text-align: center;
         padding: 20px;
-        
     }
 
     .text-container h2 {
         font-size: 1.8rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .text-container .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+        width: 80%; /* Más amplio para mejor usabilidad */
+        margin: 0 auto;
+    }
+}
+
+/* Responsividad: Smartphones */
+@media (max-width: 480px) {
+    .team-section {
+        padding: 15px;
+        gap: 15px; /* Espaciado menor para pantallas pequeñas */
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .text-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
     }
 
     .text-container p {
@@ -255,41 +281,15 @@
 
     .text-container .btn {
         font-size: 0.9rem;
-        padding: 10px 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .image-container {
-        height: 200px; /* Reduce la altura en pantallas pequeñas */
-      }
-    .text-container {
-        text-align: left; /* Ajusta el texto a la izquierda para pantallas medianas */
-    }
-   
-    .text-container h2 {
-        font-size: 1.6rem;
-    }
-
-    .text-container p {
-        font-size: 0.9rem;
-    }
-
-    .text-container .btn {
-        font-size: 0.85rem;
         padding: 8px 12px;
+        width: 100%; /* Botón ocupa todo el ancho */
     }
 }
 
-@media (max-width: 480px) {
-    .team-section {
-        padding: 10px;
-    }
+/* Responsividad: Dispositivos muy pequeños */
+@media (max-width: 320px) {
     .image-container {
-        height: 200px; /* Reduce la altura en pantallas pequeñas */
-      }
-    .text-container {
-        text-align: center;
+        height: 150px;
     }
 
     .text-container h2 {
@@ -305,75 +305,31 @@
         padding: 6px 10px;
     }
 }
-/* Responsividad */
-@media (max-width: 1024px) {
-    .team-section {
-        flex-direction: column; /* Cambia el diseño a columnas */
-    }
-
-    .image-container {
-        max-width: 100%; /* Ajusta el ancho */
-        border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores */
-    }
-
-    .text-container {
-        max-width: 100%;
-        text-align: center; /* Centra el texto */
-        padding: 20px;
-    }
-
-    .text-container h2 {
+/* Tablets y dispositivos medianos (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .servicios h1 {
         font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
-
-    .text-container p {
-        font-size: 0.95rem;
+    .contenedor-servicios {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-evenly;
     }
-
-    .text-container .btn {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-container {
-        text-align: left; /* Ajusta el texto a la izquierda para pantallas medianas */
-    }
-
-    .text-container h2 {
-        font-size: 1.6rem;
-    }
-
-    .text-container p {
-        font-size: 0.9rem;
-    }
-
-    .text-container .btn {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .team-section {
-        padding: 10px;
-    }
-
-    .text-container {
+    .servicio {
+        flex-basis: 100%;
         text-align: center;
     }
-
-    .text-container h2 {
-        font-size: 1.4rem;
+    .servicio img {
+        width: 80%;
+        max-width: 100px;
+        height: auto;
     }
-
-    .text-container p {
-        font-size: 0.85rem;
+    .servicio h3 {
+        font-size: 1.3rem;
     }
-
-    .text-container .btn {
-        font-size: 0.8rem;
-        padding: 6px 10px;
+    .servicio p {
+        font-size: 0.95rem;
     }
 }
