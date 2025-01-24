@@ -2693,6 +2693,7 @@ h1{
     max-width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
     gap: 60px; /* Reduce el espacio entre elementos */
     padding-left: 50px;
+  
   }
 
   .carousel-text {
@@ -2718,7 +2719,7 @@ h1{
   }
 
   .carousel-text {
-    font-size: 20px; /* Reduce aún más el tamaño de fuente */
+    font-size: 30px; /* Reduce aún más el tamaño de fuente */
     text-align: center; /* Centra el texto */
   }
 
@@ -2738,7 +2739,7 @@ h1{
   }
 
   .carousel-text {
-    font-size: 16px; /* Tamaño pequeño para móviles */
+    font-size: 30px; /* Tamaño pequeño para móviles */
   }
 
   .carousel-text p {
