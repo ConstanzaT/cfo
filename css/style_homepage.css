@@ -606,3 +606,27 @@ h1{
  .h1left{
   text-align: left;
 }
+
+
+.clientes-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Ocultar barra de desplazamiento */
+  -ms-overflow-style: none; /* IE */
+}
+
+.clientes-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.clientes-carousel img {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}

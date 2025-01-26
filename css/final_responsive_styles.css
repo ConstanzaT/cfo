@@ -357,3 +357,216 @@
         height: auto; /* Permite que el contenedor ajuste su altura automáticamente */
     }
 }
+/* Responsive Styles */
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+    .navbar ul {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-section {
+        height: 70vh;
+    }
+    .slide-content h1 {
+        font-size: 1.2rem;
+    }
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-section {
+        height: 80vh;
+    }
+    .slide-content h1 {
+        font-size: 1.5rem;
+    }
+    .slide-content p {
+        font-size: 1rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For medium-sized devices */
+@media (max-width: 1024px) {
+    .navbar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hero-section {
+        height: 90vh;
+    }
+    .slide-content h1 {
+        font-size: 2rem;
+    }
+    .slide-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .bootcamp {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .bootcamp-container {
+      flex-direction: column;
+    }
+  
+    .bootcamp-image img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .bootcamp-text {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  
+    .bootcamp-text ul {
+      text-align: left;
+      margin: 0 auto;
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bootcamp-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .bootcamp-text p,
+    .bootcamp-text ul {
+      font-size: 0.9rem;
+    }
+  
+    .bootcamp-text .bootcamp-button {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bootcamp-container {
+      gap: 1rem;
+    }
+  
+    .bootcamp-image img {
+      max-width: 100%;
+    }
+  
+    .bootcamp-text p,
+    .bootcamp-text ul {
+      font-size: 0.8rem;
+    }
+  
+    .bootcamp-text .bootcamp-button {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.8rem;
+    }
+  }
+
+@media (max-width: 768px) {
+    .containeracordeon {
+        flex-direction: column;
+    }
+
+    .headeracordeon h1 {
+        font-size: 1.5rem;
+    }
+
+    .accordion-header {
+        font-size: 1rem;
+    }
+
+    .accordion-content {
+        font-size: 0.9rem;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+    .carousel-container {
+      max-width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+      gap: 60px; /* Reduce el espacio entre elementos */
+      padding-left: 50px;
+    
+    }
+  
+    .carousel-text {
+      font-size: 24px; /* Reduce el tamaño de la fuente */
+    }
+  
+    .carousel-text p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      flex-direction: column; /* Elementos apilados en pantallas pequeñas */
+      height: auto; /* Ajusta la altura */
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .carousel-images {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: auto; /* Permite que la altura sea dinámica */
+    }
+  
+    .carousel-text {
+      font-size: 30px; /* Reduce aún más el tamaño de fuente */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .carousel-text p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-container {
+      padding: 5px;
+      gap: 10px;
+    }
+  
+    .carousel-images {
+      height: auto;
+    }
+  
+    .carousel-text {
+      font-size: 30px; /* Tamaño pequeño para móviles */
+    }
+  
+    .carousel-text p {
+      font-size: 0.8em;
+    }
+  }
+  
