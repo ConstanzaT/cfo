@@ -5,459 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programas de acción</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-<style>
-  .image-container img {
-    max-width: 80%; /* Reducido para mejor ajuste */
-    height: auto;
-}
+  <link rel="stylesheet" href="css/final_responsive_styles.css">
+  <link rel="stylesheet" href="css/style_general.css">
+  <link rel="stylesheet" href="css/style_historia.css">
 
-.contentacordeon {
-    flex: 2;
-}
-
-.headeracordeon {
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
-
-}
-
-.headeracordeon h1 {
-    font-size: 1.8rem; /* Más grande */
-    color: #333;
-}
-
-.accordion {
-    list-style: none;
-    padding: 0;
-    
-}
-
-.accordion-item {
-
-    border-bottom: 1px solid #ddd;
-}
-
-.accordion-header {
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    padding: 20px; /* Espaciado mejorado */
-    font-size: 1.2rem; /* Texto más grande */
-    cursor: pointer;
-}
-
-.accordion-header:hover {
-    background-color: #f2f2f2; /* Color más claro */
-}
-
-.accordion-header .icon {
-  display: flex;
-  justify-content:flex-end;
-width:40px;
-height:40px;
-
-
-  margin-left:30%;
-
-}
-
-.accordion-header .icon span{
-  align-items: center;
-}
-
-.accordion-content {
-    padding: 15px 20px;
-    font-size: 1rem;
-    line-height: 1.6; /* Mejor legibilidad */
-    display: none;
-}
-
-.accordion-content.active {
-    display: block;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .containeracordeon {
-        flex-direction: column;
-    }
-
-    .headeracordeon h1 {
-        font-size: 1.5rem;
-    }
-
-    .accordion-header {
-        font-size: 1rem;
-    }
-
-    .accordion-content {
-        font-size: 0.9rem;
-    }
-
-    .image-container img {
-        max-width: 100%;
-    }
-}
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  padding: 20px;
-  height: 100%; /* Asegura que ocupe toda la altura del contenedor padre */
-}
-.containeracordeon {
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Cambia flex-start a center */
-  gap: 5%;
-  height: auto; /* Ajusta según sea necesario */
-}
-.EquipoUX{
-  margin-top:10%;
-  margin-bottom: 3%;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.slider {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  background: linear-gradient(to bottom right, #57C1EB, #81E79B);
-  color: white;
-  border-radius: 10px;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: space-between;
-}
-
-.slider-button {
-  background: #57C1EB;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.slider-button:hover {
-  background: #81E79B;
-}
-
-.mission-vision-values ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mission-vision-values li {
-  margin-bottom: 10px;
-}
-
-.team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  text-align: center;
-}
-
-.team-member {
-
-}
-
-img {
-  max-width: 100%;
-
-}
-
-@media (max-width: 768px) {
-  .slider-button {
-      font-size: 14px;
-      padding: 8px 15px;
-  }
-}
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  color: #333;
-}
-
-.carouselhistoria {
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.card {
-  flex: 0 0 calc(100% / 3);
-  max-width: calc(100% / 3);
-  background: linear-gradient(135deg, #78d5d7, #4eb78a);
-  color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 10px;
-  box-sizing: border-box;
-}
-
-.card h3 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.card h4 {
-  margin: 10px 0 20px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.card p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button.left {
-  left: 10px;
-}
-
-.carousel-button.right {
-  right: 10px;
-}
-
-.content {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.content h2 {
-  font-size: 24px;
-  color: #333;
-  margin-top: 0;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.team-member {
-  flex: 0 0 calc(100% / 1);
-  max-width: calc(100% / 6);
-  text-align: center;
-  padding: 10px;
-}
-
-.team-member img {
-  width: 100%;
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
-.team-member h4 {
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.team-member p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  .card {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-
-  .team-member {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-member {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-}
-.historia-h2{
-text-align: left;
-margin-top:5%;
-margin-bottom:2%;
-}
-.carouselhistoria {
-position: relative;
-width: 100%;
-max-width: 1200px;
-margin: 0px auto;
-overflow: hidden;
-}
-
-#carousel-track-historia {
-display: flex;
-transition: transform 0.5s ease-in-out;
-}
-
-.card {
-flex: 0 0 calc(100% / 3.5);
-max-width: calc(100% / 3);
-margin-right: 10px;
-background: linear-gradient(135deg, #78d5d7, #4eb78a);
-color: white;
-border-radius: 15px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-padding: 20px;
-box-sizing: border-box;
-}
-
-.card:last-child {
-margin-right: 0;
-}
-
-.carousel-button {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgba(0, 0, 0, 0.5);
-border: none;
-border-radius: 50%;
-width: 40px;
-height: 40px;
-color: white;
-font-size: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-z-index: 10;
-transition: background-color 0.3s ease;
-}
-
-.carousel-button.left {
-left: 10px;
-}
-
-.carousel-button.right {
-right: 10px;
-}
-
-.carousel-button:hover {
-background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-button:disabled {
-display: none; /* Ocultar flecha si está deshabilitada */
-}
-.carouselhistoria {
-  position: relative;
-  overflow: hidden; /* Oculta las tarjetas fuera del área visible */
-  width: 100%; /* Asegura que el carrusel ocupe todo el ancho */
-}
-
-.carousel-track {
-  display: flex; /* Organiza las tarjetas en fila */
-  transition: transform 0.3s ease-in-out; /* Suaviza el desplazamiento */
-  will-change: transform; /* Mejora el rendimiento */
-}
-
-.card {
-  flex: 0 0 calc(100% / 3); /* Cada tarjeta ocupa 1/3 del ancho visible */
-  box-sizing: border-box;
-  margin-right: 10px; /* Espaciado entre tarjetas */
-}
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  color: black;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-</style>
 </head>
 <body>
 
@@ -467,14 +18,13 @@ display: none; /* Ocultar flecha si está deshabilitada */
   
 
 
-<div id="hero-container"></div>
 
 <!-- Seccion Hero  -->
 <section class="hero-section" id="historiahero">
   <div class="overlay"></div>
   <div class="text-overlay">
     <h1>Nuestra Historia</h1>
-    <h2>Bajada</h2>
+    <h2>Background y trayectoria empresarial.</h2>
   </div>
 </section>
 <!-- fin hero-->
@@ -540,95 +90,93 @@ display: none; /* Ocultar flecha si está deshabilitada */
   </section>
 
   <!-- Equipo Directivo -->
-  <section class="section">
-      <h2>Equipo Directivo</h2>
-      <div class="team">
-          <div class="team-member">
-              <img src="../img/imageh1.png" alt="Gustavo Deluca">
-              <p><strong>Gustavo Deluca</strong><br>CEO</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh2.png" alt="Mariano Deluca">
-              <p><strong>Mariano Deluca</strong><br>General Manager</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh3.png" alt="">
-              <p><strong>Graciela Grandi</strong><br>CEO</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh4.png" alt="">
-              <p><strong>Belén Gentile</strong><br>General Manager</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh5.png" alt="">
-              <p><strong>Ximena Dabbe</strong><br>General Manager</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh6.png" alt="">
-              <p><strong>Carlos Giorgi</strong><br>CEO</p>
-          </div>
-          <div class="team-member">
-              <img src="../img/imageh7.png" alt="">
-              <p><strong>Esteban Rodríguez</strong><br>General Manager</p>
-          </div>
+  <section class="team">
+    <h2>Equipo Directivo</h2>
+    <div class="team-row">
+      <!-- CEO y Manager en la fila superior -->
+      <div class="team-member">
+        <img src="img/1team.svg" alt="Gustavo Deluca">
+        <p><strong>Gustavo Deluca</strong><br>CEO (Chief Executive Officer)</p>
       </div>
+      <div class="team-member">
+        <img src="img/2team.svg" alt="Mariano Deluca">
+        <p><strong>Mariano Deluca</strong><br>General Manager</p>
+      </div>
+    </div>
+    <div class="team-row">
+      <!-- Resto del equipo en la fila inferior -->
+      <div class="team-member">
+        <img src="img/3team.svg" alt="Belén Gentile">
+        <p><strong>Belén Gentile</strong><br>CPO (Chief People Officer)</p>
+      </div>
+      <div class="team-member">
+        <img src="img/4team.svg" alt="Graciela Grandi">
+        <p><strong>Graciela Grandi</strong><br>CAO (Chief Administrative Officer)</p>
+      </div>
+      <div class="team-member">
+        <img src="img/5team.svg" alt="Ximena Dabbe">
+        <p><strong>Ximena Dabbe</strong><br>CCO (Chief Commercial Officer)</p>
+      </div>
+      <div class="team-member">
+        <img src="img/6team.svg" alt="Juan Pablo Cornejo">
+        <p><strong>Juan Pablo Cornejo</strong><br>CIO (Chief Information Officer)</p>
+      </div>
+      <div class="team-member">
+        <img src="img/7team.svg" alt="Carlos Giorgi">
+        <p><strong>Carlos Giorgi</strong><br>CFO (Chief Financial Officer)</p>
+      </div>
+    </div>
   </section>
+  
 </div>
 
 <script>
- let currentIndex = 0;
+let currentIndex = 0;
 
 function moveCarousel(direction) {
-    const track = document.getElementById('carousel-track-historia');
-    const cards = document.querySelectorAll('#carousel-track-historia .card');
-    const cardWidth = cards[0].offsetWidth; // Ancho de una tarjeta
-    const marginRight = parseFloat(getComputedStyle(cards[0]).marginRight) || 0; // Margen derecho
-    const totalCards = cards.length;
-    const visibleCards = 3; // Número de tarjetas visibles
+  const track = document.getElementById('carousel-track-historia');
+  const cards = document.querySelectorAll('#carousel-track-historia .card');
+  const cardWidth = cards[0].offsetWidth; // Ancho de una tarjeta
+  const gap = parseFloat(getComputedStyle(cards[0]).marginRight) || 0; // Espaciado entre tarjetas
+  const totalCards = cards.length;
+  const visibleArea = track.parentElement.offsetWidth; // Ancho visible del carrusel
+  const visibleCards = Math.floor(visibleArea / (cardWidth + gap)); // Cantidad de tarjetas visibles completas
 
-    // Actualiza el índice basado en la dirección
-    currentIndex += direction;
+  // Ajusta el índice dentro del rango válido
+  currentIndex += direction;
+  currentIndex = Math.max(0, Math.min(currentIndex, totalCards - visibleCards));
 
-    // Limita el índice al rango válido
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > totalCards - visibleCards) {
-        currentIndex = totalCards - visibleCards;
-    }
+  // Calcula el desplazamiento total
+  const offset = -(currentIndex * (cardWidth + gap));
+  track.style.transform = `translateX(${offset}px)`; // Aplica el desplazamiento
 
-    // Calcula el desplazamiento total (incluye márgenes)
-    const offset = -(currentIndex * (cardWidth + marginRight));
-    track.style.transform = `translateX(${offset}px)`; // Aplica el desplazamiento
-
-    updateButtons(); // Actualiza los botones
+  updateButtons(visibleCards, totalCards); // Actualiza botones
 }
 
-function updateButtons() {
-    const leftButton = document.getElementById('carousel-button-left-historia');
-    const rightButton = document.getElementById('carousel-button-right-historia');
-    const cards = document.querySelectorAll('#carousel-track-historia .card');
-    const totalCards = cards.length;
-    const visibleCards = 3;
+function updateButtons(visibleCards, totalCards) {
+  const leftButton = document.getElementById('carousel-button-left-historia');
+  const rightButton = document.getElementById('carousel-button-right-historia');
 
-    // Deshabilita los botones cuando no hay más tarjetas para mostrar
-    leftButton.disabled = currentIndex === 0;
-    rightButton.disabled = currentIndex >= totalCards - visibleCards;
+  // Habilita o deshabilita los botones según el índice actual
+  leftButton.disabled = currentIndex === 0;
+  rightButton.disabled = currentIndex >= totalCards - visibleCards;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const leftButton = document.getElementById('carousel-button-left-historia');
-    const rightButton = document.getElementById('carousel-button-right-historia');
+  const leftButton = document.getElementById('carousel-button-left-historia');
+  const rightButton = document.getElementById('carousel-button-right-historia');
 
-    if (leftButton && rightButton) {
-        leftButton.addEventListener('click', () => moveCarousel(-1)); // Mueve hacia atrás
-        rightButton.addEventListener('click', () => moveCarousel(1)); // Mueve hacia adelante
-    } else {
-        console.error('Los botones del carrusel no se encontraron en el DOM.');
-    }
+  leftButton.addEventListener('click', () => moveCarousel(-1)); // Desplaza hacia la izquierda
+  rightButton.addEventListener('click', () => moveCarousel(1)); // Desplaza hacia la derecha
 
-    // Inicializa el estado de los botones
-    updateButtons();
+  // Inicializa los botones
+  const cards = document.querySelectorAll('#carousel-track-historia .card');
+  const visibleArea = document.getElementById('carouselhistoria').offsetWidth;
+  const cardWidth = cards[0].offsetWidth + parseFloat(getComputedStyle(cards[0]).marginRight || 0);
+  const visibleCards = Math.floor(visibleArea / cardWidth);
+  updateButtons(visibleCards, cards.length);
 });
+
 </script>
 
 <div id="footer"></div>

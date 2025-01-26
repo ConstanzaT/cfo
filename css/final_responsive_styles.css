@@ -150,76 +150,6 @@
     }
 }
 
-/* General: Estilización de la sección del equipo */
-.team-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10% 0 5%; /* Combina márgenes superior e inferior */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    height: 350px; /* Altura fija para mantener consistencia */
-}
-
-.image-container {
-    flex: 1; /* Ocupa el 50% del ancho */
-    min-height: 100%;
-    display: flex; /* Ajusta el contenido */
-    justify-content: center;
-    align-items: center;
-    background: url('../img/landing_cfo.svg') no-repeat center center/cover;
-}
-
-.image-container img {
-    max-width: 100%; /* Ajusta imagen al contenedor */
-    height: auto; /* Mantiene proporción */
-}
-
-.text-container {
-    flex: 1; /* Ocupa el 50% del ancho */
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    background: url('../img/landing_background.svg') no-repeat center center/cover;
-}
-
-.text-container h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.text-container p {
-    margin-bottom: 15px;
-    color: #555;
-    line-height: 1.5;
-}
-
-.text-container .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    width: 30%; /* Tamaño fijo para desktop */
-    text-align: center;
-}
-
-.text-container .btn:hover {
-    background-color: #0056b3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-
 @media (max-width: 768px) {
     .team-section {
         flex-direction: column; /* Coloca los elementos en columna */
@@ -569,4 +499,24 @@
       font-size: 0.8em;
     }
   }
+  /* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .carousel-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
   
+    .carousel-images {
+      width: 100%;
+    }
+  
+    .carousel-text {
+      font-size: 16px; /* Texto más pequeño en pantallas pequeñas */
+      padding: 10px;
+    }
+  
+    .carousel {
+      height: 300px; /* Altura ajustada */
+    }
+  }

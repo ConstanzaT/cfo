@@ -1,3 +1,179 @@
 #outsourcing{
   background-image: url('../img/outsourcing_hero.svg');
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a nuevas filas si no caben en una sola */
+  justify-content: center; /* Centra horizontalmente las tarjetas */
+  align-items: center; /* Centra verticalmente las tarjetas */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 40px 20px; /* Espaciado interno */
+}
+
+.talent-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto dentro de los elementos */
+  padding: 40px 20px;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.talent-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.talent-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  max-width: 800px; /* Limita el ancho del texto */
+}.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px; /* Altura fija para todas las tarjetas */
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer; /* Añade un cursor interactivo */
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #4ba634, #6fc8ed); /* Aplica degradado al hover */
+  transform: translateY(-10px); /* Eleva la tarjeta al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.arrow-icon img,
+.search-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .arrow-icon img,
+.card:hover .search-icon img {
+  transform: rotate(360deg); /* Animación rotatoria al hacer hover */
+}
+
+.content {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+  opacity: 0;
+  text-align: justify;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .description {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.card:hover .search-icon {
+  opacity: 0; /* Hace que el ícono desaparezca al hacer hover */
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative; /* Mantener el relativo para los hijos */
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #4ba634, #6fc8ed);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.benefits-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.benefits-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en dispositivos pequeños */
+}
+
+.benefit-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-circle {
+  width: 150px; /* Ancho del círculo */
+  height: 150px; /* Alto del círculo */
+  border-radius: 50%; /* Hace que el contenedor sea un círculo */
+  background: linear-gradient(135deg, #6fc8ed, #4ba634); /* Degradado en el círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+  transition: transform 0.3s ease-in-out; /* Suave animación al hover */
+}
+
+.benefit-circle p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  line-height: 1.4; /* Para mantener un buen espaciado en texto multilínea */
+}
+
+.benefit-circle:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+h2{text-align: center;}
