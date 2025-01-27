@@ -1,5 +1,6 @@
 #outsourcing{
   background-image: url('../img/outsourcing_hero.svg');
+  top:60px;
 }
 .card-container {
   display: flex;
@@ -213,4 +214,29 @@ h2{text-align: center;}
   display: inline-block;
 }.carousel-text{
   font-size: 2em;
+}
+/* Animaciones avanzadas */
+
+/* Scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animate.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax Effect */
+.parallax {
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+
+/* Hover Effect for Cards */
+.card.hover-effect {
+  transform: rotate(3deg) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }

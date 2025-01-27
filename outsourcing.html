@@ -49,7 +49,7 @@
     </div>
     <div class="carousel-text">
       <p>
-        Contamos con una <span class="gradient-text" id="text1">amplia experiencia</span> en la atracciónde perfiles idóneos, ajustadosa las necesidades específicasde nuestros clientes. </p>
+        Contamos con una <span class="gradient-text" id="text1">amplia experiencia</span> en la atracción de perfiles idóneos, ajustados a las necesidades específicas de nuestros clientes. </p>
     </div>
   </div>
   <script>
@@ -291,6 +291,73 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Animación en hover para rotación y escalado
+document.addEventListener('mouseover', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.add('hover-effect');
+  }
+});
+
+document.addEventListener('mouseout', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.remove('hover-effect');
+  }
+});
+
+    </script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+  const parallaxElements = document.querySelectorAll('.parallax');
+
+  // Función para detectar si un elemento está en la vista
+  const isInViewport = (el, percentageScroll = 100) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= 
+      (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+    );
+  };
+
+  // Animar elementos al hacer scroll
+  const displayScrollElement = (element) => {
+    element.classList.add('animate');
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove('animate');
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (isInViewport(el, 90)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  // Parallax Effect
+  const handleParallax = () => {
+    parallaxElements.forEach((el) => {
+      const speed = el.dataset.speed || 0.5;
+      const offset = window.scrollY * speed;
+      el.style.transform = `translateY(${offset}px)`;
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+    handleParallax();
+  });
+
+  handleScrollAnimation(); // Inicializar
+});
+
+// Hover Effects for Cards
 document.addEventListener('mouseover', (event) => {
   if (event.target.closest('.card')) {
     const card = event.target.closest('.card');

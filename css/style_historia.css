@@ -25,6 +25,7 @@ img {
 /* Historia Hero */
 #historiahero {
   background-image: url('../img/historia_haeder.svg');
+  top:60px;
 }
 
 .historia-h2 {
