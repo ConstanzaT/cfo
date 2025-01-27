@@ -28,7 +28,7 @@
 </section>
 <!-- fin hero-->
   
-<section class="welcomedc">
+<section class="welcomedc scroll-animate">
   <div class="carousel-container deliverycarousel">
     <div class="carousel-images">
       <div class="carousel-slide">
@@ -41,7 +41,7 @@
         <img src="img/CFOTech_Web_Miniatura_Connie.svg" alt="Imagen 3" width="450" height="450">
       </div>
     </div>
-    <div class="carousel-text">
+    <div class="carousel-text scroll-animate">
       <p >
         Gestionamos proyectos de <span class="gradient-text" id="text1">desarrollo de software</span>, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando <span class="gradient-text" id="text2">metodologías ágiles</span> o tradicionales.  <script>
     // Carrusel automático
@@ -59,7 +59,29 @@
   </script>
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const scrollElements = document.querySelectorAll(".scroll-animate");
 
+  const scrollObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Agregar la clase para animar al entrar en el viewport
+          entry.target.classList.add("animate");
+        } else {
+          // Quitar la clase para volver al estado inicial al salir del viewport
+          entry.target.classList.remove("animate");
+        }
+      });
+    },
+    { threshold: 0.2 } // Activar cuando el 20% del elemento sea visible
+  );
+
+  scrollElements.forEach((element) => scrollObserver.observe(element));
+});
+
+</script>
 
 <!-- Servicios cards -->
 <h1 style="text-align: center; font-weight: 700; color: #333; margin-top: 20px;">Todos nuestros<br> servicios</h1>

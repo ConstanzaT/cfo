@@ -555,7 +555,9 @@
         background-size: contain; /* Asegura que la imagen no se recorte en pantallas pequeñas */
         height:400px;
       } 
-  
+      #deliverycenter{
+        top:0;
+      }
     
     .image-container-programa img {
         max-width: 90%; /* Ajusta el tamaño de las imágenes para pantallas medianas */
