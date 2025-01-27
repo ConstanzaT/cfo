@@ -2,9 +2,16 @@
 
 /* Elementos presentes en el HTML */
 
-.overlay-deliverycenter {
+.deliverycenter {
   background-image: url('../img/deliverycenter.svg');
   background-size: cover;
+  position: relative;
+width: 100%;
+height: 100vh;
+position: relative;
+width: 100%;
+height: 100vh;
+background-size: cover;
 }
 
 
@@ -118,3 +125,64 @@
   list-style: none;
 }
 
+.welcomedc{
+  margin-top:-110px;
+}
+.carousel-text{
+  font-size: 2em;
+}.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #4BA634, #6FC8ED, #4BA634);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-animate 3s infinite linear;
+  display: inline-block;
+}
+
+@keyframes gradient-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* Estado inicial de las tarjetas */
+.card-item {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95); /* Sutil desplazamiento hacia abajo y escala */
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Transición suave */
+}
+
+/* Estado animado de las tarjetas */
+.card-item.animate-card {
+  opacity: 1;
+  transform: translateY(0) scale(1); /* Aparece en su posición original con escala 1 */
+}
+.bootcamp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #004080;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 64, 128, 0.2);
+}
+
+.bootcamp-button:hover {
+  background: #003366;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.5);
+}
+
+.bootcamp-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 64, 128, 0.3);
+}

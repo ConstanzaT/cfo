@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programas de acción</title>
+  <title>Quienes somos</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/final_responsive_styles.css">
+
   <link rel="stylesheet" href="css/style_general.css">
   <link rel="stylesheet" href="css/style_historia.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/final_responsive_styles.css">
 
 </head>
 <body>
@@ -39,37 +41,44 @@
   </section>
 
   <!-- Slider Historia -->
-  <div class="carouselhistoria">
-    <button id="carousel-button-left-historia" class="carousel-button left">&#8249;</button>
-    <div id="carousel-track-historia" class="carousel-track">
-      <div class="card">
+  <div class="carousel-container">
+    <button id="carousel-button-left" class="carousel-button left">&#8249;</button>
+    <div class="carousel-track">
+      <div class="carousel-card">
+        <span class="icon">🎯</span>
+        <h3>2015</h3>
+        <h4>El Comienzo</h4>
+        <p>Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.</p>
+      </div>
+      <div class="carousel-card">
+        <span class="icon">🚀</span>
+        <h3>2018</h3>
+        <h4>Primer Gran Paso</h4>
+        <p>Mudanza a World Trade Center (WTC): Un nuevo espacio que impulsó nuestra colaboración y crecimiento.</p>
+      </div>
+      <div class="carousel-card">
+        <span class="icon">💡</span>
+        <h3>2020</h3>
+        <h4>Innovación y Crecimiento</h4>
+        <p>Mudanza al Distrito Tecnológico: Nos instalamos en un entorno ideal para potenciar nuestra misión de liderazgo tecnológico.</p>
+      </div>
+      <div class="carousel-card">
+        <span class="icon">👥</span>
         <h3>2021</h3>
-        <h4>Nuevos Horizontes</h4>
-        <p>Comenzamos proyectos internacionales que expandieron nuestra presencia global.</p>
+        <h4>Un Equipo en Expansión</h4>
+        <p>200 colaboradores: Alcanzamos un nuevo hito en la construcción de un equipo comprometido y profesional.</p>
       </div>
-      <div class="card">
-        <h3>2022</h3>
-        <h4>Innovación Constante</h4>
-        <p>Introdujimos soluciones tecnológicas de vanguardia para nuestros clientes.</p>
-      </div>
-      <div class="card">
-        <h3>2023</h3>
-        <h4>Crecimiento Sostenido</h4>
-        <p>Nuestro equipo creció significativamente, logrando nuevas metas.</p>
-      </div>
-      <div class="card">
+      <div class="carousel-card">
+        <span class="icon">🌎</span>
         <h3>2024</h3>
-        <h4>Futuro Prometedor</h4>
-        <p>Seguimos liderando en innovación y excelencia en el sector tecnológico.</p>
-      </div>
-      <div class="card">
-        <h3>2025</h3>
-        <h4>Expansión Global</h4>
-        <p>Nos convertimos en un referente global en tecnología y servicios.</p>
+        <h4>Consolidación y Regionalización</h4>
+        <p>Mudanza al Edificio HIT: Estrenamos oficinas diseñadas para el futuro. Regionalización: Expandimos nuestra presencia en Latinoamérica.</p>
       </div>
     </div>
-    <button id="carousel-button-right-historia" class="carousel-button right">&#8250;</button>
+    <button id="carousel-button-right" class="carousel-button right">&#8250;</button>
   </div>
+
+
 
   <!-- Misión, Visión y Valores -->
   <section class="section mission-vision-values">
@@ -129,54 +138,65 @@
   </section>
   
 </div>
-
 <script>
-let currentIndex = 0;
+document.querySelectorAll('.team-member').forEach((member) => {
+  member.addEventListener('mouseover', () => {
+    document.querySelectorAll('.team-member').forEach((other) => {
+      if (other !== member) {
+        other.style.opacity = '0.5';
+      }
+    });
+  });
 
-function moveCarousel(direction) {
-  const track = document.getElementById('carousel-track-historia');
-  const cards = document.querySelectorAll('#carousel-track-historia .card');
-  const cardWidth = cards[0].offsetWidth; // Ancho de una tarjeta
-  const gap = parseFloat(getComputedStyle(cards[0]).marginRight) || 0; // Espaciado entre tarjetas
-  const totalCards = cards.length;
-  const visibleArea = track.parentElement.offsetWidth; // Ancho visible del carrusel
-  const visibleCards = Math.floor(visibleArea / (cardWidth + gap)); // Cantidad de tarjetas visibles completas
-
-  // Ajusta el índice dentro del rango válido
-  currentIndex += direction;
-  currentIndex = Math.max(0, Math.min(currentIndex, totalCards - visibleCards));
-
-  // Calcula el desplazamiento total
-  const offset = -(currentIndex * (cardWidth + gap));
-  track.style.transform = `translateX(${offset}px)`; // Aplica el desplazamiento
-
-  updateButtons(visibleCards, totalCards); // Actualiza botones
-}
-
-function updateButtons(visibleCards, totalCards) {
-  const leftButton = document.getElementById('carousel-button-left-historia');
-  const rightButton = document.getElementById('carousel-button-right-historia');
-
-  // Habilita o deshabilita los botones según el índice actual
-  leftButton.disabled = currentIndex === 0;
-  rightButton.disabled = currentIndex >= totalCards - visibleCards;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const leftButton = document.getElementById('carousel-button-left-historia');
-  const rightButton = document.getElementById('carousel-button-right-historia');
-
-  leftButton.addEventListener('click', () => moveCarousel(-1)); // Desplaza hacia la izquierda
-  rightButton.addEventListener('click', () => moveCarousel(1)); // Desplaza hacia la derecha
-
-  // Inicializa los botones
-  const cards = document.querySelectorAll('#carousel-track-historia .card');
-  const visibleArea = document.getElementById('carouselhistoria').offsetWidth;
-  const cardWidth = cards[0].offsetWidth + parseFloat(getComputedStyle(cards[0]).marginRight || 0);
-  const visibleCards = Math.floor(visibleArea / cardWidth);
-  updateButtons(visibleCards, cards.length);
+  member.addEventListener('mouseleave', () => {
+    document.querySelectorAll('.team-member').forEach((other) => {
+      other.style.opacity = '1';
+    });
+  });
 });
 
+
+</script>
+<script>
+  const track = document.querySelector('.carousel-track');
+    const leftButton = document.getElementById('carousel-button-left');
+    const rightButton = document.getElementById('carousel-button-right');
+    const cards = Array.from(track.children);
+
+    let currentIndex = 0;
+    const visibleCards = 3;
+
+    const updateButtons = () => {
+      leftButton.disabled = currentIndex === 0;
+      rightButton.disabled = currentIndex === cards.length - visibleCards;
+    };
+
+    const moveToCard = (index) => {
+      track.style.transform = `translateX(-${index * (100 / visibleCards)}%)`;
+      currentIndex = index;
+      synchronizeIcons();
+      updateButtons();
+    };
+
+    const synchronizeIcons = () => {
+      cards.forEach((card, index) => {
+        const icon = card.querySelector('.icon');
+        if (icon) {
+          icon.style.animationDelay = `${(index - currentIndex) * 0.1}s`;
+        }
+      });
+    };
+
+    leftButton.addEventListener('click', () => {
+      if (currentIndex > 0) moveToCard(currentIndex - 1);
+    });
+
+    rightButton.addEventListener('click', () => {
+      if (currentIndex < cards.length - visibleCards) moveToCard(currentIndex + 1);
+    });
+
+    synchronizeIcons();
+    updateButtons();
 </script>
 
 <div id="footer"></div>
@@ -184,6 +204,33 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- Llamada al archivo JavaScript -->
 <script src="js/menu.js"></script>
 <script src="js/footer.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Animación para las secciones al hacer scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll('.section');
+  sections.forEach((section) => observer.observe(section));
+
+  // Animación para el Hero
+  const heroSection = document.querySelector('.hero-section');
+  if (heroSection) {
+    heroSection.classList.add('animate__animated', 'animate__zoomIn');
+  }
+});
+
+</script>
+<!-- Otros scripts -->
+<script src="js/menu.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/hero-container.js"></script>
+
 </body>
 </html>

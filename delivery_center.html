@@ -5,19 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delivery Center</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style_general.css">
-  <link rel="stylesheet" href="css/style_deliverycenter.css">
   <link rel="stylesheet" href="css/final_responsive_styles.css">
 
+  <link rel="stylesheet" href="css/final_responsive_styles.css">
+  <link rel="stylesheet" href="css/style_deliverycenter.css">
 
 <body>
   <!-- Navegación menú  -->
 <div id="menu"></div>
 
   
-<div id="hero-container"></div>
 
+<!-- Seccion Hero  -->
+<section class="hero-section deliverycenter" id="deliverycenter">
 
+  <div class="overlay"></div>
+  <div class="text-overlay">
+    <h1>Delivery Center</h1>
+    <h2>Explorá nuestros servicios</h2>
+  </div>
+</section>
+<!-- fin hero-->
   
 <section class="welcomedc">
   <div class="carousel-container">
@@ -33,10 +43,8 @@
       </div>
     </div>
     <div class="carousel-text">
-      <p>
-        Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.    </div>
-  </div>
-  <script>
+      <p >
+        Gestionamos proyectos de <span class="gradient-text" id="text1">desarrollo de software</span>, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando <span class="gradient-text" id="text2">metodologías ágiles</span> o tradicionales.  <script>
     // Carrusel automático
     let index = 0;
     const slides = document.querySelectorAll(".carousel-slide");
@@ -185,7 +193,7 @@
       <img src="img/bootcamp.svg" alt="CFOTech Bootcamp">
     </div>
     <div class="bootcamp-text">
-      <img src="img/bootcamp logo.svg" alt="Icono Oficina PMO">
+      <img src="img/bootcamp logo.svg" alt="CFOTech Bootcamp Logo">
       <h2>CFOTECH BOOTCAMP</h2>
       <p>
         Nuestro Bootcamp es una escuela diseñada para personas que buscan dar sus primeros pasos en el sector tecnológico. Acá tendrás la oportunidad de:
@@ -201,10 +209,54 @@
 </section>
 
 
+<script>
+
+  // Seleccionar los elementos con la clase 'gradient-text'
+const texts = document.querySelectorAll('.gradient-text');
+
+// Animación sutil y dinámica para cada texto
+texts.forEach((text) => {
+  let scaleDirection = 1; // Para alternar entre agrandar y reducir
+  setInterval(() => {
+    text.style.transform = `scale(${1 + scaleDirection * 0.05})`; // Aumenta o reduce un 5% suavemente
+    text.style.transition = 'transform 0.6s ease-in-out'; // Transición más lenta y suave
+    scaleDirection = -scaleDirection; // Cambiar dirección del efecto
+  }, 1200); // Repetir cada 1.2 segundos
+});
+
+
+</script>
+<script>
+  // Seleccionar todas las tarjetas con la clase 'card-item'
+const cards = document.querySelectorAll('.card-item');
+
+// Configurar el IntersectionObserver para observar cuando las tarjetas son visibles
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Agregar la clase para la animación cuando la tarjeta esté visible
+        entry.target.classList.add('animate-card');
+        observer.unobserve(entry.target); // Dejar de observar después de animar
+      }
+    });
+  },
+  { threshold: 0.2 } // Activar la animación cuando el 20% de la tarjeta sea visible
+);
+
+// Aplicar el observador a cada tarjeta
+cards.forEach((card) => {
+  observer.observe(card);
+});
+</script>
+
+
+
+
 <div id="footer"></div>
 
     <script src="js/script.js"></script>
-    <script src="js/hero-container.js"></script>
+
     <script src="js/menu.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/app.js"></script>

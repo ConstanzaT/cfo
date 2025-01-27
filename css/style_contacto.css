@@ -1,9 +1,6 @@
 #contacto {
     background-image: url('../img/header_contacto.svg');
   }
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
 
   .contact-section {
     padding: 50px 20px;
@@ -148,3 +145,4 @@
       margin-bottom: 20px;
     }
   }
+  

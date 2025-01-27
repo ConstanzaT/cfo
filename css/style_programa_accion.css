@@ -1,3 +1,16 @@
 #programa_accion {
-    background-image: url('../img/programa_accion.svg');
+    background-image: url('../img/programa.svg');
   }
+  .image-container-programa img {
+    max-width: 80%; /* Ajusta imagen al contenedor */
+    height: auto; /* Mantiene proporción */
+    padding:0;
+  }
+
+.image-container-programa img {
+  max-width: 100%; /* Se asegura que las imágenes ocupen el ancho máximo permitido */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  display: block; /* Evita márgenes inesperados en elementos inline */
+  margin: 0 auto; /* Centra la imagen */
+}
+

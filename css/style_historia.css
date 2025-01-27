@@ -1,107 +1,93 @@
-#historiahero{
-    background-image: url('../img/historia_haeder.svg');
-  }
-
-.image-container img {
-    max-width: 80%; /* Reducido para mejor ajuste */
-    height: auto;
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.contentacordeon {
-    flex: 2;
+h1, h2 {
+  color: #333;
 }
 
-.headeracordeon {
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
-
+img {
+  max-width: 100%;
 }
 
-.headeracordeon h1 {
-    font-size: 1.8rem; /* Más grande */
-    color: #333;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+.section {
+  margin-bottom: 40px;
+}
+
+/* Historia Hero */
+#historiahero {
+  background-image: url('../img/historia_haeder.svg');
+}
+
+.historia-h2 {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+/* Accordion Styles */
 .accordion {
-    list-style: none;
-    padding: 0;
-    
+  list-style: none;
+  padding: 0;
 }
 
 .accordion-item {
-
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .accordion-header {
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    padding: 20px; /* Espaciado mejorado */
-    font-size: 1.2rem; /* Texto más grande */
-    cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .accordion-header:hover {
-    background-color: #f2f2f2; /* Color más claro */
+  background-color: #f2f2f2;
 }
 
 .accordion-header .icon {
   display: flex;
-  justify-content:flex-end;
-width:40px;
-height:40px;
-
-
-  margin-left:30%;
-
-}
-
-.accordion-header .icon span{
+  justify-content: flex-end;
+  width: 40px;
+  height: 40px;
+  margin-left: 30%;
   align-items: center;
 }
 
 .accordion-content {
-    padding: 15px 20px;
-    font-size: 1rem;
-    line-height: 1.6; /* Mejor legibilidad */
-    display: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  display: none;
 }
 
 .accordion-content.active {
-    display: block;
+  display: block;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .containeracordeon {
-        flex-direction: column;
-    }
-
-    .headeracordeon h1 {
-        font-size: 1.5rem;
-    }
-
-    .accordion-header {
-        font-size: 1rem;
-    }
-
-    .accordion-content {
-        font-size: 0.9rem;
-    }
-
-    .image-container img {
-        max-width: 100%;
-    }
-}
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+.headeracordeon {
   padding: 20px;
-  height: 100%; /* Asegura que ocupe toda la altura del contenedor padre */
+  border-bottom: 2px solid #ddd;
 }
+
+.headeracordeon h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Accordion Container */
 .containeracordeon {
   max-width: 1000px;
   margin: 0 auto;
@@ -109,156 +95,143 @@ height:40px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: center; /* Cambia flex-start a center */
+  align-items: center;
   gap: 5%;
-  height: auto; /* Ajusta según sea necesario */
+  height: auto;
 }
-.EquipoUX{
-  margin-top:10%;
-  margin-bottom: 3%;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  height: 100%;
 }
 
-h1, h2 {
-  color: #333;
+.image-container img {
+  max-width: 80%;
+  height: auto;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-
-.slider {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  background: linear-gradient(to bottom right, #57C1EB, #81E79B);
-  color: white;
-  border-radius: 10px;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: space-between;
-}
-
-.slider-button {
-  background: #57C1EB;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.slider-button:hover {
-  background: #81E79B;
-}
-
-.mission-vision-values ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mission-vision-values li {
-  margin-bottom: 10px;
-}
-
+/* Team Section */
 .team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 200px;
 }
 
 
-
-img {
-  max-width: 100%;
-
-}
-
-@media (max-width: 768px) {
-  .slider-button {
-      font-size: 14px;
-      padding: 8px 15px;
-  }
-}
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  color: #333;
-}
-
-.carouselhistoria {
+.carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
+
   overflow: hidden;
+  display: flex;
+ 
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  gap:50px;
 }
 
-.card {
-  flex: 0 0 calc(100% / 3);
-  max-width: calc(100% / 3);
-  background: linear-gradient(135deg, #78d5d7, #4eb78a);
-  color: white;
+.carousel-card { flex: 0 0 calc(25% - 10px); height: 300px;
+  margin: 0 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  color: #333;
   padding: 20px;
-  margin: 10px;
-  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width:250px;
+
 }
 
-.card h3 {
-  margin: 0;
-  font-size: 24px;
+
+.carousel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.card h4 {
-  margin: 10px 0 20px;
+.carousel-card h3 {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #4ba634;
+}
+
+.carousel-card h4 {
+  margin: 10px 0;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
+  color: #555;
 }
 
-.card p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+.carousel-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.carousel-card .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  color: #4ba634;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: white;
+  background-color: #4ba634;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  color: #fff;
+  padding: 15px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+
+}
+
+.carousel-button:hover {
+  background-color: #3a8b28;
 }
 
 .carousel-button.left {
@@ -269,274 +242,74 @@ header h1 {
   right: 10px;
 }
 
-.content {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.content h2 {
-  font-size: 24px;
-  color: #333;
-  margin-top: 0;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  .card {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-
-  .team-member {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-member {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-}
-.historia-h2{
-text-align: left;
-margin-top:5%;
-margin-bottom:2%;
-}
-.carouselhistoria {
-position: relative;
-width: 100%;
-max-width: 1200px;
-margin: 0px auto;
-overflow: hidden;
-}
-
-#carousel-track-historia {
-display: flex;
-transition: transform 0.5s ease-in-out;
-}
-
-.card {
-flex: 0 0 calc(100% / 3.5);
-max-width: calc(100% / 3);
-margin-right: 10px;
-background: linear-gradient(135deg, #78d5d7, #4eb78a);
-color: white;
-border-radius: 15px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-padding: 20px;
-box-sizing: border-box;
-}
-
-.card:last-child {
-margin-right: 0;
-}
-
-.carousel-button {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgba(0, 0, 0, 0.5);
-border: none;
-border-radius: 50%;
-width: 40px;
-height: 40px;
-color: white;
-font-size: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-z-index: 10;
-transition: background-color 0.3s ease;
-}
-
-.carousel-button.left {
-left: 10px;
-}
-
-.carousel-button.right {
-right: 10px;
-}
-
-.carousel-button:hover {
-background-color: rgba(0, 0, 0, 0.8);
-}
-
 .carousel-button:disabled {
-display: none; /* Ocultar flecha si está deshabilitada */
-}
-.carouselhistoria {
-  position: relative;
-  overflow: hidden; /* Oculta las tarjetas fuera del área visible */
-  width: 100%; /* Asegura que el carrusel ocupe todo el ancho */
+  background-color: rgba(75, 166, 52, 0.5);
+  cursor: not-allowed;
 }
 
-.carousel-track {
-  display: flex; /* Organiza las tarjetas en fila */
-  transition: transform 0.3s ease-in-out; /* Suaviza el desplazamiento */
-  will-change: transform; /* Mejora el rendimiento */
+/* Mejoras globales */
+body {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  flex: 0 0 calc(100% / 3); /* Cada tarjeta ocupa 1/3 del ancho visible */
-  box-sizing: border-box;
-  margin-right: 10px; /* Espaciado entre tarjetas */
-}
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  color: black;
-  font-size: 24px;
+/* Sección Hero */
+.hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: background-color 0.3s ease;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.text-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  animation: fadeInDown 1s;
+}
+
+.text-overlay h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px 0;
+  animation: fadeInUp 1s;
+}
+
+/* Botones del carrusel */
+.carousel-button {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  transform: scale(1.1);
 }
-.team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .team-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 200px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .team-row {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .team-member {
-      width: 100%;
-    }
-  }
-  .carouselhistoria {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 100%; /* Se asegura que el contenedor se ajuste al tamaño */
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 16px; /* Espacio entre las tarjetas */
-  }
-  
-  .card {
-    flex: 0 0 calc(33.33% - 16px); /* Ajusta el ancho para que tres tarjetas encajen sin cortar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-  }
-  .carouselhistoria {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    overflow: hidden;
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card {
-    flex: 0 0 calc(100% / 3); /* Cada tarjeta ocupa 1/3 del contenedor */
-    max-width: calc(100% / 3); /* Máximo ancho para ajustar */
-    margin-right: 16px; /* Espaciado entre tarjetas */
-    background: linear-gradient(135deg, #78d5d7, #4eb78a);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .card:last-child {
-    margin-right: 0; /* Sin margen extra en la última tarjeta */
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: white;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-  
-  .carousel-button.left {
-    left: 10px;
-  }
-  
-  .carousel-button.right {
-    right: 10px;
-  }
-  
-  .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .carousel-button:disabled {
-    display: none; /* Oculta botón si está deshabilitado */
-  }
-  
+
+/* Equipo */
+.team-member img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
+}
+
+/* Transiciones suaves */
+.accordion-header {
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #eaeaea;
+}
+
