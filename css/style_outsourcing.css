@@ -17,7 +17,7 @@
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Centra el texto dentro de los elementos */
   padding: 40px 20px;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  height: 60vh; /* Ocupa toda la altura de la ventana */
 }
 
 .talent-section h2 {
@@ -177,3 +177,40 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
 h2{text-align: center;}
+/* Fondo con degradado similar al proporcionado */
+.card {
+  background: linear-gradient(180deg, #A8E6CE, #F9FBE7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 320px;
+  min-height: 350px;
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover animado con ajuste al degradado */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.carousel-container{
+  height:auto;
+}
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #4BA634, #6FC8ED, #4BA634);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-animate 3s infinite linear;
+  display: inline-block;
+}.carousel-text{
+  font-size: 2em;
+}

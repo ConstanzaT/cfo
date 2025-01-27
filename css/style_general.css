@@ -804,7 +804,7 @@ header img {
 } .carousel-container {
   display: flex;
   max-width: 1200px;
-  height: 150px;
+  height: 100px;
   border-radius: 20px;
   overflow: hidden;
   margin: 0 auto;
