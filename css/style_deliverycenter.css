@@ -12,6 +12,7 @@ position: relative;
 width: 100%;
 height: 100vh;
 background-size: cover;
+top:60px;
 }
 
 
@@ -130,7 +131,8 @@ background-size: cover;
 }
 .carousel-text{
   font-size: 2em;
-}.gradient-text {
+}
+.gradient-text {
   font-weight: bold;
   background: linear-gradient(90deg, #4BA634, #6FC8ED, #4BA634);
   -webkit-background-clip: text;
@@ -185,4 +187,8 @@ background-size: cover;
 .bootcamp-button:active {
   transform: translateY(0);
   box-shadow: 0 4px 15px rgba(0, 64, 128, 0.3);
+}
+.deliverycarousel{
+  height:100%;
+  margin-top:155px;
 }

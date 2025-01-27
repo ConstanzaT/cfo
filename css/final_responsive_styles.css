@@ -24,7 +24,7 @@
         align-items: center;
     }
     .arrow{
-        margin-top:300px;
+        margin-top:280px;
     }
 }
 
@@ -753,4 +753,24 @@
   .connect .social-icons a img {
     width: 30px;
   }
+}
+/* Ajustes específicos para las imágenes de Rocket y Katalon en dispositivos pequeños */
+@media (max-width: 768px) {
+  .partners_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px; /* Reduce el espacio entre las imágenes */
+      
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .partners_img {
+      gap: 5px; /* Aún más cerca en dispositivos muy pequeños */
+  }
+
+
 }
