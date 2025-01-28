@@ -859,3 +859,18 @@
   object-fit: contain; /* Asegura que los logotipos no se distorsionen */
   flex-shrink: 0; /* Evita que los logotipos se reduzcan en tamaños pequeños */
 }
+
+
+
+
+@media (max-width: 768px) {
+  .certified-trust .logos, .partners_img{
+    gap:30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certified-trust .logos, .partners_img{
+    gap:30px;
+  }
+}

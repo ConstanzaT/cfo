@@ -22,7 +22,7 @@
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting && !countersStarted) {
-          animateCounter("counter1", 0, 510, 4000);
+          animateCounter("counter1", 0, 580, 4000);
           animateCounter("counter2", 0, 9, 4000);
           animateCounter("counter3", 0, 70, 4000);
           animateCounter("counter4", 0, 17, 4000);
