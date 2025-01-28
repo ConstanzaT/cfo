@@ -26,7 +26,6 @@ top:60px;
 
 .bootcamp {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, rgba(135, 211, 124, 1) 0%, rgba(111, 207, 255, 1) 100%);
   color: #fff;
@@ -40,11 +39,15 @@ top:60px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.bootcamp-image img {
-  max-width: 100%;
+.bootcamp-image{
+  width:100%;max-width: 100%;
   margin-left: -6%;
+  margin:0 auto;
+  background-size: cover;
+  background-image: url('../img/bootcamp.svg'); 
+  height:350px;
 }
+
 
 .bootcamp-text h2 {
   font-size: 2rem;
@@ -69,6 +72,21 @@ top:60px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+.bootcamp-text h2 {
+  display: flex;
+  align-items: left;
+  justify-content: left; /* Centra horizontalmente */
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.bootcamp-text h2 img {
+  width: 2.5rem; /* Ajusta según sea necesario */
+  height: auto;
 }
 
 .card-page {
