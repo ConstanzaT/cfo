@@ -23,7 +23,7 @@
       align-items: center;
   }
   .arrow{
-      margin-top:280px;
+      margin-top:230px;
   }
 }
 
@@ -38,6 +38,7 @@
   .slide-content h1 {
       font-size: 1.2rem;
       text-align: left;
+   
   }
   .slide-content p {
       font-size: 0.8rem;
@@ -155,12 +156,14 @@
       align-items: center; /* Centra horizontalmente */
       gap: 20px; /* Espaciado entre elementos */
       height: auto; /* Permite altura dinámica */
+    
   }
   #contenido{
       margin-bottom:1000px;
     }
   .image-container,
   .text-container {
+    
       flex: none; /* Quita la distribución del 50% */
       width: 100%; /* Ocupa todo el ancho */
   }
@@ -176,10 +179,13 @@
 
   .text-container h2 {
       font-size: 1.8rem;
+      text-align: center;
+
   }
 
   .text-container p {
       font-size: 1rem;
+      text-align: left;
   }
 
   .text-container .btn {
@@ -210,6 +216,8 @@
   .text-container h2 {
       font-size: 1.6rem;
       margin-bottom: 10px;
+      text-align: center;
+
   }
 
   .text-container p {
@@ -231,6 +239,8 @@
 
   .text-container h2 {
       font-size: 1.4rem;
+      text-align: center;
+
   }
 
   .text-container p {
@@ -711,6 +721,7 @@
 .slide-content {
   padding: 15px;
   font-size: 0.9rem;
+  margin-top:-20%;
 }
 
 .servicio {
@@ -838,4 +849,12 @@
       opacity: 1;
       transform: scale(1);
   }
+}
+
+.carousel-track img {
+  width: 120px; /* Ajusta el ancho de los logotipos */
+  height: 50px; /* Ajusta la altura para mantener proporción */
+  margin: 0 15px; /* Espaciado uniforme entre logotipos */
+  object-fit: contain; /* Asegura que los logotipos no se distorsionen */
+  flex-shrink: 0; /* Evita que los logotipos se reduzcan en tamaños pequeños */
 }

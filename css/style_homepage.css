@@ -91,11 +91,12 @@ text-align: center;
 
 .slide-content {
   position: absolute;
-  top: 43%;
+  top: 35%;
   left: 10%;
   color: white;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   z-index: 3;
+  width:80%;
   
 }
 
@@ -753,4 +754,10 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #0056b3; /* Azul más oscuro */
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+h2{
+  text-align: left;
+}
+.video-carousel{
+  top:55px;
 }
