@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Servicios</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style_contacto_moderno.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".contact-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
+        
+        console.log("Datos enviados:", formData);
+        alert("Formulario listo para enviar al backend");
+      });
+
+      const inputs = document.querySelectorAll(".contact-form input, .contact-form textarea");
+      inputs.forEach(input => {
+        input.addEventListener("input", function() {
+          this.style.transition = "all 0.3s ease-in-out";
+          this.style.transform = "scale(1.02)";
+          this.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+        });
+        input.addEventListener("blur", function() {
+          this.style.transform = "scale(1)";
+          this.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+        });
+      });
+    });
+  </script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #2b5876, #4e4376);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.7);
+      outline: none;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      transform: scale(1.02);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  </style>
 </head>
 <body>
-    <section class="servicios">
-        <h2>Nuestros servicios</h2>
-        <div class="contenedor-servicios">
-            <div class="servicio">
-                <div class="icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="#00a65a">
-                        <circle cx="16" cy="24" r="8" fill="#74c4a9"/>
-                        <circle cx="32" cy="24" r="8" fill="#00a65a"/>
-                        <circle cx="48" cy="24" r="8" fill="#74c4a9"/>
-                        <rect x="20" y="32" width="24" height="12" rx="6" ry="6" fill="#00a65a"/>
-                    </svg>
-                </div>
-                <h3>Outsourcing</h3>
-                <p>Proveemos personal capacitado y soluciones personalizadas para mejorar la eficiencia y productividad de tu negocio.</p>
-            </div>
-            <div class="servicio">
-                <div class="icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="#00a65a">
-                        <circle cx="32" cy="16" r="8" fill="#00a65a"/>
-                        <rect x="28" y="24" width="8" height="20" fill="#74c4a9"/>
-                        <circle cx="16" cy="48" r="8" fill="#00a65a"/>
-                        <circle cx="48" cy="48" r="8" fill="#74c4a9"/>
-                    </svg>
-                </div>
-                <h3>Delivery Center</h3>
-                <p>Ofrecemos una gestión integral de proyectos tecnológicos, cubriendo todas las etapas del desarrollo de software, desde la concepción hasta el mantenimiento.</p>
-            </div>
-        </div>
-    </section>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <p>Feel free to reach out to us with any questions or inquiries.</p>
+      <img src="image.png" alt="Illustration" class="contact-image">
+    </div>
+    <div class="contact-form-container">
+      <form action="#" method="post" class="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>

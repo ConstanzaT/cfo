@@ -13,4 +13,7 @@
   display: block; /* Evita márgenes inesperados en elementos inline */
   margin: 0 auto; /* Centra la imagen */
 }
+.content-container{
+  margin-top:-50px;
+}
 
