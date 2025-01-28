@@ -40,45 +40,48 @@
       <p>Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.</p>
   </section>
 
-  <!-- Slider Historia -->
-  <div class="carousel-container">
+  <div class="carousel-container-historia">
     <button id="carousel-button-left" class="carousel-button left">&#8249;</button>
     <div class="carousel-track">
       <div class="carousel-card">
-        <span class="icon">🎯</span>
-        <h3>2015</h3>
-        <h4>El Comienzo</h4>
-        <p>Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.</p>
+        <div class="year">2015</div>
+        <div class="title">El Comienzo</div>
+        <div class="content">Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.</div>
       </div>
       <div class="carousel-card">
-        <span class="icon">🚀</span>
-        <h3>2018</h3>
-        <h4>Primer Gran Paso</h4>
-        <p>Mudanza a World Trade Center (WTC): Un nuevo espacio que impulsó nuestra colaboración y crecimiento.</p>
+        <div class="year">2018</div>
+        <div class="title">Primer Gran Paso</div>
+        <div class="content">Mudanza a World Trade Center (WTC): Un nuevo espacio que impulsó nuestra colaboración y crecimiento.</div>
       </div>
       <div class="carousel-card">
-        <span class="icon">💡</span>
-        <h3>2020</h3>
-        <h4>Innovación y Crecimiento</h4>
-        <p>Mudanza al Distrito Tecnológico: Nos instalamos en un entorno ideal para potenciar nuestra misión de liderazgo tecnológico.</p>
+        <div class="year">2020</div>
+        <div class="title">Innovación y Crecimiento</div>
+        <div class="content">Mudanza al Distrito Tecnológico: Nos instalamos en un entorno ideal para potenciar nuestra misión de liderazgo tecnológico.</div>
       </div>
       <div class="carousel-card">
-        <span class="icon">👥</span>
-        <h3>2021</h3>
-        <h4>Un Equipo en Expansión</h4>
-        <p>200 colaboradores: Alcanzamos un nuevo hito en la construcción de un equipo comprometido y profesional.</p>
+        <div class="year">2021</div>
+        <div class="title">Un Equipo en Expansión</div>
+        <div class="content">200 colaboradores: Alcanzamos un nuevo hito en la construcción de un equipo comprometido y profesional.</div>
       </div>
       <div class="carousel-card">
-        <span class="icon">🌎</span>
-        <h3>2024</h3>
-        <h4>Consolidación y Regionalización</h4>
-        <p>Mudanza al Edificio HIT: Estrenamos oficinas diseñadas para el futuro. Regionalización: Expandimos nuestra presencia en Latinoamérica.</p>
+        <div class="year">2024</div>
+        <div class="title">Consolidación y Regionalización</div>
+        <div class="content">Mudanza al Edificio HIT: Estrenamos oficinas diseñadas para el futuro. Regionalización: Expandimos nuestra presencia en Latinoamérica.</div>
+      </div>
+      <!-- Duplicating slides for infinite loop -->
+      <div class="carousel-card">
+        <div class="year">2015</div>
+        <div class="title">El Comienzo</div>
+        <div class="content">Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.</div>
+      </div>
+      <div class="carousel-card">
+        <div class="year">2018</div>
+        <div class="title">Primer Gran Paso</div>
+        <div class="content">Mudanza a World Trade Center (WTC): Un nuevo espacio que impulsó nuestra colaboración y crecimiento.</div>
       </div>
     </div>
     <button id="carousel-button-right" class="carousel-button right">&#8250;</button>
   </div>
-
-
 
   <!-- Misión, Visión y Valores -->
   <section class="section mission-vision-values">
@@ -158,45 +161,7 @@ document.querySelectorAll('.team-member').forEach((member) => {
 
 </script>
 <script>
-  const track = document.querySelector('.carousel-track');
-    const leftButton = document.getElementById('carousel-button-left');
-    const rightButton = document.getElementById('carousel-button-right');
-    const cards = Array.from(track.children);
-
-    let currentIndex = 0;
-    const visibleCards = 3;
-
-    const updateButtons = () => {
-      leftButton.disabled = currentIndex === 0;
-      rightButton.disabled = currentIndex === cards.length - visibleCards;
-    };
-
-    const moveToCard = (index) => {
-      track.style.transform = `translateX(-${index * (100 / visibleCards)}%)`;
-      currentIndex = index;
-      synchronizeIcons();
-      updateButtons();
-    };
-
-    const synchronizeIcons = () => {
-      cards.forEach((card, index) => {
-        const icon = card.querySelector('.icon');
-        if (icon) {
-          icon.style.animationDelay = `${(index - currentIndex) * 0.1}s`;
-        }
-      });
-    };
-
-    leftButton.addEventListener('click', () => {
-      if (currentIndex > 0) moveToCard(currentIndex - 1);
-    });
-
-    rightButton.addEventListener('click', () => {
-      if (currentIndex < cards.length - visibleCards) moveToCard(currentIndex + 1);
-    });
-
-    synchronizeIcons();
-    updateButtons();
+  
 </script>
 
 <div id="footer"></div>
@@ -204,28 +169,58 @@ document.querySelectorAll('.team-member').forEach((member) => {
 <!-- Llamada al archivo JavaScript -->
 <script src="js/menu.js"></script>
 <script src="js/footer.js"></script>
-<script>
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Animación para las secciones al hacer scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-      }
-    });
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const leftButton = document.getElementById('carousel-button-left');
+  const rightButton = document.getElementById('carousel-button-right');
+
+  let currentSlideIndex = 0;
+
+  const updateCarousel = () => {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${currentSlideIndex * (slideWidth + 20)}px)`; // Include gap in translation
+  };
+
+  const moveToNextSlide = () => {
+    currentSlideIndex++;
+    if (currentSlideIndex >= slides.length - 2) {
+      track.style.transition = 'none';
+      currentSlideIndex = 0;
+      updateCarousel();
+    }
+    setTimeout(() => {
+      updateCarousel();
+    }, 50);
+  };
+
+  const moveToPrevSlide = () => {
+    currentSlideIndex--;
+    if (currentSlideIndex < 0) {
+      track.style.transition = 'none';
+      currentSlideIndex = slides.length - 3;
+      updateCarousel();
+    }
+    setTimeout(() => {
+      updateCarousel();
+    }, 50);
+  };
+
+  rightButton.addEventListener('click', () => {
+    moveToNextSlide();
   });
 
-  const sections = document.querySelectorAll('.section');
-  sections.forEach((section) => observer.observe(section));
+  leftButton.addEventListener('click', () => {
+    moveToPrevSlide();
+  });
 
-  // Animación para el Hero
-  const heroSection = document.querySelector('.hero-section');
-  if (heroSection) {
-    heroSection.classList.add('animate__animated', 'animate__zoomIn');
-  }
-});
+  setInterval(() => {
+    moveToNextSlide();
+  }, 3000); // Auto-scroll every 3 seconds
 
+  window.addEventListener('resize', updateCarousel);
 </script>
 <!-- Otros scripts -->
 <script src="js/menu.js"></script>
