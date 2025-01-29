@@ -26,7 +26,6 @@
   <div class="overlay"></div>
   <div class="text-overlay">
     <h1>Nuestra Historia</h1>
-    <h2>Background y trayectoria empresarial.</h2>
   </div>
 </section>
 <!-- fin hero-->
@@ -86,19 +85,71 @@
   <!-- Misión, Visión y Valores -->
   <section class="section mission-vision-values">
       <h2 class="historia-h2">Misión</h2>
-      <p>Impulsar la transformación digital de las empresas, proporcionando soluciones innovadoras y talento capacitado que contribuyan al crecimiento y éxito de nuestros clientes.</p>
+      <p class="mission-vision-values-p">Impulsar la transformación digital de las empresas, proporcionando soluciones innovadoras y talento capacitado que contribuyan al crecimiento y éxito de nuestros clientes.</p>
 
       <h2 class="historia-h2">Visión</h2>
-      <p>Ser líderes de la innovación tecnológica, impactando positivamente en cada organización con la que colaboramos a través del trabajo en equipo, promoviendo el respeto y la diversidad, siendo reconocidos como el socio estratégico ideal para el éxito digital.</p>
+      <p class="mission-vision-values-p">Ser líderes de la innovación tecnológica, impactando positivamente en cada organización con la que colaboramos a través del trabajo en equipo, promoviendo el respeto y la diversidad, siendo reconocidos como el socio estratégico ideal para el éxito digital.</p>
+
 
       <h2 class="historia-h2">Valores</h2>
-      <ul>
-          <li><strong>Innovación constante:</strong> Priorizar la investigación y el desarrollo para estar a la vanguardia de las soluciones tecnológicas.</li>
-          <li><strong>Trabajo en equipo:</strong> Fomentar un ambiente donde los equipos trabajen juntos para resolver problemas y crear soluciones.</li>
-          <li><strong>Inclusividad:</strong> Promover un entorno de trabajo en donde todas las personas se sientan valoradas.</li>
-          <li><strong>Honestidad:</strong> Actuar con integridad, sinceridad y transparencia.</li>
-          <li><strong>Adaptabilidad:</strong> Adaptarnos rápidamente a los cambios del mercado y las tecnologías.</li>
-      </ul>
+        <div class="valores-container">
+            <div class="valores-card" data-animate>
+                <strong class="valores-strong">Innovación constante</strong>
+                <p class="valores-p">Investigamos y desarrollamos soluciones para estar a la vanguardia de la tecnología.</p>
+            </div>
+            <div class="valores-card" data-animate>
+                <strong class="valores-strong">Trabajo en equipo</strong>
+                <p class="valores-p">Fomentamos la colaboración para resolver problemas y crear soluciones impactantes.</p>
+            </div>
+            <div class="valores-card" data-animate>
+                <strong class="valores-strong">Inclusividad</strong>
+                <p class="valores-p">Promovemos un ambiente donde todos se sientan valorados y respetados.</p>
+            </div>
+            <div class="valores-card" data-animate>
+                <strong class="valores-strong">Honestidad</strong>
+                <p class="valores-p">Actuamos con integridad, sinceridad y transparencia en todas nuestras acciones.</p>
+            </div>
+            <div class="valores-card" data-animate>
+                <strong class="valores-strong">Adaptabilidad</strong>
+                <p class="valores-p">Nos ajustamos rápidamente a los cambios del mercado y las nuevas tecnologías.</p>
+            </div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              const cards = document.querySelectorAll(".valores-card");
+  
+              const showCards = () => {
+                  let triggerBottom = window.innerHeight * 0.85;
+                  cards.forEach(card => {
+                      let cardTop = card.getBoundingClientRect().top;
+                      if (cardTop < triggerBottom) {
+                          card.style.opacity = "1";
+                          card.style.transform = "translateY(0)";
+                          card.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+                      }
+                  });
+              };
+              
+              window.addEventListener("scroll", showCards);
+              showCards();
+              
+              cards.forEach(card => {
+                  card.addEventListener("mousemove", (e) => {
+                      const rect = card.getBoundingClientRect();
+                      const x = e.clientX - rect.left - rect.width / 2;
+                      const y = e.clientY - rect.top - rect.height / 2;
+                      card.style.transform = `perspective(1000px) rotateY(${x / 10}deg) rotateX(${-y / 10}deg) scale(1.05)`;
+                  });
+                  
+                  card.addEventListener("mouseleave", () => {
+                      card.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)";
+                  });
+              });
+          });
+      </script>
+
+
   </section>
 
   <!-- Equipo Directivo -->
@@ -108,7 +159,7 @@
       <!-- CEO y Manager en la fila superior -->
       <div class="team-member">
         <img src="img/1team.svg" alt="Gustavo Deluca">
-        <p><strong>Gustavo Deluca</strong><br>CEO (Chief Executive Officer)</p>
+        <p><strong>Gustavo Deluca</strong><br>CEO<br> (Chief Executive Officer)</p>
       </div>
       <div class="team-member">
         <img src="img/2team.svg" alt="Mariano Deluca">
@@ -119,23 +170,23 @@
       <!-- Resto del equipo en la fila inferior -->
       <div class="team-member">
         <img src="img/3team.svg" alt="Belén Gentile">
-        <p><strong>Belén Gentile</strong><br>CPO (Chief People Officer)</p>
+        <p><strong>Belén Gentile</strong><br>CPO<br> (Chief People<br> Officer)</p>
       </div>
       <div class="team-member">
         <img src="img/4team.svg" alt="Graciela Grandi">
-        <p><strong>Graciela Grandi</strong><br>CAO (Chief Administrative Officer)</p>
+        <p><strong>Graciela Grandi</strong><br>CAO<br> (Chief Administrative Officer)</p>
       </div>
       <div class="team-member">
         <img src="img/5team.svg" alt="Ximena Dabbe">
-        <p><strong>Ximena Dabbe</strong><br>CCO (Chief Commercial Officer)</p>
+        <p><strong>Ximena Dabbe</strong><br>CCO<br> (Chief Commercial Officer)</p>
       </div>
       <div class="team-member">
         <img src="img/6team.svg" alt="Juan Pablo Cornejo">
-        <p><strong>Juan Pablo Cornejo</strong><br>CIO (Chief Information Officer)</p>
+        <p><strong>Juan Pablo Cornejo</strong><br>CIO<br> (Chief Information Officer)</p>
       </div>
       <div class="team-member">
         <img src="img/7team.svg" alt="Carlos Giorgi">
-        <p><strong>Carlos Giorgi</strong><br>CFO (Chief Financial Officer)</p>
+        <p><strong>Carlos Giorgi</strong><br>CFO<br> (Chief Financial Officer)</p>
       </div>
     </div>
   </section>

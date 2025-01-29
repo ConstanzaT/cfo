@@ -37,7 +37,7 @@ img {
 
 
 .historia-h2 {
-  text-align: left;
+  text-align: center;
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -316,9 +316,70 @@ body {
 }/*
 .content{
   padding:0;
-}*/.mission-vision-values {
-  max-width: 1100px;
-  padding: 100 auto;
-  margin-bottom: 100px;
-  margin-top:100px;
+}*/
+
+.valores-container {
+  width:100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content:space-around;
+}
+
+.valores-container .card:nth-child(4),
+.valores-container .card:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .valores-container {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.valores-card {
+  background: linear-gradient(135deg, #a8e6cf, #00a896);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  border: none;
+  box-shadow: 0px 6px 20px rgba(0, 168, 150, 0.3);
+  color: white;
+  font-weight: bold;
+}
+
+.valores-card:hover {
+  transform: scale(1.12) rotateY(15deg) rotateX(8deg);
+  box-shadow: 0px 12px 35px rgba(0, 168, 150, 0.6);
+}
+
+h2.valores-h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #026873;
+}
+
+strong.valores-strong {
+  font-size: 1.4em;
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p.valores-p {
+  color: #f1f1f1;
+font-weight: normal;
+}
+.mission-vision-values-p{
+  width: 70%;
+  text-align: center;
+  padding:0;
+  margin: 0 auto;
 }
