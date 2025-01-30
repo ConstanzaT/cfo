@@ -232,18 +232,6 @@
 
 <script>
 
-  // Seleccionar los elementos con la clase 'gradient-text'
-const texts = document.querySelectorAll('.gradient-text');
-
-// Animación sutil y dinámica para cada texto
-texts.forEach((text) => {
-  let scaleDirection = 1; // Para alternar entre agrandar y reducir
-  setInterval(() => {
-    text.style.transform = `scale(${1 + scaleDirection * 0.05})`; // Aumenta o reduce un 5% suavemente
-    text.style.transition = 'transform 0.6s ease-in-out'; // Transición más lenta y suave
-    scaleDirection = -scaleDirection; // Cambiar dirección del efecto
-  }, 1200); // Repetir cada 1.2 segundos
-});
 
 
 </script>
