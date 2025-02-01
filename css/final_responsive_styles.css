@@ -874,3 +874,104 @@
     gap:30px;
   }
 }
+/* ============================================================
+   Reglas responsivas para el video carousel (añadir en final_responsive_styles.css)
+   ============================================================ */
+
+/* Asegura que el video se ajuste al ancho completo en dispositivos pequeños */
+.carousel-video {
+  width: 100%;
+}
+
+/* Ajustes responsivos para el contenido de los slides */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 600px;
+  }
+  
+  .slide-content h1 {
+    font-size: 1.8rem;  /* Disminuye el tamaño del título */
+  }
+  
+  .slide-content p {
+    font-size: 1rem;    /* Ajusta el tamaño del párrafo */
+  }
+  
+  /* Si tienes controles o flechas, ajusta su tamaño */
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .arrow svg {
+    width: 16px;
+    height: 16px;
+  }
+  .text-container.btn{
+    width:50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-content h1 {
+    font-size: 1.5rem;
+  }  .carousel-video {
+    height: 500px;
+  }
+  
+  
+  .slide-content p {
+    font-size: 0.9rem;
+  }
+  
+  /* Opcional: si necesitas ajustar el padding o la posición del contenido */
+  .slide-content {
+    padding: 10px;
+  }
+  
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .arrow svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-servicios {
+      flex-direction: column; /* Asegura que se apilen verticalmente */
+      align-items: center; /* Centra los elementos */
+      width: 100%; /* Se ajusta al ancho disponible */
+  }
+
+  .servicio {
+      width: 90%; /* Evita que el contenido se salga */
+      max-width: 400px; /* Limita el ancho */
+      padding: 1rem; /* Añade margen interno */
+      text-align: center; /* Centra el texto */
+      word-wrap: break-word; /* Evita desbordamiento de texto */
+      overflow-wrap: break-word; /* Asegura el ajuste de texto */
+  }
+
+  .servicio p {
+      font-size: 0.95rem; /* Reduce el tamaño del texto */
+      line-height: 1.4; /* Mejora la legibilidad */
+      max-width: 100%; /* Asegura que el texto se ajuste */
+  }
+}
+
+/* Ajustes adicionales para móviles más pequeños */
+@media (max-width: 480px) {
+  .servicio {
+      width: 100%; /* Usa todo el ancho disponible */
+      padding: 1.2rem; /* Añade margen para evitar que se vea comprimido */
+  }
+
+  .servicio p {
+      font-size: 0.9rem; /* Reduce el tamaño del texto */
+      word-break: break-word; /* Asegura que el texto no se salga */
+  }
+}
