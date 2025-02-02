@@ -1,6 +1,7 @@
 #outsourcing{
   background-image: url('../img/outsourcing_hero.svg');
   top:60px;
+  
 }
 .card-container {
   display: flex;
@@ -9,6 +10,7 @@
   align-items: center; /* Centra verticalmente las tarjetas */
   gap: 20px; /* Espacio entre tarjetas */
   padding: 40px 20px; /* Espaciado interno */
+  
 }
 
 .talent-section {
@@ -44,8 +46,9 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: left;
   cursor: pointer; /* Añade un cursor interactivo */
+
 }
 
 .card:hover {
@@ -84,9 +87,13 @@
   font-size: 0.9rem;
   line-height: 1.4;
   color: #555;
-  opacity: 0;
-  text-align: justify;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 1; /* Asegura que siempre sea visible */
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Lo coloca en el centro verticalmente */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra exactamente el texto */
+  width: 80%;
 }
 
 .card:hover .description {
@@ -239,4 +246,72 @@ h2{text-align: center;}
 .card.hover-effect {
   transform: rotate(3deg) scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  #outsourcing {
+    padding:0;
+    margin:0;
+    background-image: url('../img/outsourcing_hero.svg');
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+  height:500px;
+
+
+  }
+  #outsourcing h1{
+    margin-top:200px;
+    text-align: center;
+  
+    width:400px;
+
+  }
+
+  .welcomedc{
+    margin-top:-350px;
+    margin-bottom: -300px;
+  }
+  
+  }
+
+
+
+
+@media screen and (max-width: 768px) {
+  #outsourcing {
+    background-size: contain; /* Mantiene la imagen sin recortar */
+    background-position: center center; /* Centra la imagen */
+    padding:0;
+    margin:0;
+    height:300px;  
+  }
+
+  #outsourcing h1{
+    margin-top:200px;
+    text-align: center;
+  
+    width:400px;
+
+  }
+  .welcomedc{
+
+    margin-top:200px;
+
+  }
+  #outsourcing p{
+    width:400px;
+    font-size: 1.5em;
+  
+  }.responsabilidades{
+    margin-top:300px;
+  }
+  .diferenciadores{
+    margin-top:-10px;
+  }
 }
