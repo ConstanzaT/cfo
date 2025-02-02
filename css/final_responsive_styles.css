@@ -648,9 +648,18 @@
 
 @media (max-width: 480px) {
   .text-overlay h1 {
-    font-size: 1.5rem;
+    visibility: hidden;
   }
+  #historiahero {
+    background-image: url('../img/historia_haeder.svg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;    background-size: contain; /* Mantiene la imagen sin recortar */
+    background-position: center center; /* Centra la imagen */
 
+
+}
   .text-overlay h2 {
     font-size: 0.9rem;
   }
@@ -974,4 +983,47 @@
       font-size: 0.9rem; /* Reduce el tamaño del texto */
       word-break: break-word; /* Asegura que el texto no se salga */
   }
+}
+/* Ajuste para tablets */
+@media (max-width: 768px) {
+  #historiahero {
+    background-attachment: scroll !important; /* Desactiva el parallax */
+    position: relative !important; /* Evita que se superponga */
+}
+
+  #historiahero {
+      height: 300px;
+      background-size: contain;
+      background-position: center top;
+      margin-top: 80px; /* Ajusta esto según la altura real del nav */
+  }
+}
+
+/* Ajuste para móviles */
+@media (max-width: 480px) {
+  #menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px; /* Ajusta este valor según la altura real de tu nav */
+    background: white; /* Asegura que el menú tenga un fondo */
+}
+
+/* Forzar que la imagen comience después del nav */
+#historiahero {
+    height: 300px;
+    background-size: contain;
+    background-position: center top;
+    margin-top: 80px; /* Debe ser igual a la altura del `nav` */
+}
+  #historiahero {
+      height: 250px;background-attachment: scroll;
+
+      background-size: contain;
+      background-position: center top;
+      margin-top: 80px; /* Ajusta según la altura del nav */
+  }
+
 }
