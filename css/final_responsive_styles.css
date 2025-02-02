@@ -988,15 +988,13 @@
 @media (max-width: 768px) {
   #historiahero {
     background-attachment: scroll !important; /* Desactiva el parallax */
-    position: relative !important; /* Evita que se superponga */
+    position: relative !important; /* Evita que se superponga */  height: 300px;
+    background-size: cover;
+    background-position: center top;
+    margin-top: 80px; /* Ajusta esto según la altura real del nav */
 }
 
-  #historiahero {
-      height: 300px;
-      background-size: contain;
-      background-position: center top;
-      margin-top: 80px; /* Ajusta esto según la altura real del nav */
-  }
+
 }
 
 /* Ajuste para móviles */
