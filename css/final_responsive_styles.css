@@ -539,7 +539,7 @@
   width: 100%;
   height: 100vh; /* Ocupa toda la altura de la ventana */
   background-image: url('ruta/a/tu/imagen.jpg'); /* Cambia a la ruta de tu imagen */
-  background-size: contain; /* Cambia a 'cover' o 'contain' según el resultado deseado */
+  background-size: cover; /* Cambia a 'cover' o 'contain' según el resultado deseado */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita repeticiones */
 }
@@ -562,7 +562,7 @@
 
 @media (max-width: 768px) {
   #programa_accion,#deliverycenter,.hero-section, #historiahero {
-      background-size: contain; /* Asegura que la imagen no se recorte en pantallas pequeñas */
+      background-size: cover; /* Asegura que la imagen no se recorte en pantallas pequeñas */
       height:400px;
     } 
     #deliverycenter{
@@ -895,7 +895,11 @@
 /* Ajustes responsivos para el contenido de los slides */
 @media (max-width: 768px) {
   .hero-section {
-    height: 600px;
+    background-size: cover;
+
+    object-fit: cover;
+    height: 110vh; /* Ocupa toda la altura de la ventana */
+
   }
   
   .slide-content h1 {
@@ -988,13 +992,12 @@
 @media (max-width: 768px) {
   #historiahero {
     background-attachment: scroll !important; /* Desactiva el parallax */
-    position: relative !important; /* Evita que se superponga */  height: 300px;
+    position: relative !important; /* Evita que se superponga */
+    height: 300px;
     background-size: cover;
     background-position: center top;
     margin-top: 80px; /* Ajusta esto según la altura real del nav */
-}
-
-
+  }
 }
 
 /* Ajuste para móviles */
@@ -1007,21 +1010,379 @@
     z-index: 1000;
     height: 80px; /* Ajusta este valor según la altura real de tu nav */
     background: white; /* Asegura que el menú tenga un fondo */
-}
-
-/* Forzar que la imagen comience después del nav */
-#historiahero {
-    height: 300px;
-    background-size: contain;
-    background-position: center top;
-    margin-top: 80px; /* Debe ser igual a la altura del `nav` */
-}
-  #historiahero {
-      height: 250px;background-attachment: scroll;
-
-      background-size: contain;
-      background-position: center top;
-      margin-top: 80px; /* Ajusta según la altura del nav */
   }
 
+  /* Ajuste responsive para la imagen */
+  #historiahero {
+    height: 250px; /* Altura ajustada para móviles */
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center top;
+    margin-top: 80px; /* Debe coincidir con la altura del `nav` */
+  }
 }
+/* ============================ */
+/* Modernización del Navbar */
+/* ============================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color:black;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* ============================ */
+/* Dropdown mejorado */
+/* ============================ */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  color:black;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  top: 40px;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: #555;
+}
+
+/* ============================ */
+/* Menú hamburguesa renovado */
+/* ============================ */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1100;
+  transition: visibility 0.3s ease-in-out;
+}
+
+.mobile-menu.active + .hamburger-menu {
+  visibility: hidden;
+}
+
+.hamburger-menu span {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+/* ============================ */
+/* Mobile Menu */
+/* ============================ */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.95);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.4s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 15px;
+}
+
+.mobile-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.mobile-menu ul li a:hover {
+  background: #444;
+}
+
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ============================ */
+/* Responsive */
+/* ============================ */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: flex;
+  }
+
+  .mobile-menu {
+      display: none;
+  }
+
+  .mobile-menu.active {
+      display: flex;
+  }
+
+  .hamburger-menu.active {
+      visibility: hidden;
+  }
+}
+
+/* Ocultar el icono de hamburguesa cuando el menú está abierto */
+.mobile-menu.active + .hamburger-menu {
+    visibility: hidden;
+}
+
+/* Mantener el menú desplegable abierto al hacer hover */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Asegurar que el icono de hamburguesa se oculte solo cuando el menú está activo */
+.hamburger-menu {
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.mobile-menu.active ~ .hamburger-menu {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Prevenir que el menú desplegable desaparezca antes de poder hacer hover */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Asegurar que el dropdown-content no se cierre cuando se mueve el cursor entre el item y el submenú */
+.dropdown-content {
+    pointer-events: auto;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Asegurar que el icono de hamburguesa desaparezca cuando el menú esté activo */
+.mobile-menu.active ~ .hamburger-menu {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Solución para el hover del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #333;
+    border-radius: 5px;
+    padding: 10px;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Asegurar que la X es el único elemento que cierra el menú */
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1101;
+}
+
+/* Evitar que se cierre si se hace clic en cualquier otra parte del menú */
+.mobile-menu {
+    pointer-events: auto;
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.5s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.mobile-menu.active {
+  right: 0;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { right: -100%; }
+  to { right: 0; }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.dropdown-content.fade-in {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-section, .slide {
+  position: relative;
+  width: 100%;
+  height: 110vh; /* Ocupa toda la altura de la ventana */
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Cambia a la ruta de tu imagen */
+  background-size: cover; /* Cambia a 'cover' o 'contain' según el resultado deseado */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repeticiones */
+  object-fit: contain};

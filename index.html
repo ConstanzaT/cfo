@@ -248,7 +248,89 @@
 <!-- Footer -->
 <div id="footer"></div>
 <!-- Fin de footer-->
+<script>
 
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const closeButton = document.querySelector(".close-menu");
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    // Función para abrir el menú móvil y ocultar el icono de hamburguesa
+    function openMenu() {
+        mobileMenu.classList.add("active");
+        hamburgerMenu.style.visibility = "hidden";
+    }
+
+    // Función para cerrar el menú móvil y mostrar el icono de hamburguesa
+    function closeMenu() {
+        mobileMenu.classList.remove("active");
+        hamburgerMenu.style.visibility = "visible";
+    }
+
+    // Evento para abrir el menú
+    hamburgerMenu.addEventListener("click", openMenu);
+
+    // Evento para cerrar el menú solo con la X
+    closeButton.addEventListener("click", closeMenu);
+
+    // Mantener el submenú visible al hacer hover
+    dropdowns.forEach(dropdown => {
+        const dropdownContent = dropdown.querySelector(".dropdown-content");
+        
+        dropdown.addEventListener("mouseover", function() {
+            dropdownContent.style.display = "block";
+            dropdownContent.style.visibility = "visible";
+            dropdownContent.style.opacity = "1";
+        });
+
+        dropdown.addEventListener("mouseleave", function() {
+            setTimeout(() => {
+                if (!dropdown.matches(":hover") && !dropdownContent.matches(":hover")) {
+                    dropdownContent.style.display = "none";
+                    dropdownContent.style.visibility = "hidden";
+                    dropdownContent.style.opacity = "0";
+                }
+            }, 300);
+        });
+
+        dropdownContent.addEventListener("mouseleave", function() {
+            setTimeout(() => {
+                if (!dropdown.matches(":hover")) {
+                    dropdownContent.style.display = "none";
+                    dropdownContent.style.visibility = "hidden";
+                    dropdownContent.style.opacity = "0";
+                }
+            }, 300);
+        });
+    });
+});
+
+</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".dropdown");
+    
+    dropdowns.forEach(dropdown => {
+        const dropdownContent = dropdown.querySelector(".dropdown-content");
+        const dropdownToggle = dropdown.querySelector("a");
+        
+        dropdownToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            dropdownContent.classList.toggle("active");
+        });
+        
+        document.addEventListener("click", (event) => {
+            if (!dropdown.contains(event.target)) {
+                dropdownContent.classList.remove("active");
+            }
+        });
+    });
+});
+
+
+</script>
 <!--Js-->
   <script src="js/footer.js"></script>
   <script src="js/carrussel_hero.js"></script>

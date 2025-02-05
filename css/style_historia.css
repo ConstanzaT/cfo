@@ -32,7 +32,7 @@ img {
   display: flex; /* Asegura que el texto se centre correctamente */
   align-items: flex-end; /* Asegura espacio arriba */
   justify-content: center; /* Centra el texto horizontalmente */
-  padding-top: 5%; /* Agrega espacio adicional dinámico arriba */
+  padding-top: 15%; /* Agrega espacio adicional dinámico arriba */
 }
 
 

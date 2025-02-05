@@ -88,52 +88,7 @@
     </script>
         <script src="js/footer.js"></script>
     <script src="js/menu.js"></script>
-    <script>
-        let lastScrollY = window.scrollY;
-        let ticking = false;
-      
-        function onScroll() {
-          if (!ticking) {
-            window.requestAnimationFrame(function() {
-              handleScroll();
-              ticking = false;
-            });
-            ticking = true;
-          }
-        }
-      
-        // Función que maneja la visibilidad en función del scroll
-        function handleScroll() {
-          const elements = document.querySelectorAll('.content-container, .image-container-programa');
-          const scrollSpeed = Math.abs(window.scrollY - lastScrollY); // Calcular la velocidad del scroll
-          lastScrollY = window.scrollY;
-      
-          elements.forEach(element => {
-            if (isElementInViewport(element)) {
-              element.classList.add('visible');
-              element.classList.remove('hidden');
-              if (scrollSpeed > 30) { // Si el scroll es rápido, reduce la duración de la transición
-                element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
-              }
-            } else {
-              element.classList.add('hidden');
-              element.classList.remove('visible');
-              if (scrollSpeed > 30) { // Si el scroll es rápido, reduce la duración de la transición
-                element.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
-              }
-            }
-          });
-        }
-      
-        // Función para verificar si el elemento está en el viewport
-        function isElementInViewport(el) {
-          const rect = el.getBoundingClientRect();
-          return rect.top >= 0 && rect.bottom <= window.innerHeight;
-        }
-      
-        // Agregar el evento de scroll
-        window.addEventListener('scroll', onScroll);
-      </script>
+    
         
 </body>
 </html>
