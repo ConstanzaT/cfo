@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovation Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/final_responsive_styles.css">
+  <link rel="stylesheet" href="css/style_general.css">
+  <link rel="stylesheet" href="css/style_innovation_hub.css">
+</head>
+<body>
+  <!-- Navegación menú  -->
+<div id="menu"></div>
+<!--cierre de navegación nav menú-->
+
+  
+  <section class="hero-section" id="outsourcing">
+    <div class="overlay-outsourcing"></div>
+    <div class="text-overlay">
+      <h1>Innovation Hub</h1>
+      <p>Optimizamos procesosy expandimos horizontes.</p>
+    </div>
+  </section>
+ 
+<section class="welcomedc scroll-animate">
+  <div class="carousel-container">
+    <div class="carousel-images">
+      <div class="carousel-slide">
+        <img src="img/CFOTech_Outsourcing_Carrousel-1.png" alt="Imagen 1" width="400px" height="400px">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/CFOTech_Outsourcing_Carrousel-2.png" alt="Imagen 2" width="400px" height="400px">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/CFOTech_Outsourcing_Carrousel-3.png" alt="Imagen 3" width="400px" height="400px">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/CFOTech_Outsourcing_Carrousel-4.png" alt="Imagen 3" width="400px" height="400px">
+      </div>
+    </div>
+    <div class="carousel-text">
+      <p>
+        Disponemos de un equipo que busca <b>identificar y ejecutar iniciativasde innovación</b> en pos de brindar <span class="gradient-text" id="text1">“oportunidades emergentes”. </span> en la atracción de perfiles idóneos, ajustados a las necesidades específicas de nuestros clientes. </p>
+    </div>
+  </div>
+  <script>
+    // Carrusel automático
+    let index = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+
+    function showSlide() {
+      slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(-${index * 100}%)`;
+      });
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000); // Cambiar cada 3 segundos
+  </script>
+</section>
+
+
+<!-- Servicios cards-->
+
+<section class="responsabilidades">
+    <h2>Responsabilidades y servicios</h2>
+    <div class="card-container">
+      <div class="card">
+          <div class="arrow-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Flecha">
+          </div>
+          <div class="content">
+            Busqueda y recopilación de información
+          </div>
+          <div class="description">
+            Buscamos información sobre innovación para generar ideas. Esto ayuda a descubrir las nuevas ideas que luego pueden ser oportunidades que respalden todas las partes del proceso de innovación.</div>
+          <div class="search-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar">
+          </div>
+      </div>
+      <div class="card">
+          <div class="arrow-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Flecha">
+          </div>
+          <div class="content">
+            Identificar oportunidades
+          </div>
+          <div class="description">
+            Buscamos información sobre innovación para generar ideas. Esto ayuda a descubrir las nuevas ideas que luego pueden ser oportunidades que respalden todas las partes del proceso de innovación.
+          </div>
+          <div class="search-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar">
+          </div>
+      </div>
+      <div class="card">
+          <div class="arrow-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Flecha">
+          </div>
+          <div class="content">
+            Bootcamps
+          </div>
+          <div class="description">
+            Mostramos la oportunidad para ser evaluada y así analizar, costos, factibilidad,​  plan de implementación, etc. Esta actividad está relacionada a la implementación​ o puesta en marcha. 
+          </div>
+          <div class="search-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar">
+          </div>
+      </div>
+      <div class="card">
+        <div class="arrow-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Flecha">
+        </div>
+        <div class="content">
+         Habilitar oportunidades
+        </div>
+        <div class="description">
+          Conectamos ideas y definimos cómo ejecutarlas. Trabajamos en el desarrollo de planes de implementación y cuantificamos los resultados y aprendizajes de nuevas iniciativas. Generación, selección, prueba y difusión de ideas.
+        </div>
+        <div class="search-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar">
+        </div>
+    </div>
+  </div>
+  
+  
+  </section>
+
+<!-- Servicios cards-->
+
+
+<section class="talent-section">
+    
+</section>
+
+
+
+<div class="divisor"></div>
+
+<!-- footer -->
+<div id="footer"></div>
+<script>
+  // Cargar el footer
+  fetch('modulo/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando el footer:', error));
+</script>
+<!-- Fin de footer-->
+  
+    <script src="js/script.js"></script>
+    <script>
+      
+      /*responsividad de menu - modal */
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
+        const closeMenuButton = document.querySelector(".close-menu");
+
+        // Open the mobile menu
+        hamburgerMenu.addEventListener("click", function () {
+            mobileMenu.classList.add("active");
+            mobileMenuOverlay.classList.add("active");
+        });
+
+        // Close the mobile menu
+        closeMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+            mobileMenuOverlay.classList.remove("active");
+        });
+
+        // Close the menu when clicking on the overlay
+        mobileMenuOverlay.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+            mobileMenuOverlay.classList.remove("active");
+        });
+    }); </script> 
+    <script>
+      // Cargar el menú desde menu.html
+      fetch('modulo/menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando el menú:', error));
+    </script>
+      <script src="js/menu.js"></script>
+      <script src="app.js"></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+
+  // Verificar si las tarjetas están en vista
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
+  // Aplicar animación inicial
+  const applyAnimation = () => {
+    cards.forEach((card, index) => {
+      if (isInViewport(card)) {
+        card.style.transitionDelay = `${index * 0.1}s`;
+        card.classList.add('animate');
+      } else {
+        card.classList.remove('animate');
+      }
+    });
+  };
+
+  // Agregar eventos de scroll para activar las animaciones
+  window.addEventListener('scroll', applyAnimation);
+  window.addEventListener('resize', applyAnimation);
+  applyAnimation();
+});
+
+// Animación en hover para rotación y escalado
+document.addEventListener('mouseover', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.add('hover-effect');
+  }
+});
+
+document.addEventListener('mouseout', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.remove('hover-effect');
+  }
+});
+
+    </script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+  const parallaxElements = document.querySelectorAll('.parallax');
+
+  // Función para detectar si un elemento está en la vista
+  const isInViewport = (el, percentageScroll = 100) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= 
+      (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+    );
+  };
+
+  // Animar elementos al hacer scroll
+  const displayScrollElement = (element) => {
+    element.classList.add('animate');
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove('animate');
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (isInViewport(el, 90)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  // Parallax Effect
+  const handleParallax = () => {
+    parallaxElements.forEach((el) => {
+      const speed = el.dataset.speed || 0.5;
+      const offset = window.scrollY * speed;
+      el.style.transform = `translateY(${offset}px)`;
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+    handleParallax();
+  });
+
+  handleScrollAnimation(); // Inicializar
+});
+
+// Hover Effects for Cards
+document.addEventListener('mouseover', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.add('hover-effect');
+  }
+});
+
+document.addEventListener('mouseout', (event) => {
+  if (event.target.closest('.card')) {
+    const card = event.target.closest('.card');
+    card.classList.remove('hover-effect');
+  }
+});
+
+    </script>
+</body>
+</html>
