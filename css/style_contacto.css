@@ -1,4 +1,17 @@
-#contacto {
+#outsourcing{
     background-image: url('../img/header_contacto.svg');
     background-size: cover;
   }
+  @media screen and (max-width: 1024px) {
+    #outsourcing {
+      padding:0;
+      margin:0;
+      background-image: url('../img/header_contacto.svg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 100%;
+    height:500px;
+  
+  
+    }}

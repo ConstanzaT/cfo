@@ -12,362 +12,274 @@
   <style>
 
 
-    .contact-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .contact-form-container {
-      max-width: 80%;
-      margin: 0 auto 30px auto;
-    }
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    .contact-form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-map {
-      max-width: 80%;
-      margin: 0 auto 30px auto;
-      text-align: center;
-    }
-
-    .contact-map iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .commercial-contacts {
-      max-width: 80%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .contact-card {
-      flex: 1 1 calc(23% - 20px);
-      background: linear-gradient(to right, #e3f2fd, #bbdefb);
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, background 0.3s;
-      position: relative;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-10px);
-      background: linear-gradient(to right, #bbdefb, #90caf9);
-    }
-
-    .contact-card:hover .copy-notification {
-      opacity: 1;
-    }
-
-    .contact-card .copy-notification {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #007bff;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .commercial-contacts {
-      display: flex;
-      gap: 20px;
-      justify-content: space-between;
-      flex-wrap: nowrap; /* Fuerza que todas las cards estén en una sola fila */
-    }
-
-    .contact-card {
-      flex: 1;
-      background: linear-gradient(to right, #e3f2fd, #bbdefb);
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, background 0.3s;
-      position: relative;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-10px);
-      background: linear-gradient(to right, #bbdefb, #90caf9);
-    }
-
-    .contact-card .copy-notification {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #007bff;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .contact-card:hover .copy-notification {
-      opacity: 1;
-    }
-
-    .copy-icon {
-      cursor: pointer;
-      margin-left: 8px;
-      font-size: 16px;
-      color: #007bff;
-    }
-
-    .copy-icon:hover {
-      color: #0056b3;
-    }
+.contact-form-map-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
 .contact-form-container {
-  background: #ffffff;
+  width: 48%;
+  background: #f8f8f8;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 400px;
-  animation: fadeIn 0.8s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
 }
 
 .contact-form label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  display: block;
+  font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-  border-color: #66a6ff;
-  box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
-  outline: none;
+.contact-form textarea {
+  resize: none;
 }
 
-.contact-form .submit-button {
-  background: #66a6ff;
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 25px;
-  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.contact-form .submit-button:hover {
-  background: #89f7fe;
+.contact-map {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.validation-message {
-  font-size: 12px;
-  color: red;
-  display: none;
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
+.contact-details {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.commercial-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.contact-card {
+  width: 23%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.copy-icon {
+  cursor: pointer;
+  color: #007BFF;
+}
+
+@media (max-width: 768px) {
+  .contact-form-map-container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .contact-form-container, .contact-map {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .commercial-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  
+}
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 500; /* Negrita medium */
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+  flex-wrap: wrap; /* Para adaptarse en pantallas pequeñas */
+}
+
+.contact-details .icon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.contact-details .separator {
+  font-weight: 500;
+  color: #666;
+}
+
+
+.contact-card h3{
+  color: #58A333;
+}
+.details-item-1{
+  width:35%;
+}
+.details-item-2{
+  width:60%;
+}@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    align-items: center; /* Centrar los elementos */
+  }
+  .details-item-1,
+  .details-item-2 {
+    width: 100%; /* Hacer que los items ocupen todo el ancho disponible */
+    text-align: center; /* Centrar el texto */
   }
 }
-.contact-form input,
-    .contact-form textarea,
-    .contact-form select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
 
-    .contact-form input:hover,
-    .contact-form textarea:hover,
-    .contact-form select:hover {
-      border-color: #90caf9;
-      background-color: #f0f8ff;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus,
-    .contact-form select:focus {
-      border-color: #66a6ff;
-      box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
-      outline: none;
-    }
-
-    .contact-form input.valid,
-    .contact-form textarea.valid,
-    .contact-form select.valid {
-      border-color: #4caf50;
-      background-color: #e8f5e9;
-    }
-
-    .contact-form input.invalid,
-    .contact-form textarea.invalid,
-    .contact-form select.invalid {
-      border-color: #f44336;
-      background-color: #ffebee;
-    }
-
-    .validation-message {
-      font-size: 12px;
-      color: #f44336;
-      display: none;
-    }
-
-    .validation-message.valid {
-      color: #4caf50;
-    }
-
-    .contact-form .submit-button {
-      background: #66a6ff;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .contact-form .submit-button:hover {
-      background: #89f7fe;
-    }
   </style>
 </head>
 <body>
 <div id="menu"></div>
-<section class="hero-section" id="contacto">
+<section class="hero-section" id="outsourcing">
   <div class="overlay"></div>
   <div class="text-overlay">
     <h1>Contacto</h1>
     <h2>Trabajemos juntos</h2>
   </div>
 </section>
+
 <section class="contact-section">
   <div class="contact-header">
     <h1>CFOTech IT Global Services</h1>
     <h2>Contacta con nosotros</h2>
   </div>
-  <div class="contact-form-container">
-    <form action="#" method="post" class="contact-form">
-      <div class="form-group">
-        <label for="name">Nombre y apellido</label>
-        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
-        <span class="validation-message" id="name-validation"></span>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-        <span class="validation-message" id="email-validation"></span>
-      </div>
-      <div class="form-group">
-        <label for="phone">Teléfono</label>
-        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
-        <span class="validation-message" id="phone-validation"></span>
-      </div>
-      <div class="form-group">
-        <label for="company">Empresa</label>
-        <input type="text" id="company" name="company" placeholder="Ingresa el nombre de tu empresa">
-      </div>
-      <div class="form-group">
-        <label for="reason">Motivo</label>
-        <select id="reason" name="reason" required>
-          <option value="" disabled selected>Selecciona un motivo</option>
-          <option value="consulta">Consulta</option>
-          <option value="soporte">Soporte</option>
-          <option value="otro">Otro</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Comentario</label>
-        <textarea id="message" name="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
-      </div>
-      <button type="submit" class="submit-button">Enviar</button>
-    </form>
-  </div>
-  
-  <div class="contact-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5778812014863!2d-58.37310338477193!3d-34.60905268045998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd56e0285b%3A0x1b3b6f5f3d201bd2!2sAv.%20Chiclana%203345%2C%20C1437%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sus!4v1672536414576!5m2!1sen!2sus" loading="lazy"></iframe>
-    <div class="contact-details">
-      <p><strong>Tel:</strong> +54911 5263-3750</p>
-      <p><strong>Dirección:</strong> Av. Chiclana 3345 - Piso 8 | Torre 2, CABA, Buenos Aires, Argentina.</p>
+  <div class="contact-form-map-container">
+    <div class="contact-form-container">
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre y apellido</label>
+          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company" placeholder="Ingresa el nombre de tu empresa">
+        </div>
+        <div class="form-group">
+          <label for="reason">Motivo</label>
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Selecciona un motivo</option>
+            <option value="consulta">Consulta</option>
+            <option value="soporte">Soporte</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Comentario</label>
+          <textarea id="message" name="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
     </div>
-  </div>
+  
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5778812014863!2d-58.37310338477193!3d-34.60905268045998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd56e0285b%3A0x1b3b6f5f3d201bd2!2sAv.%20Chiclana%203345%2C%20C1437%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sus!4v1672536414576" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+      <div class="contact-details">
+        <div class="details-item-1"><p><span class="icon">📞</span> +54 9 11 5263-3750</p></div>
+        <div class="details-item-2"><p><span class="icon">📍</span> Av. Chiclana 3345 – Piso 8 | Torre 2. CABA, Buenos Aires, Argentina.</p></div>
+      </div>
+    </div>
+    <h2 style="margin:0 auto; margin-top:10%; ">Contactos</h2>
+  
   <div class="commercial-contacts">
     <div class="contact-card">
       <h3>Mariano Deluca</h3>
       <p>General Manager</p>
-      <p><strong>Email:</strong> mdeluca@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('mdeluca@cfotechlatam.com')">📋</span></p>
+      <p>mdeluca@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('mdeluca@cfotechlatam.com')"></span></p>
       
     </div>
     <div class="contact-card">
       <h3>Ximena Dabbe</h3>
       <p>Chief Commercial Officer</p>
-      <p><strong>Email:</strong> xdabbe@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('xdabbe@cfotechlatam.com')">📋</span></p>
+      <p>xdabbe@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('xdabbe@cfotechlatam.com')"></span></p>
     
     </div>
     <div class="contact-card">
       <h3>Juan Pablo Cornejo</h3>
       <p>CIO (Chief Information Officer)</p>
-      <p><strong>Email:</strong> jpcornejo@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('jpcornejo@cfotechlatam.com')">📋</span></p>
+      <p>jpcornejo@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('jpcornejo@cfotechlatam.com')"></span></p>
     
     </div>
     <div class="contact-card">
       <h3>Sergio Duré</h3>
       <p>Territory Sales Manager</p>
-      <p><strong>Email:</strong> sdure@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('sdure@cfotechlatam.com')">📋</span></p>
+      <p> sdure@cfotechlatam.com <span class="copy-icon" onclick="copyToClipboard('sdure@cfotechlatam.com')"></span></p>
      
     </div>
   </div>
 </section>
 <div id="footer"></div>
-<script>
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Correo copiado: ' + text);
-    }).catch(err => {
-      console.error('Error al copiar:', err);
-    });
-  }
-</script>
+
 <script>
 
 document.querySelectorAll(".contact-form input, .contact-form textarea, .contact-form select").forEach((input) => {
