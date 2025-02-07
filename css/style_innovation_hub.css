@@ -1,5 +1,6 @@
-#outsourcing{
+#innovation{
   background-image: url('../img/innovation_hub.svg');
+  
 }
 .card-container {
   display: flex;
@@ -255,7 +256,7 @@ h2{text-align: center;}
 
 
 @media screen and (max-width: 1024px) {
-  #outsourcing {
+  #innovation {
     padding:0;
     margin:0;
     background-image: url('../img/Innovation_hub.svg');
@@ -267,7 +268,7 @@ h2{text-align: center;}
 
 
   }
-  #outsourcing h1{
+  #innovation h1{
     margin-top:200px;
     text-align: center;
   
@@ -283,10 +284,8 @@ h2{text-align: center;}
   }
 
 
-
-
 @media screen and (max-width: 768px) {
-  #outsourcing {
+  #innovationg {
     background-size: contain; /* Mantiene la imagen sin recortar */
     background-position: center center; /* Centra la imagen */
     padding:0;
@@ -294,7 +293,7 @@ h2{text-align: center;}
     height:300px;  
   }
 
-  #outsourcing h1{
+  #innovation h1{
     margin-top:200px;
     text-align: center;
   
@@ -306,7 +305,7 @@ h2{text-align: center;}
     margin-top:200px;
 
   }
-  #outsourcing p{
+  #innovation p{
     width:400px;
     font-size: 1.5em;
   
