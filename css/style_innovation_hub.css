@@ -18,7 +18,6 @@
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Centra el texto dentro de los elementos */
   padding: 40px 20px;
-  height: 60vh; /* Ocupa toda la altura de la ventana */
 }
 
 .talent-section h2 {
@@ -28,9 +27,15 @@
 }
 
 .talent-section p {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  color: #6D6D6D;
   font-size: 1rem;
   margin-bottom: 10px;
-  max-width: 800px; /* Limita el ancho del texto */
+  max-width: 670px; /* Limita el ancho del texto */
 }.card {
   background: #ffffff;
   border: 1px solid #ddd;
@@ -70,7 +75,6 @@
 .content {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 10px 0;
   text-align: center;
   color: #333;
   transition: all 0.3s ease-in-out;
@@ -88,7 +92,7 @@
   opacity: 1; /* Asegura que siempre sea visible */
   text-align: center;
   position: absolute;
-  top: 70%; /* Lo coloca en el centro verticalmente */
+  top: 64%; /* Lo coloca en el centro verticalmente */
   left: 50%;
   transform: translate(-50%, -50%); /* Centra exactamente el texto */
   width: 80%;
@@ -216,9 +220,9 @@ h2{text-align: center;}
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
   animation: gradient-animate 3s infinite linear;
-  display: inline-block;
+ /* display: inline-block;*/
 }.carousel-text{
-  font-size: 2em;
+  font-size: 28px;
 }
 /* Animaciones avanzadas */
 
@@ -254,7 +258,7 @@ h2{text-align: center;}
   #outsourcing {
     padding:0;
     margin:0;
-    background-image: url('../img/outsourcing_hero.svg');
+    background-image: url('../img/Innovation_hub.svg');
     background-size: contain;
     background-position: center;
     position: relative;
