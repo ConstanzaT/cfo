@@ -1,19 +1,37 @@
 <header class="navbar">
-    <div class="logo">
-      <img src="img/logo.png" alt="CFOTech Logo">
-    </div>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="index.html"><b>Home</b></a></li>
-        <li><a href="delivery_center.html"><b>Servicios</b></a></li>
-        <li><a href="historia.html"><b>Quienes somos</b></a></li>
-        <li><a href=""><b>Tu CV</b></a></li>
-        <li><a href="contacto.html"><b>Contacto</b></a></li>
-      </ul>
-    </nav>
-    <div class="language-selector">
-      <span class="globe-icon">🌍</span>
-      <span>ESP</span>
-      <span class="dropdown-icon"><b>▾</b></span>
-    </div>
+  <div class="logo">
+    <img src="img/logo.png" alt="CFOTech Logo">
+  </div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+
+      <!-- Menú desplegable Servicios -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle"><b>Servicios ▾</b></a>
+        <ul class="dropdown-menu">
+          <li><a href="delivery_center.html">Delivery Center</a></li>
+          <li><a href="outsourcing.html">Outsourcing</a></li>
+        </ul>
+      </li>
+
+      <!-- Menú desplegable Quiénes Somos -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle"><b>Quiénes somos ▾</b></a>
+        <ul class="dropdown-menu">
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="historia.html#equipo">Equipo</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><b>Tu CV</b></a></li>
+      <li><a href="contacto.html"><b>Contacto</b></a></li>
+    </ul>
+  </nav>
+
+  <div class="language-selector">
+    <span class="globe-icon">🌍</span>
+    <span>ESP</span>
+    <span class="dropdown-icon"><b>▾</b></span>
+  </div>
 </header>
