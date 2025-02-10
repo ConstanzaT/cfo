@@ -10,9 +10,8 @@
   <link rel="stylesheet" href="css/style_innovation_hub.css">
 </head>
 <body>
-  <!-- Navegación menú  -->
-<div id="menu"></div>
-<!--cierre de navegación nav menú-->
+
+<div id="header"></div> <!-- header -->
 
   
   <section class="hero-section" id="innovation">
@@ -27,22 +26,19 @@
   <div class="carousel-container">
     <div class="carousel-images">
       <div class="carousel-slide">
-        <img src="img/CFOTech_Outsourcing_Carrousel-1.png" alt="Imagen 1" width="400px" height="400px">
+        <img src="img/innovation_carrousel-1.png" alt="Imagen 1" width="400px" height="400px">
       </div>
       <div class="carousel-slide">
-        <img src="img/CFOTech_Outsourcing_Carrousel-2.png" alt="Imagen 2" width="400px" height="400px">
+        <img src="img/innovation_carrousel-2.png" alt="Imagen 2" width="400px" height="400px">
       </div>
       <div class="carousel-slide">
-        <img src="img/CFOTech_Outsourcing_Carrousel-3.png" alt="Imagen 3" width="400px" height="400px">
-      </div>
-      <div class="carousel-slide">
-        <img src="img/CFOTech_Outsourcing_Carrousel-4.png" alt="Imagen 3" width="400px" height="400px">
+        <img src="img/innovation_carrousel-3.png" alt="Imagen 3" width="400px" height="400px">
       </div>
     </div>
     <div class="carousel-text">
       <p>
         Disponemos de un equipo que busca <b>identificar y ejecutar iniciativas de innovación</b> en pos de brindar <span class="gradient-text" id="text1">“oportunidades emergentes”. </span><br><br> 
-        Dichas iniciativas pueden ser internas, es decir para la empresa, o externas ya sea para mejorar puntos de dolor en clientes actuales o insight de cara a incorporar credenciales propias (nuevos productos, conocimientos, etc.) 
+        Dichas iniciativas pueden ser internas, es decir para la empresa, o externas ya sea para mejorar puntos de dolor en clientes actuales o insight de cara a incorporar credenciales propias (nuevos productos, conocimientos, etc.) 
       </p>
     </div>
   </div>
@@ -65,7 +61,7 @@
 
 <!-- Servicios cards-->
 
-<section class="responsabilidades">
+<section id="servicios" class="responsabilidades">
     <h2>Responsabilidades y servicios</h2>
     <div class="card-container">
       <div class="card">
@@ -144,6 +140,13 @@
       document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.error('Error cargando el footer:', error));
+
+    fetch('modulo/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando el header:', error));
 </script>
 <!-- Fin de footer-->
   
