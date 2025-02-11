@@ -4,12 +4,24 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 h1, h2 {
   color: #333;
 }
 
 img {
-  max-width: 100%;
+  /*max-width: 100%;*/
 }
 
 .container {
