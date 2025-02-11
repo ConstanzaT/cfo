@@ -39,4 +39,25 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error cargando el menú:', error));
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Función general para manejar el clic en las tarjetas
+    function setupCardClick(cardClass, url) {
+      const card = document.querySelector(cardClass);
+  
+      if (card) {
+        card.style.cursor = "pointer"; // Cambia el cursor para indicar que es clickeable
+  
+        card.addEventListener("click", function () {
+          window.location.href = url;
+        });
+      }
+    }
+  
+    // Configura las tarjetas con las clases y URLs correspondientes
+    setupCardClick(".servicio.outsourcing", "outsourcing.html");
+    setupCardClick(".servicio.delivery", "delivery_center.html");
+  });
+  
+
+
 
