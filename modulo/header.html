@@ -19,8 +19,8 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle"><b>Quiénes somos ▾</b></a>
         <ul class="dropdown-menu">
-          <li><a href="historia.html">Historia</a></li>
-          <li><a href="historia.html#equipo">Equipo</a></li>
+          <li><a href="historia.html">Quiénes somos</a></li>
+          <li><a href="programas_accion.html">Programa de acción</a></li>
         </ul>
       </li>
 
@@ -29,9 +29,18 @@
     </ul>
   </nav>
 
+  <!-- Selector de idioma -->
   <div class="language-selector">
     <span class="globe-icon">🌍</span>
-    <span>ESP</span>
-    <span class="dropdown-icon"><b>▾</b></span>
+    <span id="languageText">ESP</span> <!-- Aquí cambiará el idioma -->
+    <span class="dropdown-icon" onclick="toggleLanguageMenu()">▾</span>
+
+    <!-- Menú desplegable de idiomas -->
+    <div id="languageMenu" class="dropdown-menu" style="display:none;">
+      <ul>
+        <li><a href="#" onclick="changeLanguage('ESP')">ESP</a></li>
+        <li><a href="#" onclick="changeLanguage('ENG')">ENG</a></li>
+      </ul>
+    </div>
   </div>
 </header>
