@@ -984,10 +984,10 @@ header img {
   display: none; /* Se oculta por defecto */
   position: absolute;
   background: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 0;
-  min-width: 180px;
+  width: 180px;
   top: 100%;
   left: 0;
   z-index: 1000;
@@ -1012,7 +1012,7 @@ header img {
 .dropdown-menu li {
   display: block;
   width: 100%;
-  padding: 10px 15px;
+  /*padding: 2px 2px;*/
   white-space: nowrap;
   text-align: left;
 }
