@@ -11,9 +11,9 @@
     },
 
     "slide-content-work": {
-        "title": "We are the engine behind behind every solution",
-        "description": "Every solution, result and success achieved is possible thanks to our team. We transform challenges into cutting-edge technological solutions.", 
-        "button": "WORK WITH US"
+        "title": "Somos el motor detrás de cada solución",
+        "description": "Cada solución, resultado y éxito alcanzado es posible gracias a nuestro equipo. Transformamos desafíos en soluciones tecnológicas de vanguardia.", 
+        "button": "Trabajá con nosotros"
     },
 
     "slide-content-services": {
@@ -32,8 +32,24 @@
         "title": "We simplify your management",
         "description": "With integrated solutions and specialized teams, we boost your productivity, ensuring efficiency, quality and results aligned with your objectives.",
         "button": "CONTACT US"
-    }
+    },
 
+    "our-services": {
+        "title-outsourcing": "Nuestros servicios",
+        "description-outsourcing": "Proveemos personal capacitado y soluciones personalizadas para mejorar la eficiencia y productividad de tu negocio.",
+        "description-delivery-center": "Ofrecemos una gestión integral de proyectos tecnológicos, cubriendo todas las etapas del desarrollo de software, desde la concepción hasta el mantenimiento.",
+        "solutions-title": "Certified confidence for your solutions",
+        "clients-title": "Customers and Technology Partners"
+    },
+
+    "who-we-are": {
+        "title": "Quiénes somos",
+        "description-1": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.", 
+        "description-2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.", 
+        "description-3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.", 
+        "description-4": "Nuestro objetivo es ser el partner tecnológico de nuestros clientes.", 
+        "button": "Conócenos →"
+    }
 
     
 }

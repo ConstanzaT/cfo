@@ -32,9 +32,21 @@
         "title": "We simplify your management",
         "description": "With integrated solutions and specialized teams, we boost your productivity, ensuring efficiency, quality and results aligned with your objectives.",
         "button": "CONTACT US"
+    },
+
+    "our-services": {
+        "title-outsourcing": "Our services",
+        "description-outsourcing": "We provide trained personnel and customized solutions to improve the efficiency and productivity of your business.",
+        "description-delivery-center": "We offer an integral management of technological projects, covering all stages of software development, from conception to maintenance.",
+        "solutions-title": "Certified confidence for your solutions",
+        "clients-title": "Customers and Technology Partners"
+    },
+
+    "who-we-are": {
+        "title": "Who we are",
+        "description": "We are a company specialized in Technology, created in 2015, based in Argentina and abroad.We are leaders in Technology Services and IT Recruiting.We accompany our clients to provide them with digital solutions.Our goal is to be the technological partner of our clients.",
+        "button": "Get to know us →"
     }
 
-
-   
     
 }
