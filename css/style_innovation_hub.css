@@ -1,5 +1,13 @@
-#innovation{
+.innovation {
   background-image: url('../img/innovation_hub.svg');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
   
 }
 .card-container {

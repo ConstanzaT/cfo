@@ -4,11 +4,11 @@
   </div>
   <nav class="nav-links">
     <ul>
-      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="index.html"><b data-section="header" data-value="home">Home</b></a></li>
 
       <!-- Menú desplegable Servicios -->
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle"><b>Servicios ▾</b></a>
+        <a href="#" class="dropdown-toggle"><b data-section="header" data-value="services">Servicios ▾</b></a>
         <ul class="dropdown-menu">
           <li><a href="delivery_center.html">Delivery Center</a></li>
           <li><a href="outsourcing.html">Outsourcing</a></li>
@@ -17,29 +17,26 @@
 
       <!-- Menú desplegable Quiénes Somos -->
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle"><b>Quiénes somos ▾</b></a>
+        <a href="#" class="dropdown-toggle"><b data-section="header" data-value="who-we-are">Quiénes somos ▾</b></a>
         <ul class="dropdown-menu">
-          <li><a href="historia.html">Quiénes somos</a></li>
-          <li><a href="programas_accion.html">Programa de acción</a></li>
+          <li><a href="historia.html" data-section="header" data-value="who-we-are">Quiénes somos</a></li>
+          <li><a href="programas_accion.html" data-section="header" data-value="action-program">Programa de acción</a></li>
         </ul>
       </li>
 
-      <li><a href="#"><b>Tu CV</b></a></li>
-      <li><a href="contacto.html"><b>Contacto</b></a></li>
+      <li><a href="#"><b data-section="header" data-value="your-cv">Tu CV</b></a></li>
+      <li><a href="contacto.html"><b data-section="header" data-value="contact">Contacto</b></a></li>
     </ul>
   </nav>
 
   <!-- Selector de idioma -->
   <div class="language-selector">
     <span class="globe-icon">🌍</span>
-    <span id="languageText">ESP</span> <!-- Aquí cambiará el idioma -->
-    <span class="dropdown-icon" onclick="toggleLanguageMenu()">▾</span>
-
-    <!-- Menú desplegable de idiomas -->
-    <div id="languageMenu" class="dropdown-menu" style="display:none;">
-      <ul>
-        <li><a href="#" onclick="changeLanguage('ESP')">ESP</a></li>
-        <li><a href="#" onclick="changeLanguage('ENG')">ENG</a></li>
+    <div class="dropdown">
+      <button class="dropdown-toggle">ES ▾</button>
+      <ul class="dropdown-menu">
+        <li><button data-language="es">ES</button></li>
+        <li><button data-language="en">EN</button></li>
       </ul>
     </div>
   </div>

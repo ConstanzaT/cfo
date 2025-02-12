@@ -39,9 +39,9 @@
         <div class="overlay-black"></div>
         <div class="overlay-color"></div> <!-- Video 1 -->
         <div class="slide-content">
-          <h1 class="h1left">Somos el motor detrás  <br>de cada solución</h1>
-          <p>Cada solución, resultado y éxito alcanzado es posible gracias a nuestro equipo. Transformamos desafíos <br> en soluciones tecnológicas de vanguardia.</p>
-          <a href="#" class="btn">Trabajá con nosotros</a>
+          <h1 class="h1left" data-section="slide-content-work" data-value="title" >Somos el motor detrás  <br>de cada solución</h1>
+          <p data-section="slide-content-work" data-value="description">Cada solución, resultado y éxito alcanzado es posible gracias a nuestro equipo. Transformamos desafíos <br> en soluciones tecnológicas de vanguardia.</p>
+          <a href="#" class="btn" data-section="slide-content-work" data-value="button">Trabajá con nosotros</a>
         </div>
       </div>
       <div class="slide" data-index="1">
@@ -51,9 +51,9 @@
         <div class="overlay-black"></div>
         <div class="overlay-color"></div> <!-- Video 2 -->
         <div class="slide-content">
-          <h1 class="h1left">Innovación tecnológica</h1>
-          <p>Gestionamos cada etapa del desarrollo de software, asegurando soluciones adaptadas a las necesidades <br>de tu negocio.</p>
-          <a href="delivery_center.html" class="btn">Conocé nuestros servicios</a>
+          <h1 class="h1left" data-section="slide-content-services" data-value="title">Innovación tecnológica</h1>
+          <p data-section="slide-content-services" data-value="description">Gestionamos cada etapa del desarrollo de software, asegurando soluciones adaptadas a las necesidades <br>de tu negocio.</p>
+          <a href="delivery_center.html" class="btn" data-section="slide-content-services" data-value="button">Conocé nuestros servicios</a>
         </div>
       </div>
       <div class="slide" data-index="2">
@@ -63,9 +63,9 @@
         <div class="overlay-black"></div>
         <div class="overlay-color"></div> <!-- Video 3 -->
         <div class="slide-content">
-          <h1 class="h1left">Presencia global</h1>
-          <p>Más de 9 países confían en nuestra <br>experiencia tecnológica.</p>
-          <a href="historia.html" class="btn">Conocé nuestra historia</a>
+          <h1 class="h1left" data-section="slide-content-history" data-value="title">Presencia global</h1>
+          <p data-section="slide-content-history" data-value="description">Más de 9 países confían en nuestra <br>experiencia tecnológica.</p>
+          <a href="historia.html" class="btn" data-section="slide-content-history" data-value="button">Conocé nuestra historia</a>
         </div>
       </div>
       <div class="slide" data-index="2">
@@ -75,9 +75,9 @@
         <div class="overlay-black"></div>
         <div class="overlay-color"></div> <!-- Video 3 -->
         <div class="slide-content">
-          <h1 class="h1left">Simplificamos tu gestión</h1>
-          <p>Con soluciones integrales y equipos especializados, potenciamos tu productividad asegurando eficiencia, calidad y resultados alineados con los objetivos.</p>
-          <a href="contacto.html" class="btn">Contactá con nosotros</a>
+          <h1 class="h1left" data-section="slide-content-contact" data-value="title">Simplificamos tu gestión</h1>
+          <p data-section="slide-content-contact" data-value="description">Con soluciones integrales y equipos especializados, potenciamos tu productividad asegurando eficiencia, calidad y resultados alineados con los objetivos.</p>
+          <a href="contacto.html" class="btn" data-section="slide-content-contact" data-value="button">Contactá con nosotros</a>
         </div>
       </div>
     </div>
@@ -141,20 +141,7 @@
 </section>
 
 <!--Sección clientes y socios estratégicos-->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const carouselTrack = document.getElementById("carousel-track");
-    const imageCount = 77; // Numero total de imagenes
-    // Agregado de imagenes dinamicamente
-    for (let i = 1; i <= imageCount; i++) {
-      const img = document.createElement("img");
-      img.src = `img/clientes/image${i}.svg`;
-      img.alt = `Cliente ${i}`;
-      img.loading = "lazy"; // 
-      carouselTrack.appendChild(img);
-    }
-  });
-</script>
+
 <!-- Fin sección Clientes y socios -->
 
 
@@ -254,7 +241,7 @@
   <script src="js/footer.js"></script>
   <script src="js/carrussel_hero.js"></script>
   <script src="js/carrussel_cliente.js"></script>  
-  <script src="js/menu.js"></script>
   <script src="js/contadores_home.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
