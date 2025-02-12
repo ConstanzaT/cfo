@@ -5,52 +5,71 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById('header').innerHTML = data;
 
-            // Manejo de la interacción con los botones de idioma
+            // Obtener los botones de idioma y los textos a cambiar
             const langButtons = document.querySelectorAll("[data-language]");
             const textsToChange = document.querySelectorAll("[data-section]");
             const languageSelectorButton = document.querySelector(".language-selector .dropdown-toggle");
 
+            // Función para manejar la selección del idioma
+            function selectLanguage(language) {
+                languageSelectorButton.textContent = language === "es" ? "ES ▾" : "EN ▾";
+
+                // Ocultar todas las opciones de idiomas
+                langButtons.forEach(b => b.style.display = "none");
+
+                // Muestra solo el idioma no seleccionado
+                langButtons.forEach(b => {
+                    if (b.dataset.language !== language) {
+                        b.style.display = "block"; // Mostrar solo la opción no seleccionada
+                    }
+                });
+
+                fetch(`../languages/${language}.json`)
+                    .then(res => res.json())
+                    .then(data => {
+                        textsToChange.forEach((el) => {
+                            const section = el.dataset.section;
+                            const value = el.dataset.value;
+
+                            // Verifica que las claves existan en el JSON
+                            if (data[section] && data[section][value]) {
+                                el.textContent = data[section][value];
+                            } else {
+                                console.warn(`No se encontró la clave para ${section}.${value}`);
+                                el.textContent = ''; // Texto por defecto si no se encuentra la clave
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Error al cargar el archivo de idioma:', error));
+
+                // Cierra el menú desplegable después de seleccionar el idioma
+                const dropdown = document.querySelector(".language-selector .dropdown");
+                dropdown.classList.remove("active");
+            }
+
+            // Configura el idioma predeterminado al cargar la página
+            const defaultLanguage = localStorage.getItem("language") || "es"; // Obtén el idioma guardado o 'es' por defecto
+            selectLanguage(defaultLanguage);
+
+            // Manejo de la interacción con los botones de idioma
             langButtons.forEach((button) => {
                 button.addEventListener("click", () => {
-                    // Verifica si el atributo data-language está presente
                     const language = button.dataset.language;
-                    if (!language) return; // Si no hay un idioma, no hace nada
+                    if (!language) return;
 
-                    // Cambia el texto del botón para reflejar el idioma seleccionado
-                    languageSelectorButton.textContent = language === "es" ? "ES ▾" : "EN ▾";
+                    // Guarda el idioma seleccionado en localStorage
+                    localStorage.setItem("language", language);
 
-                    fetch(`../languages/${language}.json`)
-                        .then(res => res.json())
-                        .then(data => {
-                            textsToChange.forEach((el) => {
-                                const section = el.dataset.section;
-                                const value = el.dataset.value;
-
-                                // Verifica que las claves existan en el JSON
-                                if (data[section] && data[section][value]) {
-                                    el.textContent = data[section][value]; // Mejor usar textContent en lugar de innerHTML
-                                } else {
-                                    console.warn(`No se encontró la clave para ${section}.${value}`);
-                                    el.textContent = ''; // Opcional: muestra un texto por defecto
-                                }
-                            });
-                        })
-                        .catch(error => console.error('Error al cargar el archivo de idioma:', error));
-
-                    // Cierra el menú desplegable después de seleccionar el idioma
-                    const dropdown = document.querySelector(".language-selector .dropdown");
-                    dropdown.classList.remove("active");
+                    selectLanguage(language);
                 });
             });
 
-            // Configuración de dropdowns (menús desplegables)
+            // Configuración de dropdowns
             const dropdowns = document.querySelectorAll(".dropdown-toggle");
-
             dropdowns.forEach(dropdown => {
                 dropdown.addEventListener("click", function (e) {
-                    e.preventDefault(); // Evita el comportamiento por defecto del enlace
-
-                    let parent = this.parentElement; // Encuentra el <li> contenedor
+                    e.preventDefault();
+                    let parent = this.parentElement;
 
                     // Cierra otros menús antes de abrir el nuevo
                     document.querySelectorAll(".dropdown").forEach(item => {
@@ -59,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     });
 
-                    // Alterna la clase "active" en el menú actual
                     parent.classList.toggle("active");
                 });
             });
@@ -75,20 +93,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error cargando el menú:', error));
 
-    // Función general para manejar el clic en las tarjetas
+    // Función para manejar clic en las tarjetas
     function setupCardClick(cardClass, url) {
         const card = document.querySelector(cardClass);
-
         if (card) {
-            card.style.cursor = "pointer"; // Cambia el cursor para indicar que es clickeable
-
+            card.style.cursor = "pointer";
             card.addEventListener("click", function () {
                 window.location.href = url;
             });
         }
     }
 
-    // Configura las tarjetas con las clases y URLs correspondientes
     setupCardClick(".servicio.outsourcing", "outsourcing.html");
     setupCardClick(".servicio.delivery", "delivery_center.html");
 });

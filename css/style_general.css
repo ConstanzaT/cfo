@@ -1094,3 +1094,8 @@ header img {
 .language-selector button:hover {
   background-color: #f1f1f1;
 }
+
+.selected {
+  display: none; /* Oculta la opción seleccionada */
+}
+
