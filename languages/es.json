@@ -49,6 +49,22 @@
         "description-3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.", 
         "description-4": "Nuestro objetivo es ser el partner tecnológico de nuestros clientes.", 
         "button": "Conócenos →"
+    },
+
+    "counters": {
+        "collaborators": "Colaboradores",
+        "countries": "Países",
+        "customers-around-the-world": "Clientes en todo el mundo",
+        "industries": "Industrias"
+    },
+
+    "social networks": {
+        "title": "Seguinos en las redes sociales"
+    },
+
+    "hiring": {
+        "title": "¿Estás buscando tu próximo desafío?",
+        "button": "Trabajá con nosotros →"
     }
 
     
