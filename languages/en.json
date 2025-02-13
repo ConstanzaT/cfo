@@ -62,6 +62,27 @@
     "hiring": {
         "title": "Who we are",
         "button": "Work with us →"
+    },
+
+    "footer": {
+        "our-services-title": "Our services",
+        "delivery-center": "Work with us →",
+        "outsourcing": "Work with us →",
+        "innovation-hub": "Work with us →",
+        "ux": "Work with us →",
+        "about-title": "Work with us →",
+        "we": "Work with us →",
+        "our-culture": "",
+        "work": "",
+        "clients": "",
+        "links-title": "",
+        "soport": "",
+        "legal-notice": "",
+        "security-policy": "",
+        "cookies-policy": "",
+        "cookie-settings": "",
+        "social-networks-title": ""
+
     }
 
 }
