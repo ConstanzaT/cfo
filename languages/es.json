@@ -65,6 +65,29 @@
     "hiring": {
         "title": "¿Estás buscando tu próximo desafío?",
         "button": "Trabajá con nosotros →"
+    },
+
+    "footer": {
+        "our-services-title": "Nuestros servicios",
+        "delivery-center": "Delivery Center",
+        "outsourcing": "Work with us →",
+        "innovation-hub": "Work with us →",
+        "ux": "Work with us →",
+        "about-title": "Sobre CFOtech",
+        "we": "Nosotros",
+        "our-culture": "Nuestra cultura",
+        "work": "Trabaja con nosotros",
+        "clients": "Clientes",
+        "links-title": "Links",
+        "soport": "Centro de soporte",
+        "legal-notice": "Aviso legal",
+        "privacy": "Privacidad",
+        "security-policy": "Política de seguridad",
+        "cookies-policy": "Política de cookies",
+        "cookie-settings": "Ajustes de cookies",
+        "social-networks-title": "Redes sociales",
+        "chile": "",
+        "miami": ""
     }
 
     

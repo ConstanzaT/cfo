@@ -66,23 +66,25 @@
 
     "footer": {
         "our-services-title": "Our services",
-        "delivery-center": "Work with us →",
+        "delivery-center": "Delivery Center",
         "outsourcing": "Work with us →",
         "innovation-hub": "Work with us →",
         "ux": "Work with us →",
-        "about-title": "Work with us →",
-        "we": "Work with us →",
-        "our-culture": "",
-        "work": "",
-        "clients": "",
+        "about-title": "About CFOtech",
+        "we": "About us",
+        "our-culture": "Our Culture",
+        "work": "Work with us",
+        "clients": "Clients",
         "links-title": "",
-        "soport": "",
-        "legal-notice": "",
-        "security-policy": "",
-        "cookies-policy": "",
-        "cookie-settings": "",
-        "social-networks-title": ""
-
+        "soport": "Support Center",
+        "legal-notice": "Legal Notice",
+        "privacy": "Privacy",
+        "security-policy": "Security Policy",
+        "cookies-policy": "Cookie Policy",
+        "cookie-settings": "Cookie settings",
+        "social-networks-title": "Social media",
+        "chile": "",
+        "miami": ""
     }
 
 }
