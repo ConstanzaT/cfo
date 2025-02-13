@@ -88,7 +88,13 @@
         "social-networks-title": "Redes sociales",
         "chile": "",
         "miami": ""
-    }
+    },
 
-    
+    "delivery-center": {
+        "delivery-center-title": "Delivery Center",
+        "explore-our-services": "Explorá nuestros servicios",
+        "delivery-center-description": "Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.",
+        "all-our-services-title": "Todos nuestros servicios",
+        "consulting-and-assessment-title": "Consultoría y Assessment"
+    }
 }

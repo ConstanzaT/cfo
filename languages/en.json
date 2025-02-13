@@ -85,6 +85,32 @@
         "social-networks-title": "Social media",
         "chile": "",
         "miami": ""
+    },
+
+    "delivery-center": {
+        "delivery-center-title": "Delivery Center",
+        "explore-our-services": "Explore our services",
+        "delivery-center-description": "Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.",
+        "all-our-services-title": "All our services",
+        "consulting-and-assessment-title": "Consulting and Assessment",
+        
+        "about-title": "About CFOtech",
+        "we": "About us",
+        "our-culture": "Our Culture",
+        "work": "Work with us",
+        "clients": "Clients",
+        "links-title": "",
+        "soport": "Support Center",
+        "legal-notice": "Legal Notice",
+        "privacy": "Privacy",
+        "security-policy": "Security Policy",
+        "cookies-policy": "Cookie Policy",
+        "cookie-settings": "Cookie settings",
+        "social-networks-title": "Social media",
+        "chile": "",
+        "miami": ""
     }
+
+    
 
 }
