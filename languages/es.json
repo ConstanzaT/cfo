@@ -17,21 +17,21 @@
     },
 
     "slide-content-services": {
-        "title": "Technological innovation",
-        "description": "We manage each stage of software development, ensuring solutions tailored to the needs of your business.", 
-        "button": "GET TO KNOW OUR SERVICES"
+        "title": "Innovación tecnológica",
+        "description": "Gestionamos cada etapa del desarrollo de software, asegurando soluciones adaptadas a las necesidades de tu negocio.", 
+        "button": "Conocé nuestros servicios"
     },
 
     "slide-content-history": {
-        "title": "Global presence",
-        "description": "More than 9 countries rely on our technological technological expertise.", 
-        "button": "KNOW OUR HISTORY"
+        "title": "Presencia global",
+        "description": "Más de 9 países confían en nuestra experiencia tecnológica.", 
+        "button": "Conocé nuestra historia"
     },
 
     "slide-content-contact": {
-        "title": "We simplify your management",
-        "description": "With integrated solutions and specialized teams, we boost your productivity, ensuring efficiency, quality and results aligned with your objectives.",
-        "button": "CONTACT US"
+        "title": "Simplificamos tu gestión",
+        "description": "Con soluciones integrales y equipos especializados, potenciamos tu productividad asegurando eficiencia, calidad y resultados alineados con los objetivos.",
+        "button": "Contactá con nosotros"
     },
 
     "our-services": {
