@@ -92,7 +92,28 @@
         "explore-our-services": "Explore our services",
         "delivery-center-description": "Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.",
         "all-our-services-title": "All our services",
+        "innovation-hub-title": "Innovation Hub",
+        "innovation-hub-description": "Our Innovation Hub is a space where innovative ideas take shape in a collaborative and technological environment.",
+        "architectural-design": "Architecture Design",
+        "architectural-design-description": "We have a strong team of architects who can design the system structure, make decisions about appropriate technologies and tools, and ensure the integrity and performance of the software.",
+        "software-development": "Software Development",
+        "software-development-description": "We have a strong capability to develop quality software with teams experienced in various programming languages, frameworks and methodologies.",
+        "maintenance-and-support": "Maintenance and Support",
+        "maintenance-and-support-description": "We perform maintenance and corrective/evolutionary support services, working on updates, patches and bug fixes to existing software.",
+        "project-management": "Project Management",
+        "project-management-description": "We have a solid capacity to develop quality software with experienced teams in various programming languages and methodologies.",
+        "ia-data": "Artificial Intelligence + Data",
+        "ia-data-description": "We have a team that can address and execute services to become a Data Driven organization.",
+        "rpa-robotization": "RPA - Robotization",
+        "rpa-robotization-description": "We automate repetitive and manual tasks through robot software, optimizing operational efficiency.",
+        "cloud-computing": "Cloud Computing",
+        "cloud-computing-description": "We provide solutions in the Cloud, whether they are developments or building infrastructures from scratch.",
         "consulting-and-assessment-title": "Consulting and Assessment",
+        "office-pmo": "Oficina PMO",
+        "office-pmo-description": "Asesoramos a nuestros clientes en el armado de las oficinas de PMO en base a las metodologías del mercado, adaptándolas a las necesidades y la generación de demanda del negocio.",
+        "quality-assurance": "Quality Assurance",
+        "quality-assurance-description": "Nuestros equipos cuentan con procesos de QA y QC en donde se definen robustas pruebas. Realizamos consultoría sobre procesos de calidad basados en TMMI.",
+        "quality-assurance": "Quality Assurance",
         
         "about-title": "About CFOtech",
         "we": "About us",
@@ -109,8 +130,31 @@
         "social-networks-title": "Social media",
         "chile": "",
         "miami": ""
-    }
+    },
 
+   
+    "outsourcing": {
+        "Outsourcing-title": "Outsourcing",
+        "delivery-center-description": "Diseñado para proporcionar a las empresas una solución eficientey especializada en el reclutamiento y selección de talento humano.",
+        "services-title": "Responsabilidades y servicios",
+        "talent-search-and-selection-title":"Búsqueda y selección de talento",
+        "talent-search-and-selection-description":"Conectamos empresas con el talento ideal Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
+        "what-sets-us-apart": "¿Qué nos diferencia? ",
+        "benefits": "Beneficios de elegirnos"
+        
+    },
+
+   "our-history": {
+        "our-history-title": "Our History",
+        "our-history-subtitle": "Our History",
+        "our-history-description": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamos a nuestros clientes para brindarles soluciones digitales.Nuestro objetivo es ser el partner tecnológico de nuestros clientes.",
+        "mission-title": "Mission",
+        "mission-description": "To drive the digital transformation of companies, providing innovative solutions and skilled talent that contribute to the growth and success of our clients.",
+        "vision-title": "Vision",
+        "vision-description": "To be leaders in technological innovation, positively impacting each organization with which we collaborate through teamwork, promoting respect and diversity, being recognized as the ideal strategic partner for digital success.",
+        "values": "Values",
+        "management-team": "Management Team"
+    }
     
 
 }

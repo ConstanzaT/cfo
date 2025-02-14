@@ -90,11 +90,73 @@
         "miami": ""
     },
 
-    "delivery-center": {
+   "delivery-center": {
         "delivery-center-title": "Delivery Center",
         "explore-our-services": "Explorá nuestros servicios",
         "delivery-center-description": "Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.",
-        "all-our-services-title": "Todos nuestros servicios",
-        "consulting-and-assessment-title": "Consultoría y Assessment"
+        "all-our-services-title": "All our services",
+        "innovation-hub-title": "Innovation Hub",
+        "innovation-hub-description": "Nuestro Innovation Hub es un espacio donde las ideas innovadoras toman forma en un entorno colaborativo y tecnológico.",
+        "architectural-design": "Diseño de Arquitectura",
+        "architectural-design-description": "Contamos con un sólido equipo de arquitectos que pueden diseñar la estructura del sistema, tomar decisiones sobre tecnologías y herramientas adecuadas, y garantizar la integridad y el rendimiento del software.",
+        "software-development": "Desarrollo de Software",
+        "software-development-description": "Disponemos de una sólida capacidad para desarrollar software de calidad con equipos de experiencia en diversos lenguajes de programación, frameworks y metodologías.",
+        "maintenance-and-support": "Mantenimiento y Soporte",
+        "maintenance-and-support-description": "Ejecutamos servicios de mantenimiento y soporte correctivo/evolutivo, trabajando sobre actualizaciones, parches y correcciones de errores en el software existente.",
+        "project-management": "Gestión de Proyectos",
+        "project-management-description": "Disponemos de una sólida capacidad para desarrollar software de calidad con equipos de experiencia en diversos lenguajes de programación y metodologías.",
+        "ia-data": "Inteligencia Artificial + Data",
+        "ia-data-description": "Disponemos de un equipo de trabajo que puede abordar y ejecutar servicios para convertirse en una organización Data Driven.",
+        "rpa-robotization": "RPA - Robotización",
+        "rpa-robotization-description": "Automatizamos tareas repetitivas y manuales mediante software de robots, optimizando la eficiencia operativa.",
+        "cloud-computing": "Cloud Computing",
+        "cloud-computing-description": "Brindamos soluciones en la Nube, ya sean desarrollos o armado de infraestructuras desde cero.",
+        "consulting-and-assessment-title": "Consultoría y Assessment",
+        "office-pmo": "Oficina PMO",
+        "office-pmo-description": "Asesoramos a nuestros clientes en el armado de las oficinas de PMO en base a las metodologías del mercado, adaptándolas a las necesidades y la generación de demanda del negocio.",
+        "quality-assurance": "Quality Assurance",
+        "quality-assurance-description": "Nuestros equipos cuentan con procesos de QA y QC en donde se definen robustas pruebas. Realizamos consultoría sobre procesos de calidad basados en TMMI.",
+        "quality-assurance": "Quality Assurance",
+
+        "about-title": "About CFOtech",
+        "we": "About us",
+        "our-culture": "Our Culture",
+        "work": "Work with us",
+        "clients": "Clients",
+        "links-title": "",
+        "soport": "Support Center",
+        "legal-notice": "Legal Notice",
+        "privacy": "Privacy",
+        "security-policy": "Security Policy",
+        "cookies-policy": "Cookie Policy",
+        "cookie-settings": "Cookie settings",
+        "social-networks-title": "Social media",
+        "chile": "",
+        "miami": ""
+    },
+
+    "outsourcing": {
+        "Outsourcing-title": "Outsourcing",
+        "delivery-center-description": "Diseñado para proporcionar a las empresas una solución eficientey especializada en el reclutamiento y selección de talento humano.",
+        "services-title": "Responsabilidades y servicios",
+        "talent-search-and-selection-title":"Búsqueda y selección de talento",
+        "talent-search-and-selection-description":"Conectamos empresas con el talento ideal Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
+        "what-sets-us-apart": "¿Qué nos diferencia? ",
+        "benefits": "Beneficios de elegirnos"
+        
+      
+    },
+
+    "our-history": {
+        "our-history-title": "Nuestra Historia",
+        "our-history-subtitle": "Nuestra Historia",
+        "our-history-description": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamos a nuestros clientes para brindarles soluciones digitales.Nuestro objetivo es ser el partner tecnológico de nuestros clientes.",
+        "mission-title": "Misión",
+        "mission-description": "Impulsar la transformación digital de las empresas, proporcionando soluciones innovadoras y talento capacitado que contribuyan al crecimiento y éxito de nuestros clientes.",
+        "vision-title": "Visión",
+        "vision-description": "Ser líderes de la innovación tecnológica, impactando positivamente en cada organización con la que colaboramos a través del trabajo en equipo, promoviendo el respeto y la diversidad, siendo reconocidos como el socio estratégico ideal para el éxito digital.",
+        "values": "Valores",
+        "management-team": "Equipo Directivo"
     }
+
 }
