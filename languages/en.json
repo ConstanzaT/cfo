@@ -109,12 +109,12 @@
         "cloud-computing": "Cloud Computing",
         "cloud-computing-description": "We provide solutions in the Cloud, whether they are developments or building infrastructures from scratch.",
         "consulting-and-assessment-title": "Consulting and Assessment",
-        "office-pmo": "Oficina PMO",
-        "office-pmo-description": "Asesoramos a nuestros clientes en el armado de las oficinas de PMO en base a las metodologías del mercado, adaptándolas a las necesidades y la generación de demanda del negocio.",
+        "office-pmo": "PMO Office",
+        "office-pmo-description": "We advise our clients in setting up PMO offices based on market methodologies, adapting them to the needs and demand generation of the business.",
         "quality-assurance": "Quality Assurance",
-        "quality-assurance-description": "Nuestros equipos cuentan con procesos de QA y QC en donde se definen robustas pruebas. Realizamos consultoría sobre procesos de calidad basados en TMMI.",
-        "quality-assurance": "Quality Assurance",
-        
+        "quality-assurance-description": "Our teams have QA and QC processes where robust tests are defined. We provide consulting on quality processes based on TMMI.",
+        "ux": "UX Reasearch Design Thinking Workshops Usability Testing Heuristic Analysis A/B Testing Interaction Design.",
+
         "about-title": "About CFOtech",
         "we": "About us",
         "our-culture": "Our Culture",
@@ -135,12 +135,12 @@
    
     "outsourcing": {
         "Outsourcing-title": "Outsourcing",
-        "delivery-center-description": "Diseñado para proporcionar a las empresas una solución eficientey especializada en el reclutamiento y selección de talento humano.",
-        "services-title": "Responsabilidades y servicios",
-        "talent-search-and-selection-title":"Búsqueda y selección de talento",
-        "talent-search-and-selection-description":"Conectamos empresas con el talento ideal Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
-        "what-sets-us-apart": "¿Qué nos diferencia? ",
-        "benefits": "Beneficios de elegirnos"
+        "outsourcing-description": "Designed to provide companies with an efficient and specialized solution in the recruitment and selection of human talent.",
+        "services-title": "Responsibilities and services",
+        "talent-search-and-selection-title":"Talent search and selection",
+        "talent-search-and-selection-description":"We connect companies with the ideal talent Our search and selection service is designed to identify, evaluate and attract the professionals that best align with the needs and objectives of your organization.",
+        "what-sets-us-apart": "What sets us apart?",
+        "benefits": "Benefits of choosing us"
         
     },
 
