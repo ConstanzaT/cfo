@@ -43,9 +43,12 @@
     },
 
     "who-we-are": {
-        "title": "Who we are",
-        "description": "We are a company specialized in Technology, created in 2015, based in Argentina and abroad.We are leaders in Technology Services and IT Recruiting.We accompany our clients to provide them with digital solutions.Our goal is to be the technological partner of our clients.",
-        "button": "Get to know us →"
+        "title": "Who We Are",
+        "who-we-are-p1": "We are a company <strong>specialized in Technology</strong>, founded in 2015, <br>with offices in Argentina and abroad.",
+        "who-we-are-p2": "We are leaders in Technology Services and IT Recruiting.",
+        "who-we-are-p3": "We partner with our clients to provide them with digital solutions.",
+        "who-we-are-p4": "Our goal is to <strong>be the technological partner</strong> for our clients.",
+        "who-we-are-btn": "Get to Know Us →"
     },
 
     "counters": {

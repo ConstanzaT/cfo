@@ -38,19 +38,18 @@
         "title-outsourcing": "Nuestros servicios",
         "description-outsourcing": "Proveemos personal capacitado y soluciones personalizadas para mejorar la eficiencia y productividad de tu negocio.",
         "description-delivery-center": "Ofrecemos una gestión integral de proyectos tecnológicos, cubriendo todas las etapas del desarrollo de software, desde la concepción hasta el mantenimiento.",
-        "solutions-title": "Certified confidence for your solutions",
-        "clients-title": "Customers and Technology Partners"
+        "solutions-title": "Confianza certificada para tus soluciones",
+        "clients-title": "Clientes y Socios Tecnológicos"
     },
 
-    "who-we-are": {
+   "who-we-are": {
         "title": "Quiénes somos",
-        "description-1": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.", 
-        "description-2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.", 
-        "description-3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.", 
-        "description-4": "Nuestro objetivo es ser el partner tecnológico de nuestros clientes.", 
-        "button": "Conócenos →"
+        "who-we-are-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, <br>con sede en Argentina y en el exterior.",
+        "who-we-are-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.",
+        "who-we-are-p3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.",
+        "who-we-are-p4": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.",
+        "who-we-are-btn": "Conócenos →"
     },
-
     "counters": {
         "collaborators": "Colaboradores",
         "countries": "Países",
@@ -163,7 +162,11 @@
     "our-history": {
         "our-history-title": "Nuestra Historia",
         "our-history-subtitle": "Nuestra Historia",
-        "our-history-description": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamos a nuestros clientes para brindarles soluciones digitales.Nuestro objetivo es ser el partner tecnológico de nuestros clientes.",
+        "our-history-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, <br>con sede en Argentina y en el exterior.",
+        "our-history-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.",
+        "our-history-p3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.",
+        "our-history-p4": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.",
+        "our-history-btn": "Conócenos →",
         "our-history-item1-year":"2015",
         "our-history-item1-title": "El Comienzo",
         "our-history-item1-description": "Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.",

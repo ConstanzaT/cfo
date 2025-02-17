@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             // Verifica que las claves existan en el JSON
                             if (data[section] && data[section][value]) {
-                                el.textContent = data[section][value];
+                                el.innerHTML = data[section][value]; // Usar innerHTML para mantener las etiquetas HTML
                             } else {
                                 console.warn(`No se encontró la clave para ${section}.${value}`);
-                                el.textContent = ''; // Texto por defecto si no se encuentra la clave
+                                el.innerHTML = ''; // Texto por defecto si no se encuentra la clave
                             }
                         });
                     })
