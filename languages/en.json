@@ -93,7 +93,7 @@
     "delivery-center": {
         "delivery-center-title": "Delivery Center",
         "explore-our-services": "Explore our services",
-        "delivery-center-description": "Gestionamos proyectos de desarrollo de software, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando metodologías ágiles o tradicionales.",
+        "delivery-center-description": "We manage <span class='gradient-text' id='text1'>software development</span> projects, providing technological solutions and digital product design with experienced professionals, using <span class='gradient-text' id='text2'>agile</span> or traditional methodologies.",
         "all-our-services-title": "All our services",
         "innovation-hub-title": "Innovation Hub",
         "innovation-hub-description": "Our Innovation Hub is a space where innovative ideas take shape in a collaborative and technological environment.",
@@ -117,7 +117,11 @@
         "quality-assurance": "Quality Assurance",
         "quality-assurance-description": "Our teams have QA and QC processes where robust tests are defined. We provide consulting on quality processes based on TMMI.",
         "ux": "UX Reasearch Design Thinking Workshops Usability Testing Heuristic Analysis A/B Testing Interaction Design.",
-
+        "bootcamp-title": "CFOTECH BOOTCAMP",
+        "bootcamp-description": "Our Bootcamp is a school designed for people looking to take their first steps in the technology sector. Here you will have the opportunity to:",
+        "bootcamp-l1": "Acquire learning and practical experience.",
+        "bootcamp-l2": "Train in a real work environment with challenging projects.",
+        "bootcamp-l3": "Build the foundations of a solid career in the IT world.",
         "about-title": "About CFOtech",
         "we": "About us",
         "our-culture": "Our Culture",
