@@ -143,6 +143,7 @@
     "outsourcing": {
         "Outsourcing-title": "Outsourcing",
         "outsourcing-description": "Designed to provide companies with an efficient and specialized solution in the recruitment and selection of human talent.",
+        "carousel-description": "We have <span class='gradient-text' id='text1'>extensive experience</span> in attracting the right profiles, tailored to the specific needs of our clients.",
         "services-subtitle": "Selection Processes",
         "services-subtitle-description": "Each selection process is based on a thorough evaluation of the candidates' skills and capabilities, ensuring that their profile is suitable for the positions available.",
         "our-methodology": "Our methodology",
@@ -150,7 +151,8 @@
         "how-we-work": "How we work.",
         "how-we-work-description" : "Rely on our experience to optimize your recruitment process and ensure that the right talent is part of your team.",
         "talent-search-and-selection-title":"Talent search and selection",
-        "talent-search-and-selection-description":"We connect companies with the ideal talent Our search and selection service is designed to identify, evaluate and attract the professionals that best align with the needs and objectives of your organization.",
+        "talent-p1":"We connect companies with the right talent",
+        "talent-p2":"Our search and selection service is designed to identify, evaluate and attract the professionals that best align with your organization's needs and objectives.",
         "what-sets-us-apart": "What sets us apart?",
         "customized-selection-methodology": "Customized Selection Methodology",
         "we-analyze": "We analyze the profile of each position to design customized recruitment processes.",

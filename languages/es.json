@@ -141,15 +141,16 @@
     "outsourcing": {
         "Outsourcing-title": "Outsourcing",
         "outsourcing-description": "Diseñado para proporcionar a las empresas una solución eficientey especializada en el reclutamiento y selección de talento humano.",
+        "carousel-description":"Contamos con una <span class='gradient-text' id='text1'>amplia experiencia</span> en la atracción de perfiles idóneos, ajustados a las necesidades específicas de nuestros clientes.",
         "services-subtitle": "Procesos de selección",
         "services-subtitle-description": "Cada proceso de selección se basa en una evaluación exhaustiva de las aptitudes y capacidades de los candidatos, garantizando que su perfil sea el adecuado para las posiciones disponibles.",
         "our-methodology": "Nuestra metodología",
         "our-methodology-description": "Nuestra metodología asegura una alta eficacia en cada etapa del proceso, respetando los más altos estándares de seguridad y calidad en la gestión de recursos humanos.",
         "how-we-work": "Cómo trabajamos",
         "how-we-work-description" : "Confiá en nuestra experiencia para optimizar tu proceso de selección y asegurar que el talento correcto forme parte de tu equipo.",
-
         "talent-search-and-selection-title":"Búsqueda y selección de talento",
-        "talent-search-and-selection-description":"Conectamos empresas con el talento ideal Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
+        "talent-p1":"Conectamos empresas con el talento ideal",
+        "talent-p2":"Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
         "what-sets-us-apart": "¿Qué nos diferencia? ",
         "customized-selection-methodology": "Metodología de Selección Personalizada",
         "we-analyze": "Analizamos el perfil de cada puesto para diseñar procesos de reclutamiento a medida.",
