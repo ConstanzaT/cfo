@@ -246,5 +246,18 @@
         "company": "Empresa",
         "reason": "Motivo",
         "comment": "Comentario"
+    },
+
+    "contact-form": {
+        "contact-title": "Contacto",
+        "contact-subtitle": "Trabajemos juntos",
+        "contact-with-us": "Contacta con nosotros",
+        "contacts": "Contactos",
+        "name": "Nombre y apellido",
+        "mail": "Email",
+        "phone": "Teléfono",
+        "company": "Empresa",
+        "reason": "Motivo",
+        "comment": "Comentario"
     }
 }
