@@ -136,12 +136,25 @@
     "outsourcing": {
         "Outsourcing-title": "Outsourcing",
         "outsourcing-description": "Designed to provide companies with an efficient and specialized solution in the recruitment and selection of human talent.",
-        "services-title": "Responsibilities and services",
+        "services-subtitle": "Selection Processes",
+        "services-subtitle-description": "Each selection process is based on a thorough evaluation of the candidates' skills and capabilities, ensuring that their profile is suitable for the positions available.",
+        "our-methodology": "Our methodology",
+        "our-methodology-description": "Our methodology ensures high efficiency at each stage of the process, respecting the highest standards of safety and quality in human resources management.",
+        "how-we-work": "How we work.",
+        "how-we-work-description" : "Rely on our experience to optimize your recruitment process and ensure that the right talent is part of your team.",
         "talent-search-and-selection-title":"Talent search and selection",
         "talent-search-and-selection-description":"We connect companies with the ideal talent Our search and selection service is designed to identify, evaluate and attract the professionals that best align with the needs and objectives of your organization.",
         "what-sets-us-apart": "What sets us apart?",
-        "benefits": "Benefits of choosing us"
-        
+        "customized-selection-methodology": "Customized Selection Methodology",
+        "we-analyze": "We analyze the profile of each position to design customized recruitment processes.",
+        "talent-title": "Access to a Broad Talent Network",
+        "talent-description": "We have a carefully selected candidate base with experience in multiple industries.",
+        "comprehensive-evaluation-title": "Comprehensive Evaluation",
+        "comprehensive-evaluation-description": "Rely on our experience to optimize your recruitment process and ensure that the right talent is part of your team.",
+        "benefits": "Benefits of choosing us",
+        "benefits-item1": "Time reduction in the recruitment process",
+        "benefits-item2": "Guaranteed talent aligned with your company's values and objectives.",
+        "benefits-item3": "A strategic partner for the growth of your team"
     },
 
    "our-history": {
