@@ -203,6 +203,18 @@
         "values-item5-title": "Adaptability",
         "values-item5-description": "We adjust quickly to market changes and new technologies.",
         "management-team": "Management Team"
+    },
+
+   "programs-of-action": {
+        "title": "Action<br> Programs",
+        "workshop-title": "Workshop & Wellness",
+        "workshop-subtitle": "More than a program, a commitment.",
+        "workshop-p1": "We focus not only on professional development but also on the overall well-being of our employees. For this reason, we created the Workshop & Wellness Program, an initiative that combines training and self-care, contributing to both individual growth and a positive impact on the community.",
+        "workshop-p2": "This program includes a variety of activities designed to promote health, well-being, and social awareness:",
+        "workshop-l1": "<strong>CPR Campaigns:</strong> Training in cardiopulmonary resuscitation to be prepared for emergencies and save lives.",
+        "workshop-l2": "<strong>Blood Donation:</strong> We organize events in partnership with health institutions, promoting solidarity and social commitment.",
+        "workshop-l3": "<strong>Wellness Talks and Workshops:</strong> From stress management to mindfulness, because taking care of the mind is just as important as taking care of the body.",
+        "workshop-l4": "Through Workshop & Wellness, we aim not only to train our team but also to contribute our part for a better world."
     }
     
 

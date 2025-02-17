@@ -206,6 +206,18 @@
         "values-item5-title": "Adaptabilidad",
         "values-item5-description": "Nos ajustamos rápidamente a los cambios del mercado y las nuevas tecnologías.",
         "management-team": "Equipo Directivo"
+    },
+
+    "programs-of-action": {
+        "title": "Programas<br> de acción",
+        "workshop-title": "Workshop & Wellness",
+        "workshop-subtitle": "Más que un programa, un compromiso.",
+        "workshop-p1": "No solo nos enfocamos en el desarrollo profesional, sino también en el bienestar integral de nuestros colaboradores. Por esa razón, creamos el Programa Workshop & Wellness, una iniciativa que combina capacitación y cuidado personal, contribuyendo tanto al crecimiento individual como al impacto positivo en la comunidad.",
+        "workshop-p2": "Este programa incluye una variedad de actividades diseñadas para fomentar la salud, el bienestar y la conciencia social:",
+        "workshop-l1": "<strong>Campañas de RCP:</strong> Capacitación en reanimación cardiopulmonar para estar preparados ante emergencias y salvar vidas.",
+        "workshop-l2": "<strong>Donación de sangre:</strong> Organizamos jornadas en alianza con instituciones de salud, promoviendo la solidaridad y el compromiso social.",
+        "workshop-l3": "<strong>Charlas y talleres de bienestar:</strong> Desde gestión del estrés hasta mindfulness, porque cuidar la mente es tan importante como cuidar el cuerpo.",
+        "workshop-l4": "A través de Workshop & Wellness, no solo buscamos capacitar a nuestro equipo, sino también aportar nuestro grano de arena para un mundo mejor."
     }
 
 }
