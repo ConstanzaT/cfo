@@ -169,7 +169,9 @@
    "our-history": {
         "our-history-title": "Our History",
         "our-history-subtitle": "Our History",
-        "our-history-description": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamos a nuestros clientes para brindarles soluciones digitales.Nuestro objetivo es ser el partner tecnológico de nuestros clientes.",
+        "our-history-description-p1": "We are a <strong>technology-focused</strong> company, founded in 2015, with headquarters in Argentina and abroad.",
+        "our-history-description-p2": "We are leaders in Technology Services and IT Recruiting. We support our clients by providing them with digital solutions.",
+        "our-history-description-p3": "Our goal is to <strong>be the technological partner</strong> of our clients.",
         "our-history-item1-year":"2015",
         "our-history-item1-title": "The Beginning",
         "our-history-item1-description": "CFOTech IT Global Services is born, marking the beginning of our history in the technology sector.",
