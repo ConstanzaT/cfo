@@ -215,7 +215,21 @@
         "workshop-l2": "<strong>Blood Donation:</strong> We organize events in partnership with health institutions, promoting solidarity and social commitment.",
         "workshop-l3": "<strong>Wellness Talks and Workshops:</strong> From stress management to mindfulness, because taking care of the mind is just as important as taking care of the body.",
         "workshop-l4": "Through Workshop & Wellness, we aim not only to train our team but also to contribute our part for a better world."
-    }
-    
+    },
+
+    "innovation": {
+        "innovation-p1": "We optimize processes<br> and expand horizons.",
+        "innovation-description": "We have a team that seeks to <b>identify and execute innovation initiatives</b> in order to provide <span class='gradient-text' id='text1'>'emerging opportunities'. </span><br><br> These initiatives can be internal, meaning for the company, or external, aiming to improve pain points for current clients or gain insights for incorporating our own credentials (new products, knowledge, etc.)",
+        "innovation-services": "Responsibilities and services",
+        "service-1-title": "Research and information gathering",
+        "service-1-description": "We search for information on innovation to generate ideas. This helps to discover new ideas that can later become opportunities supporting all parts of the innovation process.",
+        "service-2-title": "Identify opportunities",
+        "service-2-description": "We select ideas and work to ensure they align with the overall strategy of the organization or the client, thus developing the best possible set of criteria to evaluate proposals so they fit the objectives.",
+        "service-3-title": "Bootcamps",
+        "service-3-description": "We present the opportunity to be evaluated and analyze costs, feasibility, implementation plans, etc. This activity is related to the implementation or roll-out.",
+        "service-4-title": "Enable opportunities",
+        "service-4-description": "We connect ideas and define how to execute them. We work on developing implementation plans and quantify the results and learnings from new initiatives. Generation, selection, testing, and dissemination of ideas.",
+        "innovation-p2": "In a VUCA (volatile, uncertain, complex, and ambiguous) world that changes at high speed, innovation is a key tool that companies use to continue projecting themselves into the <b>future.</b>"
+}
 
 }

@@ -218,6 +218,25 @@
         "workshop-l2": "<strong>Donación de sangre:</strong> Organizamos jornadas en alianza con instituciones de salud, promoviendo la solidaridad y el compromiso social.",
         "workshop-l3": "<strong>Charlas y talleres de bienestar:</strong> Desde gestión del estrés hasta mindfulness, porque cuidar la mente es tan importante como cuidar el cuerpo.",
         "workshop-l4": "A través de Workshop & Wellness, no solo buscamos capacitar a nuestro equipo, sino también aportar nuestro grano de arena para un mundo mejor."
+    },
+
+     "innovation": {
+        "innovation-p1": "Optimizamos procesos<br> y expandimos horizontes.",
+        "innovation-description": "Disponemos de un equipo que busca <b>identificar y ejecutar iniciativas de innovación</b> en pos de brindar <span class='gradient-text' id='text1'>'oportunidades emergentes'. </span><br><br> Dichas iniciativas pueden ser internas, es decir para la empresa, o externas ya sea para mejorar puntos de dolor en clientes actuales o insight de cara a incorporar credenciales propias (nuevos productos, conocimientos, etc.)",
+        "innovation-services": "Responsabilidades y servicios",
+        "service-1-title": "Busqueda y recopilación de información",
+        "service-1-description": "Buscamos información sobre innovación para generar ideas. Esto ayuda a descubrir las nuevas ideas que luego pueden ser oportunidades que respalden todas las partes del proceso de innovación.",
+        "service-2-title": "Identificar oportunidades",
+        "service-2-description": "Seleccionamos ideas, trabajamos para garantizar que las mismas se conecten con la estrategia general de la organización o el cliente, y así desarrollar el mejor conjunto posible de criterios para evaluar propuestas, para que encajen con los objetivos.",
+        "service-3-title": "Bootcamps",
+        "service-3-description": "Mostramos la oportunidad para ser evaluada y así analizar, costos, factibilidad,​ plan de implementación, etc. Esta actividad está relacionada a la implementación​ o puesta en marcha. ",
+        "service-4-title": "Habilitar oportunidades",
+        "service-4-description": "Conectamos ideas y definimos cómo ejecutarlas. Trabajamos en el desarrollo de planes de implementación y cuantificamos los resultados y aprendizajes de nuevas iniciativas. Generación, selección, prueba y difusión de ideas.",
+        "innovation-p2": "En un mundo VICA (volátil, incierto, complejo y ambiguo) que cambia a toda​ velocidad, la innovación es una herramienta clave que tienen las empresas para seguir proyectándose al <b>futuro.</b>"
     }
+
+
+
+    
 
 }
