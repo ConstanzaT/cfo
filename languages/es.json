@@ -233,10 +233,18 @@
         "service-4-title": "Habilitar oportunidades",
         "service-4-description": "Conectamos ideas y definimos cómo ejecutarlas. Trabajamos en el desarrollo de planes de implementación y cuantificamos los resultados y aprendizajes de nuevas iniciativas. Generación, selección, prueba y difusión de ideas.",
         "innovation-p2": "En un mundo VICA (volátil, incierto, complejo y ambiguo) que cambia a toda​ velocidad, la innovación es una herramienta clave que tienen las empresas para seguir proyectándose al <b>futuro.</b>"
+    },
+
+    "contact": {
+        "contact-title": "Contacto",
+        "contact-subtitle": "Trabajemos juntos",
+        "contact-with-us": "Contacta con nosotros",
+        "contacts": "Contactos",
+        "name": "Nombre y apellido",
+        "mail": "Email",
+        "phone": "Teléfono",
+        "company": "Empresa",
+        "reason": "Motivo",
+        "comment": "Comentario"
     }
-
-
-
-    
-
 }

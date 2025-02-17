@@ -230,6 +230,20 @@
         "service-4-title": "Enable opportunities",
         "service-4-description": "We connect ideas and define how to execute them. We work on developing implementation plans and quantify the results and learnings from new initiatives. Generation, selection, testing, and dissemination of ideas.",
         "innovation-p2": "In a VUCA (volatile, uncertain, complex, and ambiguous) world that changes at high speed, innovation is a key tool that companies use to continue projecting themselves into the <b>future.</b>"
-}
+},
+
+    "contact": {
+        "contact-title": "Contact",
+        "contact-subtitle": "Let's work together",
+        "contact-with-us": "Contact us",
+        "contacts": "Contacts",
+        "name": "Full Name",
+        "mail": "Email",
+        "phone": "Phone",
+        "company": "Company",
+        "reason": "Reason",
+        "comment": "Comment"
+    }
+
 
 }
