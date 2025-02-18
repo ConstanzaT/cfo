@@ -17,39 +17,247 @@
     },
 
     "slide-content-services": {
-        "title": "Technological innovation",
-        "description": "We manage each stage of software development, ensuring solutions tailored to the needs of your business.", 
-        "button": "GET TO KNOW OUR SERVICES"
+        "title": "Innovación tecnológica",
+        "description": "Gestionamos cada etapa del desarrollo de software, asegurando soluciones adaptadas a las necesidades de tu negocio.", 
+        "button": "Conocé nuestros servicios"
     },
 
     "slide-content-history": {
-        "title": "Global presence",
-        "description": "More than 9 countries rely on our technological technological expertise.", 
-        "button": "KNOW OUR HISTORY"
+        "title": "Presencia global",
+        "description": "Más de 9 países confían en nuestra experiencia tecnológica.", 
+        "button": "Conocé nuestra historia"
     },
 
     "slide-content-contact": {
-        "title": "We simplify your management",
-        "description": "With integrated solutions and specialized teams, we boost your productivity, ensuring efficiency, quality and results aligned with your objectives.",
-        "button": "CONTACT US"
+        "title": "Simplificamos tu gestión",
+        "description": "Con soluciones integrales y equipos especializados, potenciamos tu productividad asegurando eficiencia, calidad y resultados alineados con los objetivos.",
+        "button": "Contactá con nosotros"
     },
 
     "our-services": {
         "title-outsourcing": "Nuestros servicios",
         "description-outsourcing": "Proveemos personal capacitado y soluciones personalizadas para mejorar la eficiencia y productividad de tu negocio.",
         "description-delivery-center": "Ofrecemos una gestión integral de proyectos tecnológicos, cubriendo todas las etapas del desarrollo de software, desde la concepción hasta el mantenimiento.",
-        "solutions-title": "Certified confidence for your solutions",
-        "clients-title": "Customers and Technology Partners"
+        "solutions-title": "Confianza certificada para tus soluciones",
+        "clients-title": "Clientes y Socios Tecnológicos"
     },
 
-    "who-we-are": {
+   "who-we-are": {
         "title": "Quiénes somos",
-        "description-1": "Somos una empresa especializada en Tecnología, creada en 2015, con sede en Argentina y en el exterior.", 
-        "description-2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.", 
-        "description-3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.", 
-        "description-4": "Nuestro objetivo es ser el partner tecnológico de nuestros clientes.", 
-        "button": "Conócenos →"
-    }
+        "who-we-are-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, <br>con sede en Argentina y en el exterior.",
+        "who-we-are-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.",
+        "who-we-are-p3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.",
+        "who-we-are-p4": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.",
+        "who-we-are-btn": "Conócenos →"
+    },
+    "counters": {
+        "collaborators": "Colaboradores",
+        "countries": "Países",
+        "customers-around-the-world": "Clientes en todo el mundo",
+        "industries": "Industrias"
+    },
 
-    
+    "social networks": {
+        "title": "Seguinos en las redes sociales"
+    },
+
+    "hiring": {
+        "title": "¿Estás buscando tu próximo desafío?",
+        "button": "Trabajá con nosotros →"
+    },
+
+    "footer": {
+        "our-services-title": "Nuestros servicios",
+        "delivery-center": "Delivery Center",
+        "outsourcing": "Work with us →",
+        "innovation-hub": "Work with us →",
+        "ux": "Work with us →",
+        "about-title": "Sobre CFOtech",
+        "we": "Nosotros",
+        "our-culture": "Nuestra cultura",
+        "work": "Trabaja con nosotros",
+        "clients": "Clientes",
+        "links-title": "Links",
+        "soport": "Centro de soporte",
+        "legal-notice": "Aviso legal",
+        "privacy": "Privacidad",
+        "security-policy": "Política de seguridad",
+        "cookies-policy": "Política de cookies",
+        "cookie-settings": "Ajustes de cookies",
+        "social-networks-title": "Redes sociales",
+        "chile": "",
+        "miami": ""
+    },
+
+   "delivery-center": {
+        "delivery-center-title": "Delivery Center",
+        "explore-our-services": "Explorá nuestros servicios",
+        "delivery-center-description": "Gestionamos proyectos de <span class='gradient-text' id='text1'>desarrollo de software</span>, brindando soluciones tecnológicas y diseño de productos digitales con profesionales de experiencia, utilizando <span class='gradient-text' id='text2'>metodologías ágiles</span> o tradicionales.",
+        "all-our-services-title": "All our services",
+        "innovation-hub-title": "Innovation Hub",
+        "innovation-hub-description": "Nuestro Innovation Hub es un espacio donde las ideas innovadoras toman forma en un entorno colaborativo y tecnológico.",
+        "architectural-design": "Diseño de Arquitectura",
+        "architectural-design-description": "Contamos con un sólido equipo de arquitectos que pueden diseñar la estructura del sistema, tomar decisiones sobre tecnologías y herramientas adecuadas, y garantizar la integridad y el rendimiento del software.",
+        "software-development": "Desarrollo de Software",
+        "software-development-description": "Disponemos de una sólida capacidad para desarrollar software de calidad con equipos de experiencia en diversos lenguajes de programación, frameworks y metodologías.",
+        "maintenance-and-support": "Mantenimiento y Soporte",
+        "maintenance-and-support-description": "Ejecutamos servicios de mantenimiento y soporte correctivo/evolutivo, trabajando sobre actualizaciones, parches y correcciones de errores en el software existente.",
+        "project-management": "Gestión de Proyectos",
+        "project-management-description": "Disponemos de una sólida capacidad para desarrollar software de calidad con equipos de experiencia en diversos lenguajes de programación y metodologías.",
+        "ia-data": "Inteligencia Artificial + Data",
+        "ia-data-description": "Disponemos de un equipo de trabajo que puede abordar y ejecutar servicios para convertirse en una organización Data Driven.",
+        "rpa-robotization": "RPA - Robotización",
+        "rpa-robotization-description": "Automatizamos tareas repetitivas y manuales mediante software de robots, optimizando la eficiencia operativa.",
+        "cloud-computing": "Cloud Computing",
+        "cloud-computing-description": "Brindamos soluciones en la Nube, ya sean desarrollos o armado de infraestructuras desde cero.",
+        "consulting-and-assessment-title": "Consultoría y Assessment",
+        "office-pmo": "Oficina PMO",
+        "office-pmo-description": "Asesoramos a nuestros clientes en el armado de las oficinas de PMO en base a las metodologías del mercado, adaptándolas a las necesidades y la generación de demanda del negocio.",
+        "quality-assurance": "Quality Assurance",
+        "quality-assurance-description": "Nuestros equipos cuentan con procesos de QA y QC en donde se definen robustas pruebas. Realizamos consultoría sobre procesos de calidad basados en TMMI.",
+        "ux": "UX Reasearch​ Talleres de Design Thinking Tests de Usabilidad​ Análisis Heurístico​​ A/B Testing​ Diseño de Interacción​.",
+        "bootcamp-title": "CFOTECH BOOTCAMP",
+        "bootcamp-description": "Nuestro Bootcamp es una escuela diseñada para personas que buscan dar sus primeros pasos en el sector tecnológico. Acá tendrás la oportunidad de:",
+        "bootcamp-l1": "Adquirir aprendizaje y experiencia práctica.",
+        "bootcamp-l2": "Formarte en un entorno real de trabajo con proyectos desafiantes.",
+        "bootcamp-l3": "Construir las bases de una carrera sólida en el mundo IT.",
+        "about-title": "About CFOtech",
+        "we": "About us",
+        "our-culture": "Our Culture",
+        "work": "Work with us",
+        "clients": "Clients",
+        "links-title": "",
+        "soport": "Support Center",
+        "legal-notice": "Legal Notice",
+        "privacy": "Privacy",
+        "security-policy": "Security Policy",
+        "cookies-policy": "Cookie Policy",
+        "cookie-settings": "Cookie settings",
+        "social-networks-title": "Social media",
+        "chile": "",
+        "miami": ""
+    },
+
+    "outsourcing": {
+        "Outsourcing-title": "Outsourcing",
+        "outsourcing-description": "Diseñado para proporcionar a las empresas una solución eficientey especializada en el reclutamiento y selección de talento humano.",
+        "carousel-description":"Contamos con una <span class='gradient-text' id='text1'>amplia experiencia</span> en la atracción de perfiles idóneos, ajustados a las necesidades específicas de nuestros clientes.",
+        "services-subtitle": "Procesos de selección",
+        "services-subtitle-description": "Cada proceso de selección se basa en una evaluación exhaustiva de las aptitudes y capacidades de los candidatos, garantizando que su perfil sea el adecuado para las posiciones disponibles.",
+        "our-methodology": "Nuestra metodología",
+        "our-methodology-description": "Nuestra metodología asegura una alta eficacia en cada etapa del proceso, respetando los más altos estándares de seguridad y calidad en la gestión de recursos humanos.",
+        "how-we-work": "Cómo trabajamos",
+        "how-we-work-description" : "Confiá en nuestra experiencia para optimizar tu proceso de selección y asegurar que el talento correcto forme parte de tu equipo.",
+        "talent-search-and-selection-title":"Búsqueda y selección de talento",
+        "talent-p1":"Conectamos empresas con el talento ideal",
+        "talent-p2":"Nuestro servicio de búsqueda y selección está diseñado para identificar, evaluar y atraer a los profesionales que mejor se alineen con las necesidades y objetivos de tu organización.",
+        "what-sets-us-apart": "¿Qué nos diferencia? ",
+        "customized-selection-methodology": "Metodología de Selección Personalizada",
+        "we-analyze": "Analizamos el perfil de cada puesto para diseñar procesos de reclutamiento a medida.",
+        "talent-title": "Acceso a una Red de Talento Amplia",
+        "talent-description": "Contamos con una base de candidatos cuidadosamente seleccionados y con experiencia en múltiples industrias.",
+        "comprehensive-evaluation-title": "Evaluación Integral",
+        "comprehensive-evaluation-description": " Confiá en nuestra experiencia para optimizar tu proceso de selección y asegurar que el talento correcto forme parte de tu equipo.",
+        "benefits": "Beneficios de elegirnos",
+        "benefits-item1": "Reducción de tiempos en el proceso de contratación",
+        "benefits-item2": "Garantía de talento alineado con los valores y objetivos de tu empresa",
+        "benefits-item3": "Un socio estratégico para el crecimiento de tu equipo"
+    },
+
+    "our-history": {
+        "our-history-title": "Nuestra Historia",
+        "our-history-subtitle": "Nuestra Historia",
+        "our-history-description-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, con sede en Argentina y en el exterior.",
+        "our-history-description-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamos a nuestros clientes para brindarles soluciones digitales.",
+        "our-history-description-p3": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.",
+        "our-history-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, <br>con sede en Argentina y en el exterior.",
+        "our-history-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT.",
+        "our-history-p3": "Acompañamos a nuestros clientes para brindarles soluciones digitales.",
+        "our-history-p4": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.",
+        "our-history-btn": "Conócenos →",
+        "our-history-item1-year":"2015",
+        "our-history-item1-title": "El Comienzo",
+        "our-history-item1-description": "Nace CFOTech IT Global Services, marcando el inicio de nuestra historia en el sector tecnológico.",
+        "our-history-item2-year":"2018",
+        "our-history-item2-title": "Primer Gran Paso",
+        "our-history-item2-description": "Mudanza a World Trade Center (WTC): Un nuevo espacio que impulsó nuestra colaboración y crecimiento.",
+        "our-history-item3-year":"2020",
+        "our-history-item3-title": "Innovación y Crecimiento",
+        "our-history-item3-description": "Mudanza al Distrito Tecnológico: Nos instalamos en un entorno ideal para potenciar nuestra misión de liderazgo tecnológico.",
+        "our-history-item4-year":"2021",
+        "our-history-item4-title": "Un Equipo en Expansión",
+        "our-history-item4-description": "200 colaboradores: Alcanzamos un nuevo hito en la construcción de un equipo comprometido y profesional.",
+        "our-history-item5-year":"2024",
+        "our-history-item5-title": "Consolidación y Regionalización",
+        "our-history-item5-description": "Mudanza al Edificio HIT: Estrenamos oficinas diseñadas para el futuro. Regionalización: Expandimos nuestra presencia en Latinoamérica. +530 colaboradores: Un equipo que no para de crecer, llevando innovación a cada rincón.",
+        "mission-title": "Misión",
+        "mission-description": "Impulsar la transformación digital de las empresas, proporcionando soluciones innovadoras y talento capacitado que contribuyan al crecimiento y éxito de nuestros clientes.",
+        "vision-title": "Visión",
+        "vision-description": "Ser líderes de la innovación tecnológica, impactando positivamente en cada organización con la que colaboramos a través del trabajo en equipo, promoviendo el respeto y la diversidad, siendo reconocidos como el socio estratégico ideal para el éxito digital.",
+        "values": "Valores",
+        "values-item1-title": "Innovación constante",
+        "values-item1-description": "Investigamos y desarrollamos soluciones para estar a la vanguardia de la tecnología.",
+        "values-item2-title": "Trabajo en equipo",
+        "values-item2-description": "Fomentamos la colaboración para resolver problemas y crear soluciones impactantes.",
+        "values-item3-title": "Inclusividad",
+        "values-item3-description": "Promovemos un ambiente donde todos se sientan valorados y respetados.",
+        "values-item4-title": "Honestidad",
+        "values-item4-description": "Actuamos con integridad, sinceridad y transparencia en todas nuestras acciones.",
+        "values-item5-title": "Adaptabilidad",
+        "values-item5-description": "Nos ajustamos rápidamente a los cambios del mercado y las nuevas tecnologías.",
+        "management-team": "Equipo Directivo"
+    },
+
+    "programs-of-action": {
+        "title": "Programas<br> de acción",
+        "workshop-title": "Workshop & Wellness",
+        "workshop-subtitle": "Más que un programa, un compromiso.",
+        "workshop-p1": "No solo nos enfocamos en el desarrollo profesional, sino también en el bienestar integral de nuestros colaboradores. Por esa razón, creamos el Programa Workshop & Wellness, una iniciativa que combina capacitación y cuidado personal, contribuyendo tanto al crecimiento individual como al impacto positivo en la comunidad.",
+        "workshop-p2": "Este programa incluye una variedad de actividades diseñadas para fomentar la salud, el bienestar y la conciencia social:",
+        "workshop-l1": "<strong>Campañas de RCP:</strong> Capacitación en reanimación cardiopulmonar para estar preparados ante emergencias y salvar vidas.",
+        "workshop-l2": "<strong>Donación de sangre:</strong> Organizamos jornadas en alianza con instituciones de salud, promoviendo la solidaridad y el compromiso social.",
+        "workshop-l3": "<strong>Charlas y talleres de bienestar:</strong> Desde gestión del estrés hasta mindfulness, porque cuidar la mente es tan importante como cuidar el cuerpo.",
+        "workshop-l4": "A través de Workshop & Wellness, no solo buscamos capacitar a nuestro equipo, sino también aportar nuestro grano de arena para un mundo mejor."
+    },
+
+     "innovation": {
+        "innovation-p1": "Optimizamos procesos<br> y expandimos horizontes.",
+        "innovation-description": "Disponemos de un equipo que busca <b>identificar y ejecutar iniciativas de innovación</b> en pos de brindar <span class='gradient-text' id='text1'>'oportunidades emergentes'. </span><br><br> Dichas iniciativas pueden ser internas, es decir para la empresa, o externas ya sea para mejorar puntos de dolor en clientes actuales o insight de cara a incorporar credenciales propias (nuevos productos, conocimientos, etc.)",
+        "innovation-services": "Responsabilidades y servicios",
+        "service-1-title": "Busqueda y recopilación de información",
+        "service-1-description": "Buscamos información sobre innovación para generar ideas. Esto ayuda a descubrir las nuevas ideas que luego pueden ser oportunidades que respalden todas las partes del proceso de innovación.",
+        "service-2-title": "Identificar oportunidades",
+        "service-2-description": "Seleccionamos ideas, trabajamos para garantizar que las mismas se conecten con la estrategia general de la organización o el cliente, y así desarrollar el mejor conjunto posible de criterios para evaluar propuestas, para que encajen con los objetivos.",
+        "service-3-title": "Bootcamps",
+        "service-3-description": "Mostramos la oportunidad para ser evaluada y así analizar, costos, factibilidad,​ plan de implementación, etc. Esta actividad está relacionada a la implementación​ o puesta en marcha. ",
+        "service-4-title": "Habilitar oportunidades",
+        "service-4-description": "Conectamos ideas y definimos cómo ejecutarlas. Trabajamos en el desarrollo de planes de implementación y cuantificamos los resultados y aprendizajes de nuevas iniciativas. Generación, selección, prueba y difusión de ideas.",
+        "innovation-p2": "En un mundo VICA (volátil, incierto, complejo y ambiguo) que cambia a toda​ velocidad, la innovación es una herramienta clave que tienen las empresas para seguir proyectándose al <b>futuro.</b>"
+    },
+
+    "contact": {
+        "contact-title": "Contacto",
+        "contact-subtitle": "Trabajemos juntos",
+        "contact-with-us": "Contacta con nosotros",
+        "contacts": "Contactos",
+        "name": "Nombre y apellido",
+        "mail": "Email",
+        "phone": "Teléfono",
+        "company": "Empresa",
+        "reason": "Motivo",
+        "comment": "Comentario"
+    },
+
+    "contact-form": {
+        "contact-title": "Contacto",
+        "contact-subtitle": "Trabajemos juntos",
+        "contact-with-us": "Contacta con nosotros",
+        "contacts": "Contactos",
+        "name": "Nombre y apellido",
+        "mail": "Email",
+        "phone": "Teléfono",
+        "company": "Empresa",
+        "reason": "Motivo",
+        "comment": "Comentario"
+    }
 }
