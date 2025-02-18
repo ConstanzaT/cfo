@@ -21,6 +21,8 @@
   text-align: center; /* Centra el texto dentro de los elementos */
   padding: 40px 20px;
   height: 60vh; /* Ocupa toda la altura de la ventana */
+  margin-top:-5%;
+  margin-bottom:10%;
 }
 
 .talent-section h2 {
@@ -208,8 +210,13 @@ h2{text-align: center;}
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.carousel-container{
-  height:auto;
+.carousel-container {
+  height: auto;
+  margin-top: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .gradient-text {
   font-weight: bold;
@@ -266,16 +273,13 @@ h2{text-align: center;}
 
   }
   #outsourcing h1{
-    margin-top:200px;
     text-align: center;
   
-    width:400px;
 
   }
 
   .welcomedc{
     margin-top:-350px;
-    margin-bottom: -300px;
   }
   
   }
@@ -309,9 +313,27 @@ h2{text-align: center;}
     font-size: 1.5em;
   
   }.responsabilidades{
-    margin-top:300px;
+    margin-top:50%;
   }
   .diferenciadores{
     margin-top:-10px;
   }
+  
+}
+.responsabilidades{
+  margin-top:-15%;
+}
+@media (max-width: 600px) {
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.carousel-container{
+  margin-top:20%;
+}
+
 }
