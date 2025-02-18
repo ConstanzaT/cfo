@@ -96,7 +96,7 @@
         "delivery-center-description": "We manage <span class='gradient-text' id='text1'>software development</span> projects, providing technological solutions and digital product design with experienced professionals, using <span class='gradient-text' id='text2'>agile</span> or traditional methodologies.",
         "all-our-services-title": "All our services",
         "innovation-hub-title": "Innovation Hub",
-        "innovation-hub-description": "Our Innovation Hub is a space where innovative ideas take shape in a collaborative and technological environment.",
+        "innovation-hub-description": "Our Innovation Hub is a space where innovative ideas take shape in a collaborative and technological environment.<br><br><br><strong>See more...</strong",
         "architectural-design": "Architecture Design",
         "architectural-design-description": "We have a strong team of architects who can design the system structure, make decisions about appropriate technologies and tools, and ensure the integrity and performance of the software.",
         "software-development": "Software Development",
