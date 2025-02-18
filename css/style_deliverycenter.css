@@ -149,6 +149,7 @@ background-size: cover;
 }
 .carousel-text{
   font-size: 2em;
+  margin-top: 6%;
 }
 .gradient-text {
   font-weight: bold;

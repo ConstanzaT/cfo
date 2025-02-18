@@ -11,7 +11,7 @@ body {
 
 /* Hamburger Menu Styles */
 .hamburger-menu {
-  display: none;
+  /*display: none;*/
   flex-direction: column;
   justify-content: space-around;
   height: 25px;
@@ -575,7 +575,7 @@ header img {
 #programa_accion,  #outsourcing, #contacto, #historiahero, .deliverycenter {
   position: relative;
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   background-size: cover;
 
 }
