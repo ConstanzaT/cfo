@@ -217,6 +217,17 @@
         "workshop-l4": "Through Workshop & Wellness, we aim not only to train our team but also to contribute our part for a better world."
     },
 
+    "your_cv": {
+        "title": "Submit Your Resume",
+        "subtitle": "We are hiring!",
+        "your_cv-title": "CFOTech IT Global Services",
+        "your_cv-subtitle": "Job Opportunities",
+        "your_cv-p1": "We are a <strong>Technology-specialized</strong> company, founded in 2015, headquartered in Argentina and abroad.​",
+        "your_cv-p2": "We are leaders in IT Recruiting and Technology Services. We support our clients by providing digital solutions.",
+        "your_cv-p3": "Our goal is to <strong>be the technological partner</strong> of our clients.​",
+        "your_cv-p4": "<strong>Blood Donation:</strong> We organize events in partnership with healthcare institutions, promoting solidarity and social commitment."
+    },
+
     "innovation": {
         "innovation-p1": "We optimize processes<br> and expand horizons.",
         "innovation-description": "We have a team that seeks to <b>identify and execute innovation initiatives</b> in order to provide <span class='gradient-text' id='text1'>'emerging opportunities'. </span><br><br> These initiatives can be internal, meaning for the company, or external, aiming to improve pain points for current clients or gain insights for incorporating our own credentials (new products, knowledge, etc.)",
@@ -243,6 +254,18 @@
         "company": "Company",
         "reason": "Reason",
         "comment": "Comment"
+    },
+
+    "contact-form": {
+        "name": "Enter your full name",
+        "mail": "Enter your email",
+        "phone": "Enter your phone number",
+        "company": "Enter your company name",
+        "reason-placeholder": "Select a reason",
+        "reason-consulta": "Inquiry",
+        "reason-soporte": "Support",
+        "reason-otro": "Other",
+        "comment": "Enter your message"
     }
 
 
