@@ -220,6 +220,17 @@
         "workshop-l4": "A través de Workshop & Wellness, no solo buscamos capacitar a nuestro equipo, sino también aportar nuestro grano de arena para un mundo mejor."
     },
 
+    "your_cv": {
+        "title": "Dejá tu CV",
+        "subtitle": "¡We are hiring!",
+        "your_cv-title": "CFOTech IT Global Services",
+        "your_cv-subtitle": "Oportunidades de empleo",
+        "your_cv-p1": "Somos una empresa <strong>especializada en Tecnología</strong>, creada en 2015, con sedeen Argentina y en el exterior.​",
+        "your_cv-p2": "Somos Líderes en Servicios Tecnológicos y Recruiting en IT. Acompañamosa nuestros clientes para brindarles soluciones digitales.",
+        "your_cv-p3": "Nuestro objetivo es <strong>ser el partner tecnológico</strong> de nuestros clientes.​",
+        "your_cv-p4": "<strong>Donación de sangre:</strong> Organizamos jornadas en alianza con instituciones de salud, promoviendo la solidaridad y el compromiso social."
+    },
+
      "innovation": {
         "innovation-p1": "Optimizamos procesos<br> y expandimos horizontes.",
         "innovation-description": "Disponemos de un equipo que busca <b>identificar y ejecutar iniciativas de innovación</b> en pos de brindar <span class='gradient-text' id='text1'>'oportunidades emergentes'. </span><br><br> Dichas iniciativas pueden ser internas, es decir para la empresa, o externas ya sea para mejorar puntos de dolor en clientes actuales o insight de cara a incorporar credenciales propias (nuevos productos, conocimientos, etc.)",
