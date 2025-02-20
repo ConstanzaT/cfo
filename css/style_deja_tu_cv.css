@@ -2,17 +2,15 @@
     background-image: url('../img/deja_tu_cv.svg');
     margin-top: 4%
   }
-  .image-container-deja-tu-cv img {
-    max-width: 80%; 
-    height: auto; 
-    padding:0;
-  }
+  
 
 .image-container-deja-tu-cv img {
   max-width: 100%; 
   height: auto; 
   display: block;
   margin: 0 auto; 
+  height: 350px;
+  width: 500px;
 }
 .content-container{
   margin-top:-50px;
